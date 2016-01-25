@@ -2,9 +2,9 @@
 title: Brian Ambielli
 email: brian.ambielli@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome! I'm a Software Developer with a focus on Software Quality.
+  Take a look around, and feel free to drop me a line if you have
+  any questions or comments.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bambielli.com" # the base hostname & protocol for your site
 twitter_username: bambielli
