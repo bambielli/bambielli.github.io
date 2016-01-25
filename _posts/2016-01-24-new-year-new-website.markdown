@@ -8,7 +8,7 @@ I figured it's about time I set up a personal website!
 
 It also couldn't be easier with [Jekyll][jekyll] powered Github static pages. I didn't know anything about Jekyll until this weekend, and now I'm hooked. This blog is generated with entirely client side code, served from my [github static page repo][github-page]. "Deploying" a new post is as easy as a commit and a push. Its simplicity inspired me to finally register bambielli.com and put something on it.
 
-I plan on using this blog to:
+I plan on using this site to:
 
   * Comment on life as a Software Developer at [Syndio][syndio], where I have been employed for almost a year.
   * Record thoughts on books that I finish reading: I just finished [Thinking Fast and Slow][thinking-fast] by Daniel Kahneman.
