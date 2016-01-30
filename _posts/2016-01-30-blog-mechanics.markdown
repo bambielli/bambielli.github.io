@@ -5,7 +5,7 @@ date:   2016-01-30 11:30:00
 categories: general
 ---
 
-Since I am using [github][github]{:target="_blank"} to host and version my content, I might as well take advantage of other features of the platform to help organize and manage updates to my site. We use github for most of our software project management mechanisms at work, so implementing here should feel pretty natural. Here are my initial thoughts on how each tool will be used:
+Since I am using [github][github]{:target="_blank"} to host and version my content, I might as well take advantage of other features of the platform to help organize and manage updates to my site. We use github for most of our software project management mechanisms at work, so implementing here should feel pretty natural. Initial thoughts on how each tool will be used:
 
 #### [Issue Log (Work Item Tracking)][issue-log]{:target="_blank"}:
 The issue log is used to track work items to be done. There is a set of custom tags that I will use to keep my issue log organized: "Post" issues contain topics for future blog posts and lists of ideas to cover in each (this post is currently being tracked as issue [#3][#3]{:target="_blank"}). "Bug" issues are true bugs that need to be fixed, or content that is still missing from the site. "Enhancements" are other areas of the site that could use polish but aren't mission critical. Using tags in the issue log allows me to filter on what types of issues are currently open when I prioritize work for the next milestone.
