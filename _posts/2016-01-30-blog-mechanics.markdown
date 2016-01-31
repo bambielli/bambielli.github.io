@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thinking Like a Software Project Manager - Blog Mechanics"
-date:   2016-01-30 11:30:00
+date:   2016-01-30 19:30:00
 categories: general
 ---
 
