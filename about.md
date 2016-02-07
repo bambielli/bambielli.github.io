@@ -9,3 +9,5 @@ permalink: /about/
 
 This is a placeholder for the actual about me that is to come.
 Trust me...it will be worth the wait!
+
+[Download my Resume here](/downloads/Resume.pdf)
