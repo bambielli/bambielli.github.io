@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Command line shortcuts for navitaging to beginning and end of a command"
+title:  "Command Line Shortcuts for Navigating to Beginning and End of a Command"
 date:   2016-02-09 17:02:00
 category: til
 tags: [command-line, efficiency]
