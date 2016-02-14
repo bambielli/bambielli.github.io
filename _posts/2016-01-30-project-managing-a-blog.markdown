@@ -22,7 +22,7 @@ Github Pages deploys "master" to production. I don't want to accidentally deploy
 #### [Pull Requests (Code Reviews)][pull-request]{:target="_blank"}:
 Once a work item is complete, I'll open a pull request from its branch back in to master. This will allow me to review changes proposed by the branch before deploying to production. During this review, I will go over a [checklist][checklist]{:target="_blank"} that I've developed to ensure work item quality. To borrow from agile project management, this acts as the [definition of done][definition-of-done]{:target="_blank"} for the item under review. The checklist will be added to the top of each pull request to ensure steps aren't forgotten. Once code review is complete, I'll merge the branch back in to master which will auto deploy to my site. Pretty nifty! The header of this section links to the pull request that merged this post in to master if you'd like to see the process in action.
 
-This might wind up being too much overhead for the purposes of a personal website...but its a good exercise to think about how a personal website could conform to best practices for developing and managing software projects! This post went through the full process described above before entering production, and I think it worked out well.
+This might wind up being too much overhead for the purposes of a personal website...but it has been a good exercise to think about how a personal website could conform to best practices for developing and managing software projects! This post went through the full process described above before entering production, and I think it worked out well.
 
 I'll try it out for a while and see what I think.
 
