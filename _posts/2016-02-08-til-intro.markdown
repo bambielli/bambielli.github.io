@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is this page?"
+title:  "What is a TIL?"
 date:   2016-02-08 15:07:00
 category: til
 ---
