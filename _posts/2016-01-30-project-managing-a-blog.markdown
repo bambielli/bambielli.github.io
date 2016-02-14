@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "Thinking Like a Software Project Manager - Blog Mechanics"
+title:  "Project Managing a Blog?"
 date:   2016-01-30 19:30:00
 categories: general
 ---
 
-Since I am using [github][github]{:target="_blank"} to host and version my content, I might as well take advantage of other features of the platform to help organize and manage updates to my site. We use github for most of our software project management mechanisms at work, so implementing here should feel pretty natural. Some initial thoughts on how I plan to use each tool:
+Since I am using [github][github]{:target="_blank"} to host and version my content, I might as well take advantage of other features of the platform to help organize and manage updates to my site.
+
+Some initial thoughts on how I plan to use each tool:
 
 #### [Issue Log (Work Item Tracking)][issue-log]{:target="_blank"}:
 Work items to be completed will be tracked in the issue log. Each item will be tagged with one of the following: "Post" issues will contain topics for future blog posts and lists of ideas to cover in each (this post is currently being tracked as issue [#3][#3]{:target="_blank"}). "Bug" issues will track a bug that needs to be fixed, or content that is still missing from the site. "Enhancements" will be used to track non-critical issues or suggestions. Using tags in the issue log will allow me to filter on what types of issues are currently open when I prioritize what to tackle next.
