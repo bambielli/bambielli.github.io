@@ -8,17 +8,19 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {% if post.category != 'til' %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span>{{post.excerpt}}</span>
-      </li>
-        {% for category in post.categories %}
-          <a href="#">#{{ category }}</a>
-        {% endfor %}
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span>{{post.excerpt}}</span>
+        </li>
+          {% for tag in post.tags %}
+            <a href="#">#{{ tag }}</a>
+          {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 

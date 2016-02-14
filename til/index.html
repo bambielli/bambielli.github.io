@@ -1,15 +1,26 @@
 ---
 layout: page
-title: T.I.L
+title: TIL - Today I Learned
 permalink: /til/
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">THIS IS WHERE TIL WILL GO</h1>
-
   <ul class="post-list">
-    the wat in the hat
+    {% for post in site.categories.til %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span>{{post.excerpt}}</span>
+      </li>
+        {% for tag in post.tags %}
+          <a href="#">#{{ tag }}</a>
+        {% endfor %}
+    {% endfor %}
   </ul>
 
 </div>
+

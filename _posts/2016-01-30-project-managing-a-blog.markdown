@@ -2,7 +2,8 @@
 layout: post
 title:  "Project Managing a Blog?"
 date:   2016-01-30 19:30:00
-categories: general
+category: general
+tags: [project-management, github]
 ---
 
 Since I am using [github][github]{:target="_blank"} to host and version my content, I might as well take advantage of other features of the platform to help organize and manage updates to my site.
