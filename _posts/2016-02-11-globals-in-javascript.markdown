@@ -18,4 +18,4 @@ Is equivalent to:
 	    window.global_id = 4;
 	</script>
 
-I also learned that the javascript "this" keyword, when used outside of a closure, also refers to *window*.
+I also learned that the javascript "this" keyword, when used outside of a closure, also refers to *window*. Neat!
