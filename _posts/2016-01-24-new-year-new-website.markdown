@@ -2,11 +2,12 @@
 layout: post
 title:  "New Year, New Website"
 date:   2016-01-24 20:50:00
-categories: general
+category: general
+tags: [resolutions]
 ---
 I figured it's about time I set up a personal website!
 
-It also couldn't be easier with [Jekyll][jekyll]{:target="_blank"} powered Github static pages. I didn't know anything about Jekyll until this weekend, and now I'm hooked. This blog is generated with entirely client side code, served from my [github static page repo][github-page]{:target="_blank"}. "Deploying" a new post is as easy as a commit and a push. Its simplicity inspired me to finally register bambielli.com and put something on it.
+It also couldn't be easier with [Jekyll][jekyll]{:target="_blank"} powered Github static pages. I didn't know anything about Jekyll until this weekend, and now I'm hooked. This blog is generated with entirely client side code, served from my [github pages repo][github-page]{:target="_blank"}. "Deploying" a new post is as easy as a commit and a push. Its simplicity inspired me to finally register bambielli.com and put something on it.
 
 I plan on using this site to:
 

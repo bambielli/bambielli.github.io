@@ -2,11 +2,12 @@
 title: Brian Ambielli
 email: brian.ambielli@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Welcome! I'm a Software Developer with a focus on Software Quality.
+  Welcome! I'm a Software Developer with a focus on Software Quality,
+  working at Syndio in Chicago, IL.
   Take a look around, and feel free to drop me a line if you have
   any questions or comments.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://bambielli.com" # the base hostname & protocol for your site
+url: "https://www.bambielli.com" # the base hostname & protocol for your site
 twitter_username: bambielli
 github_username:  bambielli
 
