@@ -8,6 +8,8 @@ tags: [javascript]
 
 TIL that global variables are automatically (magically?) set on *window* in javascript.
 
+__Example:__
+
 	<script>
 	    global_id = 4;
 	</script>

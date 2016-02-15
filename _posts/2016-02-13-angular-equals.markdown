@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "angular.equals for JSON Object Comparison"
-date:   2016-02-13 15:47:00
+date:   2016-02-13 16:40:00
 category: til
-tags: [angularJS, javascript, json]
+tags: [angular, javascript, json]
 ---
 
 TIL that angular has an "equals" method that does a deep comparison between objects to determine equality.

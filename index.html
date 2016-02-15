@@ -16,10 +16,11 @@ layout: default
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <span>{{post.excerpt}}</span>
-        </li>
           {% for tag in post.tags %}
             <a href="#">#{{ tag }}</a>
           {% endfor %}
+        </li>
+
       {% endif %}
     {% endfor %}
   </ul>
