@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "The Value Add of Testing"
-date:   2016-02-09 17:02:00
+title:  'The "Value Add" of Testing'
+date:   2016-02-10 19:06:00
 category: til
 tags: [testing]
 ---
 
-TIL what the true value add of testing is...there is none!
+TIL what the true value add of testing is...__there is none!__
 
 Let me explain - I happened upon [this][this]{:target="_blank"} article from Google's testing blog today while I was looking for clarity on when to write end-to-end (E2E) tests vs. when to just unit test. The post has very strong opinions on the purpose and useful-ness of E2E tests, and the underlying sentiment resonated with me.
 

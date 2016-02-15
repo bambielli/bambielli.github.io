@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AngularJS Services Maintain State Between Page Refreshes"
+title:  "Angular Services Maintain State Between Browser Refreshes"
 date:   2016-02-12 15:47:00
 category: til
 tags: [angularJS, javascript]

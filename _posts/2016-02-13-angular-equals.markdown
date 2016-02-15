@@ -6,7 +6,7 @@ category: til
 tags: [angularJS, javascript, json]
 ---
 
-TIL that angular has a "equals" method that does a deep compare between objects to compare equality.
+TIL that angular has an "equals" method that does a deep comparison between objects to determine equality.
 
 __Example:__
 
