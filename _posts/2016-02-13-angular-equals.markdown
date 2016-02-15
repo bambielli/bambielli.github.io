@@ -21,5 +21,5 @@ angular.equals(object1, object2); // evaluates to true
 
 {% endhighlight %}
 
-I needed to do a deep compare between two JSON objects to see if they contained equivalent values (order might differ between keys and values) and was about to write my own deep compare when I stumbled upon this. Way to go angular!
+I needed to do a deep compare between two JSON objects to see if they contained equivalent values, and was about to write my own deep compare when I stumbled upon this built-in. Way to go angular!
 
