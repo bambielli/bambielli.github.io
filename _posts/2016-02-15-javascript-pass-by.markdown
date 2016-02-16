@@ -36,7 +36,7 @@ console.log(obj2.val); // remains as "hello"
 
 If Javascript was purely call by value, then the mutation of obj1 would not be seen by the caller. If it was purely call by reference, then all three of the updates from the function above would have been seen by the caller. Call by sharing truly seems to be a hybrid of the two more commonly referenced evaluation approaches.
 
-The name "call by sharing" is not colloquially used to describe this type of evaluation strategy. Java, Python and Ruby all implement call by sharing, but members of those communities do not reference it by its given name. This inconsistency has led to confusion among users of multiple languages (myself included) and I'm glad I finally took some time to understand and sort out the differences.
+The name "call by sharing" is not colloquially used to describe this type of evaluation strategy. Java, Python and Ruby all implement call by sharing, but members of those communities do not reference it by its proper name. This inconsistency has led to confusion among users of multiple languages (myself included) and I'm glad I finally took some time to understand and sort out the differences.
 
 Related Links:
 
