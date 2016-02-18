@@ -3,10 +3,10 @@ layout: post
 title:  "Github supports templates for Issues and PRs"
 date:   2016-02-17 22:14:00
 category: til
-tags: [angular, javascript, json]
+tags: [github, devops]
 ---
 
-TIL that github now supports [templates][templates] for both Issues and Pull Requests.
+TIL that github now supports [templates][templates]{:target="_blank"} for both Issues and Pull Requests.
 
 Since our team essentially lives in github, This is huge for us.
 
