@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interpolation vs. ng-bind"
+title:  "Angular Interpolation vs. ng-bind"
 date:   2016-02-19 21:49:00
 category: til
 tags: [angular]
