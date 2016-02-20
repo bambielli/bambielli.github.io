@@ -8,11 +8,11 @@ tags: [angular]
 
 TIL what the difference between angular's 3 watcher configurations are: `$watch`, `$watchCollection`, and `$watch (objectEquality)`.
 
-__Angular watchers facilitate the 2 way data binding between views and controllers / services.__ Watchers bind listener functions to $scope properties or expressions that evaluate to $scope properties. Bound `$scope` properties are dirty-checked during each `$digest()` cycle, and if a change is detected between cycles the bound listener function will be called.
+__Angular watchers facilitate the 2 way data binding between views and controllers / services.__ Watchers bind listener functions to $scope properties (or expressions that evaluate to $scope properties). Bound `$scope` properties are dirty-checked during each `$digest()` cycle, and if a change in the property is detected the bound listener function is called.
 
 There are a few different variations of watchers, each with different performance and purposes:
 
-1) [`$watch`][watch]{:target="_blank"} - this is the most basic form of watcher. It accepts an expression as a string (either a `$scope` property or expression that evaluates to a `$scope` property) and a listener callback to be called when the expression changes. This type of watcher only detects changes to __shallow__ aspects of the bound `$scope` property (i.e did the reference change). This means if the bound `$scope` property is an object, and a value in that object changes, the listener will not be called.
+1) [`$watch`][watch]{:target="_blank"} - this is the most basic form of watcher. It accepts an expression as a string (either a `$scope` property or expression that evaluates to a `$scope` property) and a listener function to be called when the expression changes. This type of watcher only detects changes to __shallow__ aspects of the bound `$scope` property. This means if the bound `$scope` property is an object, and a value in that object changes, the listener callback will not be called.
 
 __Example:__
 {% highlight javascript %}
@@ -38,7 +38,7 @@ $scope.name = ['Jim', 'John']; // triggers the watcher AGAIN since we created a 
 
 {% endhighlight %}
 
-2) [`$watchCollection`][watch-collection]{:target="_blank"} - this registeres a watcher for a collection of scope properties (either an object or an array). If any of the items within the collection change, including adding a new item or removing an item, the watcher will fire.
+2) [`$watchCollection`][watch-collection]{:target="_blank"} - this registeres a watcher for a collection of scope properties (either an object or an array). If any item within the collection changes, including the addition or removal of a new item, the listener is called.
 
 __Example:__
 {% highlight javascript %}
