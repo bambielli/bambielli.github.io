@@ -6,7 +6,7 @@ category: til
 tags: [angular]
 ---
 
-TIL what the difference between angular's 3 watcher configurations are: `$watch`, `$watchCollection`, and `$watch (objectEquality)`.
+TIL what the difference between angular's watcher offerings are: `$watch`, `$watchCollection`, '$watchGroup' and `$watch (objectEquality)`.
 
 __Angular watchers facilitate the 2 way data binding between views and controllers / services.__ Watchers bind listener functions to $scope properties (or expressions that evaluate to $scope properties). Bound `$scope` properties are dirty-checked during each `$digest()` cycle, and if a change in the property is detected the bound listener function is called.
 
@@ -71,7 +71,7 @@ $scope.names = ['Jim', 'John']; // DOES NOT trigger the watcher again, even thou
 
 ### [$watchGroup][watch-group]{:target="_blank"}
 
-The distinction between this watcher and `$watchCollection`, is that `$watchGroup` takes a **group of expressions** to watch instead of just one collection object. This can be useful if you need to bind a group of `$scope` properties to the same listener callback (instead of needing to write different watchers for them all). `$watchGroup` is only available in agular 1.3 onwards, so we don't use it yet in our application (still on angular 1.2.27) and `$watchCollection` can be configured to perform similarly to `$watchGroup`.
+The distinction between this watcher and `$watchCollection`, is that `$watchGroup` takes a **group of expressions** to watch instead of just one collection object. This can be useful if you need to bind a group of `$scope` properties to the same listener callback (instead of needing to write different watchers for them all). For performance reasons, `$watchGroup` delays calling the bound listener until the end of the `$digest()` cycle, to wait and see if multiple items in the group change during `$digest()` so the listener is only called once. `$watchGroup` is only available in agular 1.3 onwards, so we don't use it yet in our application (still on angular 1.2.27).
 
 ### $watch (objectEquality)
 
@@ -98,7 +98,7 @@ $scope.full_name = [{'first_name':'Michael', 'last_name': 'Ambielli'}]; // WILL 
 
 {% endhighlight %}
 
-Because `$watch (objectEquality)` uses `angular.equals` for deep object comparison, it is the __slowest performing__ of the watchers (deep comparison takes longer than shallow). For this reason, if you just need to watch a list of items and you don't care about deep value changes in the list, `$watchCollection` is a better choice. Of course, if you just need to watch a single value (and shallow comparison will suffice) `$watch` without objectEquality is the best option.
+Because `$watch (objectEquality)` uses `angular.equals` for deep object comparison, it is the __slowest performing__ of the watchers (deep comparison takes longer than shallow). For this reason, if you just need to watch a list of items and you don't care about deep value changes in the list, `$watchCollection` or `$watchGroup` is a better choice. Of course, if you just need to watch a single value (and shallow comparison will suffice) `$watch` without objectEquality is the best option.
 
 __Bonus TIL:__ I also learned that registering a watcher on scope returns a deregistration function that can be used to remove the watcher from the digest cycle if it is no longer needed.
 
