@@ -6,7 +6,7 @@ category: til
 tags: [angular]
 ---
 
-TIL what the difference between angular's watcher offerings are: `$watch`, `$watchCollection`, '$watchGroup' and `$watch (objectEquality)`.
+TIL what the difference between angular's watcher offerings are: `$watch`, `$watchCollection`, `$watchGroup` and `$watch (objectEquality)`.
 
 __Angular watchers facilitate the 2 way data binding between views and controllers / services.__ Watchers bind listener functions to $scope properties (or expressions that evaluate to $scope properties). Bound `$scope` properties are dirty-checked during each `$digest()` cycle, and if a change in the property is detected the bound listener function is called.
 
@@ -98,7 +98,7 @@ $scope.full_name = [{'first_name':'Michael', 'last_name': 'Ambielli'}]; // WILL 
 
 {% endhighlight %}
 
-Because `$watch (objectEquality)` uses `angular.equals` for deep object comparison, it is the __slowest performing__ of the watchers (deep comparison takes longer than shallow). For this reason, if you just need to watch a list of items and you don't care about deep value changes in the list, `$watchCollection` or `$watchGroup` is a better choice. Of course, if you just need to watch a single value (and shallow comparison will suffice) `$watch` without objectEquality is the best option.
+Because `$watch (objectEquality)` uses `angular.equals` for deep object comparison, it is the __slowest performing__ of the watchers (deep comparison takes longer than shallow). For this reason, if you just need to watch a list of items and you don't care about deep value changes in the list, `$watchCollection` or `$watchGroup` would better choices. Of course, if you just need to watch a single value (and shallow comparison will suffice) `$watch` without objectEquality is the speediest option.
 
 __Bonus TIL:__ I also learned that registering a watcher on scope returns a deregistration function that can be used to remove the watcher from the digest cycle if it is no longer needed.
 
