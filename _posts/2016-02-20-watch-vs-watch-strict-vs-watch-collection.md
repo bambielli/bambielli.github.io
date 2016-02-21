@@ -42,7 +42,7 @@ $scope.name = ['Jim', 'John']; // triggers the watcher AGAIN since we created a 
 
 ### [$watchCollection][watch-collection]{:target="_blank"}
 
-This registeres a watcher for an array or object that is bound to $scope. If any item within the collection changes, including the addition or removal of a new item, the listener is called. Equality is determined using `===` between cycles.
+This registers a watcher for an array or object that is bound to $scope. If any item within the collection changes, including the addition or removal of a new item, the listener is called. Equality is determined using `===` between cycles.
 
 __Example:__
 {% highlight javascript %}
@@ -71,7 +71,7 @@ $scope.names = ['Jim', 'John']; // DOES NOT trigger the watcher again, even thou
 
 ### [$watchGroup][watch-group]{:target="_blank"}
 
-The distinction between this watcher and `$watchCollection`, is that `$watchGroup` takes a **group of expressions** to watch instead of just one collection object. This can be useful if you need to bind a group of `$scope` properties to the same listener callback (instead of needing to write different watchers for them all). For performance reasons, `$watchGroup` delays calling the bound listener until the end of the `$digest()` cycle, to wait and see if multiple items in the group change during `$digest()` so the listener is only called once. `$watchGroup` is only available in agular 1.3 onwards, so we don't use it yet in our application (still on angular 1.2.27).
+The distinction between this watcher and `$watchCollection`, is that `$watchGroup` takes a **group of expressions** to watch instead of just one collection object. This can be useful if you need to bind a group of `$scope` properties to the same listener callback (instead of needing to write different watchers for them all). For performance reasons, `$watchGroup` delays calling the bound listener until the end of the `$digest()` cycle, to wait and see if multiple items in the group change during `$digest()` so the listener is only called once. `$watchGroup` is only available in angular 1.3 onwards, so we don't use it yet in our application (still on angular 1.2.27).
 
 ### $watch (objectEquality)
 
