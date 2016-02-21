@@ -12,7 +12,9 @@ __Angular watchers facilitate the 2 way data binding between views and controlle
 
 There are a few different variations of watchers, each with different performance and purposes:
 
-1) [`$watch`][watch]{:target="_blank"} - this is the most basic form of watcher. It accepts an expression as a string (either a `$scope` property or expression that evaluates to a `$scope` property) and a listener function to be called when the expression changes. This type of watcher only detects changes to __shallow__ aspects of the bound `$scope` property. This means if the bound `$scope` property is an object, and a value in that object changes, the listener callback will not be called.
+### [$watch][watch]{:target="_blank"}
+
+This is the most basic form of watcher. It accepts an expression as a string (either a `$scope` property or expression that evaluates to a `$scope` property) and a listener function to be called when the expression changes. This type of watcher only detects changes to __shallow__ aspects of the bound `$scope` property (reference equality via `===` comparison). This means if the bound `$scope` property is an object, and a value in that object changes, the listener callback will not be called.
 
 __Example:__
 {% highlight javascript %}
@@ -27,7 +29,7 @@ $scope.$digest(); // Value of $scope.name after $digest() is 'Brian'
 
 // The following assignments would trigger the listener above.
 // Note: between each assignment, the $scope would need to be $digest-ed for the change to be detected.
-$scope.name = []; // A new array or object
+$scope.name = []; // A new array or object (a new reference)
 $scope.name = undefined; // Making it undefined or null (which changes the reference)
 $scope.name = 'hi'; // New strings
 $scope.name = 1; // New primitives
@@ -38,7 +40,9 @@ $scope.name = ['Jim', 'John']; // triggers the watcher AGAIN since we created a 
 
 {% endhighlight %}
 
-2) [`$watchCollection`][watch-collection]{:target="_blank"} - this registeres a watcher for a collection of scope properties (either an object or an array). If any item within the collection changes, including the addition or removal of a new item, the listener is called.
+### [$watchCollection][watch-collection]{:target="_blank"}
+
+This registeres a watcher for an array or object that is bound to $scope. If any item within the collection changes, including the addition or removal of a new item, the listener is called. Equality is determined using `===` between cycles.
 
 __Example:__
 {% highlight javascript %}
@@ -65,7 +69,13 @@ $scope.names = ['Jim', 'John']; // DOES NOT trigger the watcher again, even thou
 
 {% endhighlight %}
 
-3) `$watch (objectEquality)` - `$watch` can take a third boolean argument, which tells the watcher to use `angular.equals` to check for deep objectEquality of the bound item. This causes the watcher to fire even when a sub-key or value of an object inside of the watched `$scope` property changes.
+### [$watchGroup][watch-group]{:target="_blank"}
+
+The distinction between this watcher and `$watchCollection`, is that `$watchGroup` takes a **group of expressions** to watch instead of just one collection object. This can be useful if you need to bind a group of `$scope` properties to the same listener callback (instead of needing to write different watchers for them all). `$watchGroup` is only available in agular 1.3 onwards, so we don't use it yet in our application (still on angular 1.2.27) and `$watchCollection` can be configured to perform similarly to `$watchGroup`.
+
+### $watch (objectEquality)
+
+`$watch` can take a third boolean argument, which tells the watcher to use `angular.equals` to check for deep objectEquality of the bound item. This causes the watcher to fire even when a sub-key or value of an object inside of the watched `$scope` property changes.
 
 __Example:__
 {% highlight javascript %}
@@ -108,3 +118,4 @@ The next time `$scope.name` changes, the watcher will not be registered so the a
 
 [watch]: https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watch
 [watch-collection]: https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watchCollection
+[watch-group]: https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watchGroup
