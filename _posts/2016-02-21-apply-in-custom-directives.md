@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Why $scope.apply() is Necessary"
+title:  "Why $scope.apply() is Necessary in Custom Directives"
 date:   2016-02-21 11:47:00
 category: til
 tags: [angular]
 ---
 
-TIL why you need to call $scope.apply() when you change the value of `$scope` properties inside of custom angular directives.
+TIL why you need to call `$scope.apply()` when you change the value of `$scope` properties inside of custom angular directives.
 
 [`$scope.apply()`][apply]{:target="_blank"} is a way to inform angular that a data model has changed in the current context. __Calling `$scope.apply()` implicitly calls `$rootScope.$digest()`,__ so every watcher that is registered to `$rootScope` on down to the currently existing child scopes will be dirty-checked to detect models changes.
 
-`$scope.apply()` is called automatically by all of angular's built in directives and services that have the ability to update data models (e.g `ng-bind`, `ng-click`, `$http`, `$timeout`). We need to call $scope.apply() manually __if a data model has the potential to change outside of an angular context:__ i.e. when we are changing `$scope` properites inside of custom directives.
+`$scope.apply()` is called automatically by all of angular's built in directives and services that have the ability to update data models (e.g `ng-bind`, `ng-click`, `$http`, `$timeout`). We need to call `$scope.apply()` manually __if a data model has the potential to change outside of an angular context:__ i.e. when we are changing `$scope` properites inside of custom directives.
 
 __Example:__
 
@@ -24,7 +24,7 @@ __Bonus TIL:__
 
 One last thing to note about `apply()`...
 
-`apply()` takes an optional function argument that can be used to wrap code that makes the model changes to be applied. It is possible to call $scope.apply() without the optional function, but if your code throws an error it will be thrown outside of angular's exception handling mechanisms. Wrapping model-changing code inside of the $scope.apply() function argument puts it within an angular context, exposing it to these exception handling mechanisms, so it is always best practice to do so.
+`apply()` takes an optional function argument that can be used to wrap code that makes the model changes to be applied. It is possible to call `$scope.apply()` without the optional function, but if your code throws an error it will be thrown outside of angular's exception handling mechanisms. Wrapping model-changing code inside of the `$scope.apply()` function argument puts it within an angular context, exposing it to these exception handling mechanisms, so it is always best practice to do so.
 
 __Example:__
 
