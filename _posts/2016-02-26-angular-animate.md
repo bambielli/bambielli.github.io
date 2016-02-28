@@ -1,22 +1,25 @@
 ---
 layout: post
-title:  "Angular-Animate...Slowing Us Down!"
+title:  "Hunting Down Performance Issues: 'angular-animate'"
 date:   2016-02-26 12:38:00
 category: til
 tags: [angular, angular-animate, performance]
 ---
 
-TIL what the [angular-animate][angular-animate]{:target="_blank"} library does, after noticing it was contributing to over 60% of the scripting time necessary to scroll through our grid!
+TIL what the [angular-animate][angular-animate]{:target="_blank"} library does, after noticing it was contributing to *over 60% of the scripting time necessary to scroll through our grid!*
 
-angular-animate is a cool library provided by the angular team, to facilitate animations on the core angular ng-* directives. After installing it through your package manager, inject it as a service (ngAnimate) in the base of the modules that you want to use it.
+angular-animate is a cool library provided by the angular team, that facilitates animations on the core angular ng-* directives. It works by applying a base set of classes to any element that contains an ng-*. These classes allow developers to attach custom CSS animations to events that map to the classes applied by angular-animate.
 
-For all of the core angular directives, angular-animate applies a set of classes to each that facilitate class-based CSS animations. `ng-repeat` for example gets 3 classes applied by angular-animate: enter, leave, move. These are used to trigger animations when items are added (enter) removed (leave) or shuffled (move) in a collection. See a list of the directives supported by angular-animate, and what classes are applied by default [here][here]{:target="_blank"}.
+__Example:__
 
-In the grid I've been working on over the past week, the application and removal of these classes on elements that entered the grid became a serious performance concern. __We have ng-repeat and ng-if directives within cells of each grid row__ leading to a huge number of class additions and removals from angular-animate.
+angular-animate applies three classes to the `ng-repeat` directive: `enter`, `leave`, and `move`. These are used to trigger animations when items are added (enter) removed (leave) or shuffled (move) in a collection. As a developer, I could create a class for my ng-repeat element, that adds or removes additional properties based on if one of the angular-animate classes is currently present.
 
-By disabling the application of the base angular-animate classes for the grid, I reduced scripting time during scroll events by 60%. I was just going to disable angular-animate entirely for the grid, but realized that we don't actually use the library anymore through the app, so I removed it entirely.
+See a list of the directives supported by angular-animate, and what classes are applied by default [here][here]{:target="_blank"}.
 
-angular-animate is a cool library in concept, but this specific application where we had fast moving / dynamic elements scrolling through a grid seemed to be an inappropriate use.
+In the grid I've been working on over the past week, the addition and removal of these base classes on elements that entered the grid became a serious performance concern: __We have `ng-repeat` and `ng-if` directives within cells of each grid row__ which led to a huge number of class additions and removals by angular-animate.
+
+By disabling angular-animate for directives in the grid, __I reduced scripting time during scroll events by 60%.__ Instead of stopping there, I checked to see if we were actually using angular-animate at all throughout our core app...we weren't. I removed the service from the entire module which will now save performance time across our core app.
+
 
 [angular-animate]: https://docs.angularjs.org/api/ngAnimate
 [here]: https://docs.angularjs.org/api/ngAnimate#directive-support
