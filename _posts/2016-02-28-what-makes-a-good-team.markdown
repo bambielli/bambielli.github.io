@@ -1,39 +1,43 @@
 ---
 layout: post
 title:  "NYT Article: What Makes the Perfect Team?"
-date:   2016-02-08 15:07:00
+date:   2016-02-28 15:07:00
 category: general
 ---
 
-I read an article recently published by the New York Times[1] that highlighted research efforts by Google that aimed to determine what makes the perfect team. A "good" team can elevate the capabilities of its members, while a "bad" team has the opposite effect: productivity decreases and employee satisfaction starts dropping. The article resonated with me quite a bit as it articulated thoughts I have had while working on various teams throughout my career.
+An article recently published by New York Times Magazine[1] highlighted research efforts by Google to determine the contributing factors for a high functioning team. A good team elevates the capabilities of its members, while a bad team has quite the opposite effect: productivity decreases and employee well-being begins to drop. The article resonated with me quite a bit as it articulated thoughts I have had while working on various teams throughout my career.
 
-The key finding was that __groups should aim to develop a culture of psychological safety__, wherein group members feel safe to take risks and speak up within the group without the concern of being punished or rejected for their risk taking. *This group culture was found to put team members at ease, increase their sense of well being both in and outside of work, and foster creativity / productivity within groups.*
+### A Culture of "Psychological Safety"
 
-Psychologically safe people __feel comfortable being themselves at work__, which is encouraged by connecting with co-workers and teammates on a more personal level. Taking lunchbreaks to small talk with co-workers shouldn't be seen as a waste of time in this sense, but should be advocated for by managers as a worthwhile investment in group culture.
+The key finding was that __groups should aim to develop a culture that promotes psychological safety__, wherein group members feel comfortable to take risks and speak up within the group without the concern of being punished or rejected. This group culture was found to put team members at ease, increase their sense of worth both in and outside of work, and foster both creativity and productivity within the group.
 
-Group behaviors that are indicative of a culture of psychological safety are:
+Psychologically safe employees ***are comfortable being themselves at work***, and consequently feel more engaged. These feelings of security are encouraged by getting to know teammates on a more personal level, developing empathy and understanding for one another in the process. Sharing lunch with co-workers shouldn't be seen as a waste of time in this sense, but should be advocated for as a worthwhile *investment* towards group culture!
+
+Group behaviors that are indicative of a psychologically safe group culture are:
 
 1) Group members speak (roughly) the same amount during team meetings, and no one talks over one another.
-2) A high level of social sensitivity (empathy) between group members.
+2) A high level of social sensitivity (empathy) of group members.
 
-I have *absolutely* experienced the consequences of being on teams with a psychologically unsafe culture: you feel drained at the end of the day, work more in isolation since seeking out feedback leads to being rebuked for "incorrect" (read *"different"*) decisions, and are overcome with feelings of inadequacy and self-doubt.
+### A Make or Break Decision for Employee Engagement
 
-It's interesting how much team culture can affect an employee's overall workplace sentiment: __the choice of the team that you're placed on can make or break your experience at a company.__
+I have *absolutely* experienced the consequences of being on teams with a psychologically unsafe culture: you feel drained at the end of the day and work more in isolation since seeking out feedback leads to being rebuked for "incorrect" (read *"different"*) decisions. Feelings of inadequacy and self doubt are common, although illogical.
 
-What makes it *more* interesting is that an employee often has very little input on their team assignments. Managers assign employees to project teams based on *availability*, not based on objective evidence that the selected members will work well together.
+It's interesting how much team culture can affect an employee's general sentiment about their workplace: __which team you're placed on can make or break your experience at a company.__
 
-If an employee doesn't click with the culture of their assigned team, it could be perceived by a manager as a failure of the employee to assimilate. This discourages employees from speaking up about a potentially bad fit.
+What's *more* interesting is that an employee often has very little input on their team assignments. Managers assign employees to project teams based on *availability*, not based on objective evidence that the selected members will work well together.
 
-This is exactly the __wrong__ behavior that managers want, though. They should want to identify which teams do NOT work well together and intervene, since it not only affects employee satisfaction but team productivity as well.
+If an employee doesn't click with the culture of their assigned team, it could be perceived by a manager as a failure of the employee to assimilate. This may discourage employees from speaking up about a potentially bad fit, which is exactly the opposite behavior managers should encourage.
 
-__This is something that the Syndio platform can help with:__ for mission critical initiatives that cannot afford a poorly functioning team, *managers can use knowledge of their employee network to make more informed decisions on team composition.*
+### Make More Informed Decisions on Group Composition
 
-Our platform also detects which groups have lower than average workplace sentiment, potentially highlighting a group with bad dynamics. This helps managers determine which of their groups might need some re-structuring or individual coacing.
+A people analytics platform such as [Syndio's][Syndio]{:target="_blank"} can help take the guesswork out of composing new groups. Equipped with network knowledge of their workforce and metrics around which employees are good listeners, leaders, innovators and change agents, managers can make more strategic choices that increase the likelihood of creating a psychologically safe group culture when forming new teams. This knowledge is invaluable for mission critical projects that cannot afford to be impeded by a dysfunctional group.
 
+[Syndio's][Syndio]{:target="_blank"} platform also detects which groups have lower than average workplace sentiment, indicating a group with potential culture issues. Red flags such as these enable managers to detect struggling teams earlier and course correct as needed.
 
-
+People analytics will provide the data necessary to make *smarter* decisions when choosing who works together, which will ultimately lead to more productive groups and satisfied group members.
 
 Related Links:
  - [1][New York Times]{:target="_blank"} http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html
 
 [New York Times]: http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html
+[Syndio]: http://synd.io
