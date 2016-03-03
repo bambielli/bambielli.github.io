@@ -19,7 +19,7 @@ __Two behaviors that were found to be indicative of a psychologically safe group
 
 2. Group members display a high level of social sensitivity (empathy).
 
-Both behaviors demonstrate a culture of respect and understanding for fellow teammates, which leads to a safer / positive experience for those involved.
+Both behaviors demonstrate a culture of respect and understanding for fellow teammates, which leads to a safer and more positive experience for those involved.
 
 ### A Make or Break Decision for Employee Engagement
 
