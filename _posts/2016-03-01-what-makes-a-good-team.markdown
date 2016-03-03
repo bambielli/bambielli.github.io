@@ -11,7 +11,7 @@ An article recently published by the *New York Times Magazine* highlighted resea
 
 The key finding was that groups should aim to develop a culture of __psychological safety__, wherein group members feel comfortable to take risks and speak up without the concern of being punished or rejected. This group culture puts team members at ease, increases their sense of worth, and promotes both creativity and productivity within the group. Psychologically safe employees are comfortable __being themselves at work,__ and consequently feel more engaged while working.
 
-Psychological safety is encouraged by getting to know teammates and co-workers on a more personal level, developing empathy and understanding for one another in the process. Sharing lunch with co-workers shouldn't be seen as a waste of time in this sense, but should be advocated for as a worthwhile *investment* towards group culture!
+Psychological safety is encouraged by getting to know teammates and co-workers on a more personal level, developing empathy and understanding for one another in the process. Sharing lunch with co-workers shouldn't be seen as a waste of time in this sense, but should be advocated for as a worthwhile *investment* towards group culture goals!
 
 __Two behaviors that were found to be indicative of a psychologically safe group culture are:__
 
@@ -41,7 +41,7 @@ Equipped with a network map of their workforce, and metrics that highlight which
 
 [Syndio's][Syndio]{:target="_blank"} platform also detects which groups have lower than average workplace sentiment, indicating a group with potential culture issues. Red flags such as these enable managers to detect struggling teams earlier and course correct as needed.
 
-People analytics provide the data necessary to make smarter decisions when choosing who works together. __This will ultimately lead to more productive groups (employer benefit) and satisfied group members (employee benefit).__
+People analytics provides the intelligence necessary to make informed decisions about who works with whom. __This will ultimately lead to more productive groups (employer benefit) and satisfied group members (employee benefit).__
 
 #### Related Links:
 
