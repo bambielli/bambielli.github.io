@@ -41,7 +41,7 @@ Equipped with a network map of their workforce, and metrics that highlight which
 
 [Syndio's][Syndio]{:target="_blank"} platform also detects which groups have lower than average workplace sentiment, indicating a group with potential culture issues. Red flags such as these enable managers to detect struggling teams earlier and course correct as needed.
 
-People analytics provides the intelligence necessary to make informed decisions about who should work with whom. __This will ultimately lead to more productive groups (employer benefit) and satisfied group members (employee benefit).__
+People analytics provides the intelligence necessary to make informed decisions about who should work with whom. __This will ultimately lead to more productive groups (employer benefit) and more satisfied group members (employee benefit).__
 
 #### Related Links:
 
