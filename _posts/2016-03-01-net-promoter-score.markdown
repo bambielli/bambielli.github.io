@@ -6,7 +6,7 @@ category: til
 tags: [management, metrics, customer]
 ---
 
-TIL of a metric that helps a growing business measure the engagement of their customers: Net Promoter Score
+TIL of a metric that helps measure customer engagement and loyalty: Net Promoter Score
 
 This morning at Syndio we had our monthly team meeting where we examine how each business function stacked up against its set of KPIs from the previous month. One of the KPIs the implementation function is beginning to measure is Net Promoter Score (NPS).
 
