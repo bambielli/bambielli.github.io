@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Overwriting Mocks in Tests"
+title:  "Overwriting Mocks in Jasmine Tests"
 date:   2016-03-04 11:30:00
 category: til
 tags: [angular, testing, unit-test, jasmine]
