@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hunting Down Performance Issues: 'angular-animate'"
+title:  "Hunting Down Performance Issues"
 date:   2016-02-26 12:38:00
 category: til
 tags: [angular, angular-animate, performance]
