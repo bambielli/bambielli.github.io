@@ -28,7 +28,7 @@ The spy above is `overriding` the method call to the service that interfaces wit
 
 __The solution:__
 
-The `spyOn` method returns the created spy as an object when it is invoked. If I just save that object to a variable, I can delete it as necessary and re-create it to return a rejected promise in my edge case test!
+The `spyOn` method returns the created spy as an object when it is invoked. If you just save that object to a variable, you can delete it as necessary and re-create it to return a rejected promise in my edge case test!
 
 __Even Better:__
 
@@ -58,7 +58,7 @@ beforeEach(function(){
 
 __Furthermore__, if a spy already exists for a dependency but you need to call the actual implementation of that dependency again temporarily for a test, you can use `spy.and.callThrough()` to overwrite the fake method with the original implementation
 
-Spys rock, and make testing SO much easier than it ever has been. I thought I had a good grasp on spys and when to use them, *but now I feel like agent M deploying 007 all OVER these controllers and services*
+Spys rock, and make testing SO much easier than it ever has been. I thought I had a good grasp on spys and when to use them, ___but now I feel like agent M deploying 007 all OVER these controllers and services.___
 
 get it? __spys???__
 
