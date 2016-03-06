@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mocking the Clock Using Jasmine"
-date:   2016-02-29 15:12:00
+date:   2016-03-02 14:56:00
 category: til
 tags: [testing, unit-test, jasmine, javascript]
 ---
