@@ -16,7 +16,7 @@ This was something I have kept in the back of my head since I started working wi
 
 I won't go in depth in to `dependency injection` here (maybe another day...) but the fact that angular leverages this pattern throughout construction of its controllers and services makes mocking and testing units of code a breeze.
 
-If a unit under test relies on a method call to an injected dependency, the [jasmine test framework][jasmine]{:target="_blank"} makes it easy to mock and call fake methods whenever the dependency is needed, allowing the tester to focus on the unit under test instead of first making sure a particular dependency is functioning as expected.
+If a unit under test relies on a method call to an injected dependency, the [jasmine test framework makes it easy to mock and call fake methods][jasmine]{:target="_blank"} whenever the dependency is needed, allowing the tester to focus on the unit under test instead of first making sure a particular dependency is functioning as expected.
 
 Note: testing with realistic responses from the backend should be reserved for **integration** tests, and should not be of concern at the *unit* level.
 
