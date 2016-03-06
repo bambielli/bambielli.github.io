@@ -8,7 +8,7 @@ tags: [angular, testing, unit-test, jasmine]
 
 TIL how to overwrite mocks in tests, by saving them to a variable and modifying the function tied to the object.
 
-During my test-a-palooza (technical term) over the past few days, I have been learning a lot of advanced jasmine techniques.
+During my *test-a-palooza* (technical term) over the past few days, I have been learning a lot of advanced jasmine techniques.
 
 In my test file, I found that I wanted to overwrite a spy that I had previously created in a `beforeEach`. Here is an example of the spy:
 
