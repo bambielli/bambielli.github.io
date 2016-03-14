@@ -96,7 +96,7 @@ The performance of this sorting algorithm is `O(nlog(n))`, with the log(n) porti
  subArr1 = [4, 2];
  subArr3 = [4]; subArr4 = [2];
 
- //once splitting is complete, sub-arrays are combined in to a merged
+ //Once splitting is complete, sub-arrays are combined in to a merged
  //array that is itself in sorted order.
  mergedArr1 = [2, 4];
 
@@ -107,12 +107,12 @@ The performance of this sorting algorithm is `O(nlog(n))`, with the log(n) porti
  //Then, it is combined in to a sorted merged array.
  mergedArr2 = [1,3];
 
- //finally, elements are combined from the two merged arrays in to an array
+ //Finally, elements are combined from the two merged arrays in to an array
  //of `startingArr.length`, which is returned as the final sorted array.
 
  finalArr = [1, 2, 3, 4]
 
- //note that items are added to finalArr in the following order:
+ //Note that items are added to finalArr in the following order:
  //mergedArr2[0], mergedArr1[0], mergedArr2[1], mergedArr1[1]
 {%endhighlight%}
 
