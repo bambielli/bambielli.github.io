@@ -6,11 +6,9 @@ category: til
 tags: [algorithms, teaching]
 ---
 
-TIL the differences between a few different sorting algorithms: `selection sort`, `insertion sort`, and `merge sort`
+TIL (more like re-learned) the differences between a few basic sorting algorithms: `selection sort`, `insertion sort`, and `merge sort`
 
-This is more of a "*Today I Re-Learned*”...which still counts as learning!
-
-This week during class I introduced students to 3 sorting algorithms that could potentially appear on the AP exam: `selection sort`, `insertion sort`, and `merge sort`. Students are NOT required to know how to implement these algorithms (in java) on the exam, but should be familiar with how they work and what a collection will look like after N passes of the algorithm.
+This week during class I introduced students to 3 sorting algorithms that could potentially appear on the AP exam: `selection sort`, `insertion sort`, and `merge sort`. Students are NOT required to know how to implement these algorithms (in java) on the exam, but should be familiar with how they work and what a collection will look like after 'n' passes of the algorithm.
 
 ### Teaching Techniques
 
@@ -22,19 +20,19 @@ I created a **slide deck** that covered 3 main parts for each algorithm:
   2. How the algorithm looks like after n passes using a small array of 4 elements
   3. How the algorithm performs in best and worst case scenarios
 
-I then split the students up in to groups of 3 and gave each group a set of notecards with the numbers 0 - 9 written on them, so they could practice implementing the algorithm on their desk. I walked around and corrected any mistakes I saw while they were implementing.
+Then, I split the students up in to groups of 3 and gave each group a set of notecards with the numbers 0 - 9 written on them. They shuffled these cards in random order on their desk, and practiced implementing the algorithm. I walked around and corrected any mistakes I saw while they were working.
 
-I also found some Youtube videos (linked in the headers below) that helped illustrate each algorithm in a more visually appealing way.
+Finally, I found some Youtube videos (linked in the headers below) that helped illustrate each algorithm in a more...engaging way :)
 
 ### [Selection Sort][Selection]{:target="_blank"}
 
 Possibly one of the worst sorting algorithms out there performance-wise, this was a good place to start our discussion.
 
-`Selection sort` works by starting with the element in index 0 of the array, and comparing the element to **every other element in the array** to find the overall smallest element. The smallest element and the element in position 0 are then swapped, so the smallest element is now in position 0. This algorithm is repeated for each element in the array.
+`Selection sort` works by starting with the element at index 0 of the array, and comparing the element to **every other element in the array** to find the smallest element. The smallest element and the element in position 0 are then swapped, so the smallest element is now in position 0. This algorithm is repeated for each element in the array.
 
 After 'k' passes of the algorithm, the first 'k' elements of the array are in their final sorted position.
 
-The number of comparisons necessary to complete this algorithm is on the order of `O(n^2)`, since each element needs to be compared to every other element once. There is no pre-ordering that makes this algorithm perform any more favorably.
+The number of comparisons necessary to complete this algorithm is on the order of `O(n^2)`, since each element needs to be compared to every other element once. There is no pre-ordering that makes this algorithm perform any more efficiently.
 
 __Example:__
 
@@ -85,15 +83,15 @@ __Example:__
 
 ### [Merge Sort][Merge]{:target="_blank"}
 
-Merge sort works by dividing the starting array in to 2 arrays of (roughly) equal length, then splitting each sub-array recursively until there is one element per sub array. Two adjacent sub-arrays are combined by examining the elements of each sub-array one by one, and placing each item in to the a "merged array" in sorted order.
+`Merge sort` works by dividing the starting array in to 2 arrays of (roughly) equal length, then splitting each sub-array recursively until there is one element per sub array. Two adjacent sub-arrays are combined by examining the elements of each sub-array one by one, and placing each item in to the a "merged array" in sorted order.
 
 This is an example of a divide and conquer algorithm, and was originally created by John Von Neumann in 1945. Since it involves similar work being done on separate halves of an array of variable size, it makes sense to implement this algorithm as a recursive method.
 
-The performance of this sorting algorithm is `O(nlog(n))`, with the log(n) portion coming from the number of splits it takes to get an array down to single element sub-arrays. There is no better or worse performance based on the pre-ordering of data.
+The performance of this sorting algorithm is `O(nlog(n))`, with the log(n) portion coming from the number of splits it takes to get an array down to single element sub-arrays. There is no better or worse performance based on the pre-ordering of data. Merge sort requires the creation of an additional array of length `startingArray.length` in which the sorted version will be constructed, so **merge sort is more space inefficient** than selection or insertion sort.
 
 {%highlight javascript%}
- //The following shows how a starting array is split in to
- //sub arrays each of length 1.
+ //The following shows how the left-most elements are split in to sub-arrays
+ //of length 1 to be merged back together in sorted order.
  startingArr = [4, 2, 3, 1];
  subArr1 = [4, 2];
  subArr3 = [4]; subArr4 = [2];
@@ -102,15 +100,15 @@ The performance of this sorting algorithm is `O(nlog(n))`, with the log(n) porti
  //array that is itself in sorted order.
  mergedArr1 = [2, 4];
 
- //Next the right hand branch of merge sort is traversed.
+ //Next the right half of the array is split.
  subArr2 = [3,1];
  subArr5 = [3], subArr6 = [1]
 
- //Then it is combined in to a sorted merged array.
+ //Then, it is combined in to a sorted merged array.
  mergedArr2 = [1,3];
 
  //finally, elements are combined from the two merged arrays in to an array
- //of `startingArr.length`, which is the final sorted array.
+ //of `startingArr.length`, which is returned as the final sorted array.
 
  finalArr = [1, 2, 3, 4]
 
@@ -118,7 +116,9 @@ The performance of this sorting algorithm is `O(nlog(n))`, with the log(n) porti
  //mergedArr2[0], mergedArr1[0], mergedArr2[1], mergedArr1[1]
 {%endhighlight%}
 
-Students were able to recognize that merge sort should be implemented using recursion, which was awesome! I think the videos + notecard shuffling was helpful to understand the algorithms with some more hands on activities. We'll see how well they know their stuff on the unit test this week!
+Students were able to recognize that merge sort should be implemented using recursion, which was awesome!
+
+I think the videos + notecard shuffling was helpful to understand the algorithms with some more hands on activities. We'll see how well they know their stuff on the unit test this week!
 
 *NOTE: All credit for videos linked in this blog post goes to the creators, whose information can be found in the video descriptions on youtube.*
 
