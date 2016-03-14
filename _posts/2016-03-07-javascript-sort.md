@@ -24,9 +24,9 @@ arr.sort();
 
 To do a proper **integer sort**, you need to pass a **comparator function** to the `Array.prototype.sort()` method that dictates how sorting should be accomplished. The comparator takes 2 arguments `(a, b)` which represents two adjacent elements in the array to be sorted.
 
-1) If 0 is returned from the comparator, nothing is done to the positions of a and be in the array.
-2) If a value greater than 0 is returned, b comes first positionally in the array relative to a and will be sorted as such.
-3) If a value less than 0 is returned, a comes first positionally in the array relative to b and will be sorted as such.
+  1. If **0 is returned** from the comparator, nothing is done to the positions of 'a' and 'b' in the array
+  2. If a value **greater than 0 is returned**, 'b' comes first positionally in the array relative to 'a'
+  3. If a value **less than 0 is returned**, 'a' comes first positionally in the array relative to 'b'
 
 **A proper integer sort is achieved by the following:**
 
