@@ -18,11 +18,14 @@ We are beginning to implement usage / event tracking throughout our application 
 
 ### Strategy
 
-My hypothesis is that after launching a dashboard, the usage of users of all types drops off to exactly 0, as there is no incentive to come back to the application after a user has seen our initial analysis. We have a few thoughts on how to make the app more of an everyday essential type of tool, and using cohort analysis ***we will be able to tell if what we are doing resonates with any of our core customer profiles by seeing usage data level off asymtotically with the X axis instead of dropping through it.*** Once we reach this point (we have something that at least one type of user uses daily) we can focus on either:
+My hypothesis is that shortly after launching a dashboard, the usage statistics for all types of user profiles drops off to 0 and stays there, as there is currently no incentive to come back to the application after seeing our initial analysis. We have a few thoughts on how to make the app more of an everyday essential type of tool, and using cohort analysis ***we should be able to tell if what we are doing resonates with any of our core customer profiles by seeing usage data level off asymptotically with the X axis instead of dropping through it.***
 
-  1. Getting the usage graphs for other user types to level off - different types of users find daily utility with our tool.
-  2. Raising the asymtote of one particular user type higher on the Y axis - more of a single type of user finds utility with our tool.
+Once we reach this point (we have something that at least one type of user uses daily) we can focus on one of the following:
 
-The strategy we take here is up to the product owner, and hopefully this data allows them to see if what we are building is actually providing value to our customer base.
+  1. Getting the usage graphs for other user types to level off asymptotically - different types of users find daily utility with our tool.
+  2. Raising the asymptote of one particular user type higher on the Y axis - *more* of a single type of user finds utility with our tool.
+
+The strategy we take here is up to the product owner, but collecting and analysing this data is a crucial step towards understanding if what we are building is actually providing incremental value to our customer base.
 
 [keen]: https://keen.io
+
