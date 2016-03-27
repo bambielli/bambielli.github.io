@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Synchronous Javascript"
-date:   2016-03-10 22:16:00
+date:   2016-03-16 22:16:00
 category: til
 tags: [javascript]
 ---
