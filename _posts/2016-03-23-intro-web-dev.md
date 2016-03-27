@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "50 Minute Crash Course in Web-Development"
+title:  "Teaching a 50 Minute Crash Course in Web-Development"
 date:   2016-03-23 20:00:00
 category: general
 tags: [teaching, web-development]
 ---
 
-There were only 3 days of class this week at school (students got Thursday and Friday off for Easter) so instead of forging ahead with  new course material before the break, I decided to put together a lesson on Web Development. ***The goal was to have students create an HTML page, with a bit of CSS and JavaScript, in a 50 minute class period, with no assumptions of prior knowledge of any of these web languages.*** Read on to see the lesson plan, and some of the thoughts I had around planning for the day.
+There were only 3 days school this week (students got Thursday and Friday off for Easter) so instead of forging ahead with new course material before the break, I decided to put together a lesson on Web Development. ***The goal was to have students create an HTML page, with a bit of CSS and JavaScript, in a 50 minute class period, with no assumptions of prior knowledge of any of these web languages.*** Read on to see the lesson plan, and some of the thoughts I had around planning for the day.
 
 ### Planning
 
