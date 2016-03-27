@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Neo4j Graph Days Chicago"
+title:  "Neo4j pt. 2: Data Modeling Class"
 date:   2016-03-25 14:48:00
 category: general
 tags: [neo4j, graph-databases, data-modeling]
