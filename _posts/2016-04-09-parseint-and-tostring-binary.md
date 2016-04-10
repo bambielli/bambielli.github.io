@@ -8,7 +8,7 @@ tags: [javascript]
 
 TIL how to convert a binary string to a digit of any base, and how to convert a digit of any base to its corresponding binary string.
 
-This weekend was the annual [Google Code Jam][gcj]{:target="_blank"} which I try to participate in every year. I don't know if the questions this year were easier, or if I am just a better programmer, but I was able to submit answers for 3 of the 4 qualifying problems and qualify for the next round. Although I could have written my answers in Python, I decided to code in Javascript as I have been practicing with it quite a bit lately.
+This weekend was the annual [Google Code Jam][gcj]{:target="_blank"} qualification round. I don't know if the questions this year were easier, or if I am just a better programmer, but I was able to submit answers for 3 of the 4 qualifying problems and qualify for the next round. Although I could have written my answers in Python, I decided to code in Javascript as I have been practicing with it quite a bit lately.
 
 ### JamCoins Problem
 
