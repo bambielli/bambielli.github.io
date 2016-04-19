@@ -29,7 +29,7 @@ console.log(fName()); //this will print 'undefined undefined'
 
 {%endhighlight%}
 
-The result of the console.log is 'undefined undefined'! Why is that? Because we "borrowed" the method from the `Brian` object, but not its context! Context is what the `this` in a method refers to, and it is defined by default as the context of the object in which the method is called.
+The result of the console.log is 'undefined undefined'! Why is that? Because we "borrowed" the method from the `Brian` object, but we did not borrow its context! Context is what the `this` in a method refers to, and it is defined by default as the object in which the method is invoked.
 
 A call to Brian.fullName() will call the fullName method with the Brian context, and will appropriately return 'Brian Ambielli'. However, when calling the method in the global scope (as we do when calling fName() above) the context is the global "window" object.
 
@@ -53,9 +53,9 @@ console.log(fName()); //this will print 'Jim Frank'
 
 {%endhighlight%}
 
-In this case, the global object has firstName and lastName properties attached to it already, so when the function references this.firstName and this.lastName those properties will actually be defined. But what if we just want to call the function from the global scope with the context of the original object?
+In this case, the global object has firstName and lastName properties attached to it already, so when the function references this.firstName and this.lastName those properties will actually be defined (on window). But what if we just want to call fName global scope with the context of the borrowed method's original object?
 
-This is where Bind comes in.
+This is where `bind` comes in.
 
 ###Example 3:
 
@@ -77,7 +77,8 @@ console.log(fName()); //this will print 'Brian Ambielli'
 
 {%endhighlight%}
 
-We did it! By binding the object `Brian` to the method when we assigned it to the global variable, we were able to preserve the context for that copy of the method.
+We did it! By binding the object `Brian` to the `fullName` method when we assigned it to the global variable `fName`, we were able to preserve the context for that copy of the method.
+
 Bind is useful when we want to permanently "borrow" methods from other objects, and specify the context in which we want the copy to operate.
 
 If we do not want to permanently "borrow" a method (assigning the copy to a new property in our intended scope) javascript has other ways to `call` or `apply` methods in place without needing to make a copy.
@@ -86,7 +87,8 @@ For another day...
 
 ###Extra Example:
 
-Apparently it is possible to bind and invoke a function in place.
+Apparently it is possible to bind and invoke the bound function in place.
+
 {%highlight javascript%}
 var Brian = {
 	firstName: 'Brian',
@@ -105,4 +107,4 @@ console.log(fName.bind(Brian)()); //this will print 'Brian Ambielli'
 
 {%endhighlight%}
 
-The last line binds fName to the Brian context, and then invokes it immediately. Not sure if this is at all good practice, and I feel like using apply is better.
+The last line binds fName to the Brian context, and then invokes it immediately. This effectively mimicks what `call` does. Not sure if this is at all good practice, and I feel like using `call` is preferred.
