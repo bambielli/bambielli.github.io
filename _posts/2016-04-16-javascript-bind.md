@@ -107,4 +107,4 @@ console.log(fName.bind(Brian)()); //this will print 'Brian Ambielli'
 
 {%endhighlight%}
 
-The last line binds fName to the Brian context, and then invokes it immediately. This effectively mimicks what `call` does. Not sure if this is at all good practice, and I feel like using `call` is preferred.
+The last line binds fName to the Brian context, and then invokes it immediately. This effectively mimicks what `call` does. Not sure if this is at all good practice, and I feel like using `call` is preferred. EDIT: According to SO it isn't "bad" practice per-say...you are basically doing the same thing that `call` does.
