@@ -10,7 +10,7 @@ TIL about the `bind` method in javaScript and how to use it.
 
 Bind is used for "binding" another object context to a method call. In other words, you can swap out the object that `this` references in a method by calling bind on the method and passing in a context.
 
-###Example 1:
+### Example 1:
 Let's look at the following example (not using bind yet):
 
 {%highlight javascript%}
@@ -33,7 +33,7 @@ The result of the console.log is 'undefined undefined'! Why is that? Because we 
 
 A call to `Brian.fullName()` will call the `fullName` method with the Brian context, and will appropriately return 'Brian Ambielli'. However, when calling the method in the global scope (as we do when calling `fName()` above) the context is the global "window" object.
 
-###Example 2:
+### Example 2:
 
 {%highlight javascript%}
 var Brian = {
@@ -57,7 +57,7 @@ In this case, the global object has `firstName` and `lastName` properties attach
 
 This is where `bind` comes in.
 
-###Example 3:
+### Example 3:
 
 {%highlight javascript%}
 var Brian = {
@@ -85,7 +85,7 @@ If we do not want to permanently "borrow" a method (assigning the copy to a new 
 
 For another day...
 
-###Extra Example:
+### Extra Example:
 
 Apparently it is possible to bind and invoke the bound function in place.
 
