@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "NYT Article: What Makes the Perfect Team?"
 date:   2016-03-01 15:07:00
-category: general
+category: post
+tags: [leadership, teams, teamwork]
 ---
 
 An article recently published by the *New York Times Magazine* highlighted research efforts by Google to answer the question __"What Makes the Perfect Team?"__ The article resonated with me quite a bit as it articulated thoughts I have had while working on various teams throughout my career.

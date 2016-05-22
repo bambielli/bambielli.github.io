@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Project Managing a Blog?"
 date:   2016-01-30 19:30:00
-category: general
+category: post
 tags: [project-management, github]
 ---
 

@@ -1,28 +1,14 @@
 ---
-layout: default
+layout: archive
+author_profile: true
 ---
 
-<div class="home">
+{% include base_path %}
 
-  <h1 class="page-heading">Posts</h1>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.category != 'til' %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
 
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-          <span>{{post.excerpt}}</span>
-          {% for tag in post.tags %}
-            <a href="#">#{{ tag }}</a>
-          {% endfor %}
-        </li>
-
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-</div>
+{% include paginator.html %}

@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Neo4j pt. 2: Data Modeling Class"
 date:   2016-03-25 14:48:00
-category: general
+category: post
 tags: [neo4j, graph-databases, data-modeling]
 ---
 

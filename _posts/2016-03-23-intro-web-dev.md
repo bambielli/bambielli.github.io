@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Teaching a 50 Minute Crash Course in Web-Development"
 date:   2016-03-23 20:00:00
-category: general
+category: post
 tags: [teaching, web-development]
 ---
 

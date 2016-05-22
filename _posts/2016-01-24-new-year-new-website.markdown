@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "New Year, New Website"
 date:   2016-01-24 20:50:00
-category: general
+category: post
 tags: [resolutions]
 ---
 I figured it's about time I set up a personal website!
