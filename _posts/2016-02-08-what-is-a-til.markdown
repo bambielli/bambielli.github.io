@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "What is a TIL?"
 date:   2016-02-08 15:07:00
-category: general
+category: post
 ---
 
 TIL stands for "Today I Learned.” I believe the concept originated from the subreddit [/r/TodayILearned][til]{:target="_blank"}.

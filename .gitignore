@@ -2,3 +2,4 @@
 /.jekyll-metadata
 /.sass-cache
 /images/_site
+/node_modules

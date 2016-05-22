@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Teaching with TEALS 2015-2016"
 date:   2016-05-12 13:20:00
 category: post
