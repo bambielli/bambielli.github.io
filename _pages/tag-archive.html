@@ -7,8 +7,8 @@ author_profile: false
 
 {% include base_path %}
 
+<!-- push TILs to an array with general posts -->
 {% assign __full_array = site.posts %}
-<!-- push TILs to the array -->
 {% for post in site.til %}
   {% assign __full_array = __full_array | push: post %}
 {% endfor %}
