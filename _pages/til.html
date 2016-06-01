@@ -6,10 +6,10 @@ permalink: /til/
 
 {% include base_path %}
 <!-- This groups by array, gives you group_names and group_items -->
-{% include group-by-array collection=site.til field="tags" %}
+<!-- {% include group-by-array collection=site.til field="tags" %}
 {% for tag in group_names %}
   <a onclick="toggleSelected(this)" class="page__taxonomy-item" rel="tag">{{ tag }}</a>
-{% endfor %}
+{% endfor %} -->
 
 <div class="grid__wrapper">
   {% for post in site.til reversed %}
@@ -17,8 +17,9 @@ permalink: /til/
   {% endfor %}
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	var toggleSelected = function(elem) {
 		elem.classList.toggle('selected');
 	}
 </script>
+ -->
