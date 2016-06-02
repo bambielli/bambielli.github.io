@@ -47,11 +47,11 @@ On the topic of Sublime, I recommend enabling the following options in `Preferen
 
 `trim_trailing_white_space_on_save` will do just that, making your diffs in github easier to parse through.
 
-`ensure_newline_at_eof_on_save` is also self explainatory, and keeps your files consistent with the expectation of many unix based text editing utilities that non-empty files have a newline `\n` at the end. Github also tracks this in files, so having it enabled ensures all of your files remain consistent and do not show up in diffs because newlines were removed.
+`ensure_newline_at_eof_on_save` is also self explanatory, and keeps your files consistent with the expectation of many unix based text editing utilities that non-empty files have a newline `\n` at the end. Github also tracks this in files, so having it enabled ensures all of your files remain consistent and do not show up in diffs because newlines were removed.
 
 `scroll_past_end` lets the editor scroll further down than the last line of the file. This is useful to bring text at the end of a file higher up in the editor, without needing to add a bunch of unnecessary blank lines.
 
-### [Curret Git Branch in Your PS1][gbps1]{:target="_blank"}
+### [Current Git Branch in Your PS1][gbps1]{:target="_blank"}
 
 This one blew my mind when I enabled it, and also taught me how to configure the "Prompt String 1" (PS1) that displays by default in the terminal. Just follow the instructions in the post above, which involves adding a shell function to your `~/.bash_profile` that checks for the presence of a git repository and parses the text of the current branch. If a branch was found, the name of the branch will be added to your `PS1`, right before your cursor! Knowing what branch you're on is critical when working on a complex project with multiple branches, preventing inadvertent work in / commits to the wrong branch.
 
