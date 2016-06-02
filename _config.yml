@@ -43,8 +43,6 @@ social:
   name                   : "Brian Ambielli" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://www.linkedin.com/in/bambielli"
-    - "https://twitter.com/bambielli"
-    - "https://facebook.com/bambielli"
 # Analytics
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
@@ -81,7 +79,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "bambielli"
+  twitter          :
   vine             :
   weibo            :
   xing             :
