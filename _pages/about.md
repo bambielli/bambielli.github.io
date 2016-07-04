@@ -11,7 +11,7 @@ With a strong engineering background and expertise in Software & Process Quality
 
 [Download my Resume here][resume]{:target="_blank"} or connect with me on [LinkedIn][linkedin]{:target="_blank"}.
 
-[expedia]: https://expedia.com
+[expedia]: https://www.expedia.com
 [linkedin]: https://www.linkedin.com/in/bambielli
 [resume]: /downloads/Brian-Ambielli-Resume.pdf
 
