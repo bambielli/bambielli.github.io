@@ -1,5 +1,5 @@
 ---
-title:  "Read by Refactoring pt1: A methodology for simplifying legacy code"
+title:  "Read by Refactoring - Part 1: Making Legacy Code more Readable"
 date:   2016-08-21 18:55:00
 category: post
 tags: [code-review, legacy-code]
