@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Bambielli's Blog"
 title_separator          : "-"
 name                     : "Brian Ambielli"
-description              : "Blogging about Javascript, Design, and Teaching"
+description              : "Code and Coffee"
 url                      :
 baseurl                  :
 gh_repo                  :
@@ -23,14 +23,14 @@ comments:
     shortname            : "bambielli"
 
 # SEO Related
-google_site_verification :
+google_site_verification : "ZADeNvSqVAh-s-olGhyP4QJoePmnTrER-Yx-IPBcq9w"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "bambielli"
 facebook:
   username               :
   app_id                 :
@@ -79,7 +79,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "bambielli"
   vine             :
   weibo            :
   xing             :
