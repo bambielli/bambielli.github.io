@@ -1,5 +1,5 @@
 ---
-title:  "Zombie Migration"
+title:  "Part 1: Zombie Migration"
 date:   2016-09-25 15:53:00
 category: post
 tags: [beer, nginx, raspberry-pi, django]
