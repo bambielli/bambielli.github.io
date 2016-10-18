@@ -45,7 +45,7 @@ Now that the application was running smoothly and server was secured, the only t
 
 Another nice part of having a domain name pointing at the static IP for the router, is that now I could SSH on to the app with the command `ssh user_name_here@doesfloydshavezombie.com` instead of needing to remember what the actual IP numbers were. Awesome!
 
-I lied... one final step: in order to achieve the goal of officially deleting the heroku app instance I had provisioned for the site, I also needed to do a data transfer from my heroku postgres instance to the one on the new server. After installing the heroku CLI + toolbelt on the server, I was able to curl down a dump of the database and pg_restore it to the database on my server. I did a quick user count after I did the upload: **103 users were still signed up to receive my notifications** even though the site had been down for the past few months. That feels good :)
+I lied... one final step: in order to achieve the goal of officially deleting the heroku app instance I had provisioned for the site, I also needed to do a data transfer from my heroku postgres instance to the one on the new server. After installing the heroku CLI + toolbelt on the server, I was able to curl down a dump of the database and pg_restore it to the database on my server. I did a quick user count after I did the upload: **103 users were still signed up to receive notifications** even though the site had been down for the past few months. That feels good :)
 
 ### It's Aliiiiivvveeeeeee
 
