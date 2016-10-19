@@ -57,7 +57,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Brian Ambielli"
-  avatar           : "brian.jpg"
+  avatar           : "me.jpg"
   bio              : "Software Engineer @ Expedia"
   location         : "Chicago"
   email            : "brian.ambielli@gmail.com"
