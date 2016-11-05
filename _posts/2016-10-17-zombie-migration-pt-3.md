@@ -55,7 +55,7 @@ That's not to say that this experience hasn't been valuable for me. Setting up a
 
 A successful project! Let the Zombie Dust flow!
 
-[zombie]: doesfloydshavezombie.com
+[zombie]: http://doesfloydshavezombie.com
 [ssh]: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 [static]: https://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update
 
