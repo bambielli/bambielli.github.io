@@ -1,5 +1,5 @@
 ---
-title:  "Promise Libraries: Bluebird"
+title:  "Native vs 3rd Party Promise Implementations"
 date:   2016-12-04 09:30:00
 category: til
 tags: [promise, es6, bluebird]
