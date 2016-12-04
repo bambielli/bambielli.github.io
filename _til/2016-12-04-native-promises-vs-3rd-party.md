@@ -134,7 +134,7 @@ Also amazing!
 
 ### Can I use?
 
-According to [can I use][can]{:target="_blank"} native promises are ready for use in most current version browsers today, but not all. If you're looking to support legacy browsers (or IE), using a 3rd party promise library is a nice alternative to relying on the native implementation in the browser.
+According to [can I use][can]{:target="_blank"} native promises are ready for use in most current version browsers today, but not all. If you're looking to support legacy browsers (or IE), using a 3rd party promise library is a nice alternative to relying on an implementation in the browser.
 
 ### Conclusion
 
