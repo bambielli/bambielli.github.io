@@ -14,7 +14,6 @@ I've been spending some free time over the holidays working on an app idea. I fi
 `app.use` applies the specified middleware to the main app middleware stack. When attaching middleware to the main app stack, the order of attachment matters; if you attach middleware A before middleware B, middleware A will always execute first. You can specify a path for which a particular middleware is applicable. In the below example, "hello world" will always be logged before "happy holidays."
 
 {%highlight javascript%}
-
 const express = require('express')
 const app = express()
 
@@ -33,7 +32,6 @@ app.use(function(req, res, next) {
 `app.all` on the other hand will attach to the app's implicit router. `app.all` attaches a particular piece of middleware to all HTTP methods, and if attached in the main config file will globally apply the middleware to all requests made to your app. Like `app.use`, it is also possible to specify a path for which the middleware should be applied.
 
 {%highlight javascript%}
-
 const express = require('express')
 const app = express()
 
@@ -41,8 +39,7 @@ app.all('/api/*', function(req, res, next) {
   console.log('only applied for routes that begin with /api')
   next()
 })
-
-{%endhighlight}
+{%endhighlight%}
 
 `app.all` also accepts a regex as its path parameter. `app.use` does not accept a regex, but will automatically match all routes that extend the base route.
 
