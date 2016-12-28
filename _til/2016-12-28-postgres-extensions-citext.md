@@ -15,24 +15,21 @@ Side note: the word `user` in Postgres is a reserved keyword, so you are unable 
 
 ### The CITEXT Extension
 
-Postgres has a column extension called CITEXT (stands for case-insensitive extension). This type allows one to query for the column in a case insensitive manner. From the docs:
+Postgres has a column extension called CITEXT (stands for case-insensitive extension). This type allows one to query for the column in a case insensitive manner.
 
 {%highlight sql%}
 CREATE TABLE users (
-    nick CITEXT PRIMARY KEY,
-    pass TEXT   NOT NULL
+    nickname CITEXT PRIMARY KEY,
+    full_name TEXT NOT NULL
 );
 
-INSERT INTO users VALUES ( 'larry',  md5(random()::text) );
-INSERT INTO users VALUES ( 'Tom',    md5(random()::text) );
-INSERT INTO users VALUES ( 'Damian', md5(random()::text) );
-INSERT INTO users VALUES ( 'NEAL',   md5(random()::text) );
-INSERT INTO users VALUES ( 'Bjørn',  md5(random()::text) );
+INSERT INTO users VALUES ( 'brian',  'Brian Ambielli'  );
+INSERT INTO users VALUES ( 'Lauren', 'Lauren Ambielli' );
 
-SELECT * FROM users WHERE nick = 'Larry';
+SELECT * FROM users WHERE nickname = 'Brian';
 {%endhighlight%}
 
-In the above scenario, the row that contains the value "larry" would be returned, even though the query was for `nick = 'Larry'`. This is because the Postgres does a case-insensitive comparison of CITEXT columns by converting the query string and the value of the comparing column to lowercase using LOWER.
+In the above scenario, the row that contains the value "brian" would be returned, even though the query was for `nickname = 'Brian'`. This is because the Postgres does a case-insensitive comparison of CITEXT columns by converting the query string and the value of the comparing column to lowercase using LOWER.
 
 Data is not stored as lowercase; rows are just returned as if both the query and row value were lower case.
 
@@ -45,7 +42,7 @@ CITEXT is an example of a [postgres extension][pgext]{:target="_blank"}, of whic
 CREATE EXTENSION IF NOT EXISTS citext;
 {%endhighlight%}
 
-This will create the citext extension in the database to which you are connected. You can view all enabled extensions for a Postgres database with the `\dx` command.
+This will create the CITEXT extension in the database to which you are connected if the extension hasn't already been created for the database. You can view all enabled extensions for a Postgres database with the `\dx` command.
 
 ### Is CITEXT Necessary for My Use Case?
 
@@ -56,5 +53,3 @@ Since my use case is for storing an email, and it is trivial to downcase the val
 I didn't know about Postgres extensions before looking in to CITEXT, though, so this was a good exercise overall!
 
 [pgext]: https://wiki.postgresql.org/wiki/Extensions
-
-
