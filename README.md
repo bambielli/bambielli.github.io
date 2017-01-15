@@ -1,4 +1,4 @@
-## [Bambielli's Blog](https://www.bambielli.com)
+## [Bambielli's Blog](http://www.bambielli.com)
 
 This is the repository for my personal website.
 
