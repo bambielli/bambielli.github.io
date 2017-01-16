@@ -9,7 +9,7 @@ I'm a Seattle native living in Chicago, currently working at [Expedia][expedia]{
 
 With a strong engineering background and expertise in Software & Process Quality, I'm constantly looking for ways to leverage my technical skills to help others and contribute to meaningful projects.
 
-[Download my Resume here][resume]{:target="_blank"} or connect with me on [LinkedIn][linkedin]{:target="_blank"}.
+[Download my resume here][resume]{:target="_blank"} or connect with me on [LinkedIn][linkedin]{:target="_blank"}.
 
 [expedia]: https://www.expedia.com
 [linkedin]: https://www.linkedin.com/in/bambielli
