@@ -3,5 +3,16 @@ main:
   - title: "About"
     url: /about/
 
-  - title: "TIL - Today I Learned"
+  - title: "Posts"
+    url: /posts/
+
+  - title: "Today I Learned"
     url: /til/
+
+  - title: "Travel"
+    url: /travel/
+
+  - title: "Tags"
+    url: /tags/
+
+
