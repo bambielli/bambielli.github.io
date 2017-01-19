@@ -1,11 +1,11 @@
 ---
-title:  "The Console Object && CSS Specificity"
+title:  "CSS specificity and the Console Object"
 date:   2017-01-18 22:25:00
 category: til
 tags: [console, devtools, chrome, css]
 ---
 
-TIL (more like relearned) CSS specificity rules, and some additional methods on the console object other than `console.log`.
+TIL (more like relearned) CSS specificity rules, and (unrelated) some additional methods on the console object other than `console.log`.
 
 We had a UI Community of Practice meeting today at Expedia. There were 2 speakers: the first spoke about CSS specificity rules, and the second spoke about the console object and some of the additional methods on it past just `console.log`
 
