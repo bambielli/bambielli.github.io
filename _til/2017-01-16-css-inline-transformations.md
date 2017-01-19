@@ -1,5 +1,5 @@
 ---
-title:  "CSS Inline Animations"
+title:  "CSS Inline Transformations"
 date:   2017-01-16 14:56:00
 category: til
 tags: [css, jekyll, liquid, animation]
