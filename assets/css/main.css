@@ -14,3 +14,16 @@ a:focus{outline:thin dotted #f89406;outline:5px auto #f89406;outline-offset:-2px
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+
+#brian {
+  display: block;
+  float: right;
+  margin: 23px 0px 2px 10px;
+}
+
+@media (max-width: 600px) {
+  #brian {
+    float: none;
+    margin: auto;
+  }
+}
