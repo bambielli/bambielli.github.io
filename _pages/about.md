@@ -3,7 +3,7 @@ title: Thanks for Stopping By!
 permalink: /about/
 ---
 
-![Me.jpg](/images/brian.jpg){: .img-circle .brian }
+<img id="brian" class="img-circle" src="/images/brian.jpg" />
 
 I'm a Seattle native living in Chicago, currently working at [Expedia][expedia]{:target="_blank"} as a Software Engineer / FrontEnd Tech Lead for our product. I've worked for organizations that range in size from Fortune 500 to 10 person startup.
 
