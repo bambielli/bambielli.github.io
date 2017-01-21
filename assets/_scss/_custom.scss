@@ -22,9 +22,8 @@
   font-size: 25px;
   -webkit-transition: -webkit-transform .7s ease-in-out;
           transition:         transform .7s ease-in-out;
-}
-
-#resolution:hover {
-  -webkit-transform: rotate(360deg);
+  &:hover {
+    -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+  }
 }
