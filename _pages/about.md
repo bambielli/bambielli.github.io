@@ -5,7 +5,7 @@ permalink: /about/
 
 <img class="img-circle brian" src="/images/brian2.jpg" />
 
-I'm a Seattle native living in Chicago, currently working at [Expedia][expedia]{:target="_blank"} as a Software Engineer / FrontEnd Tech Lead for our product. I've worked for organizations that range in size from Fortune 500 to 10 person startup.
+I'm a Seattle native living in Chicago, currently working at [Expedia][expedia]{:target="_blank"} as a Software Engineer & FrontEnd Tech Lead for our product. I've worked for organizations that range in size from Fortune 500 to 10 person startup.
 
 With a strong engineering background and expertise in Software & Process Quality, I'm constantly looking for ways to leverage my technical skills to help others and contribute to meaningful projects.
 
