@@ -27,3 +27,16 @@
           transform: rotate(360deg);
   }
 }
+
+.page__hero {
+  &--overlay {
+    .wrapper {
+      text-align: center;
+    }
+
+    .page__lead {
+      margin: auto;
+    }
+  }
+}
+
