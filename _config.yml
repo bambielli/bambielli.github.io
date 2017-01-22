@@ -6,7 +6,6 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-<<<<<<< HEAD
 locale                   : "en-US"
 title                    : "Bambielli's Blog"
 title_separator          : "-"
@@ -84,7 +83,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Brian Ambielli"
-  avatar           : "me.jpg"
+  avatar           : "/assets/images/me.jpg"
   bio              : "Software Engineer @ Expedia"
   location         : "Chicago"
   email            : "brian.ambielli@gmail.com"
