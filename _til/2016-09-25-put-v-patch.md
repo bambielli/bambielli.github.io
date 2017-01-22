@@ -16,7 +16,7 @@ PUT requests, on the other hand, ARE idempotent, since every Put request is eith
 I was reading [this article][article]{:target="_blank"} which had the following awesome table that highlighted the different behaviors of HTTP verbs in a very clear way.
 
 <figure>
-  <img src="/images/HttpVerbTable.jpg">
+  <img src="/assets/images/HttpVerbTable.jpg">
   <figcaption>Frequently used HTTP verbs</figcaption>
 </figure>
 

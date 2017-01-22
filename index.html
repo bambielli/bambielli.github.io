@@ -1,22 +1,13 @@
 ---
 title: "Bambielli's Blog"
-layout: archive
-date: 2017-01-15T13:32:41
+layout: home
+date: 2017-01-21T21:32:41
 header:
   overlay_color: "#000"
   overlay_filter: "0.47"
-  overlay_image: /coverPhoto.jpg
+  overlay_image: /assets/images/coverPhoto.jpg
   cta_label: "Connect on LinkedIn"
   cta_url: "https://www.linkedin.com/in/bambielli"
   caption: "Gornergrat Observation Station - Zermatt, CH"
 excerpt: "Part-time Teacher. Fulltime Developer. Lifetime Learner."
 ---
-{% include base_path %}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
