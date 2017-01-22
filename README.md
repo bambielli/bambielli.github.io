@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## [Bambielli's Blog](http://www.bambielli.com)
 
 This is the repository for my personal website.
@@ -11,4 +12,3 @@ It is styled with the [Minimal Mistakes](https://mmistakes.github.io/minimal-mis
 Check out the issue log to see what I'm considering writing about / working on next.
 
 NOTE: to precompile and autoprefix SCSS, run the script `npm run build:all`
-
