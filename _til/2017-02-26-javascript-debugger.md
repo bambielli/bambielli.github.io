@@ -34,7 +34,8 @@ This is a nice alternative to inserting breakpoints via the "sources" tab in the
 
 I found when I was initially playing around with the `debugger` statement in my code, that sometimes it wouldn't take effect.
 
-I eventually found that in order for the `debugger` statement to actually pause execution of your script, *you need to have your devTools open*. Otherwise the browser will skip the debugger statement. 
+I eventually found that for the `debugger` statement to pause execution of your script, *you need to have your devTools open*. Otherwise the browser will skip the debugger statement. 
 
 I guess this is a good thing, in case you accidentally leave a debugger statement in your code when you push to prod. Still, if using debuggers in your code, it is probably best to include some sort of linting rule or step in your code review process to confirm no debuggers are left in scripts before merging.
+
 
