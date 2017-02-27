@@ -1,11 +1,13 @@
 ---
-title:  "Read by Refactoring - Part 1: Making Legacy Code more Readable"
-date:   2016-08-21 18:55:00
+title: "Read by Refactoring - Part 1: Making Legacy Code more Readable"
+date: 2016-08-21 18:55:00
 category: post
 tags: [code-review, legacy-code]
 ---
 
 Have you ever spent hours looking at legacy code - making notes on paper, adding comments to the codebase, cursing poorly named methods and variables - just to have all of that hard work disappear when you switch contexts or take a break? Last week I went to a workshop at Expedia called ***Read by Refactoring*** where we learned a methodology for reading legacy code and making it better in the process.
+
+[Click here for Read By Refactoring Part 2.][rbr2]{:target="_blank"}
 
 ### What is the goal?
 
@@ -43,7 +45,7 @@ Well you should be! Not using an IDE with refactor tools like the ones discussed
 
 "But what if I'm writing in a dynamically typed / non-compiled language?"
 
-This is a good question. Part of the read by refactoring process is to ensure your code compiles between changes, which isn't really a thing if you're writing in a dynamically typed / non-compiled language like JavaScript or Python. We worked in Java during the workshop, but I'd imagine that the **update** (renaming) operations would be safe to make in the languages I mentioned above as well. I reached out to our read by refactoring instructor for some thoughts on the subject. I'll write another post when I hear back.
+This is a good question. Part of the read by refactoring process is to ensure your code compiles between changes, which isn't really a thing if you're writing in a dynamically typed / non-compiled language like JavaScript or Python. We worked in Java during the workshop, but I'd imagine that the **update** (renaming) operations would be safe to make in the languages I mentioned above as well.
 
 [spaghetti-code]: https://en.wikipedia.org/wiki/Spaghetti_code
-
+[rbr2]: /posts/2017-02-26-read-by-refactoring-pt-2/
