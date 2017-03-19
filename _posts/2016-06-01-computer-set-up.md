@@ -62,6 +62,6 @@ Another trick that saves me a lot of time is tab completion of git branches. Wit
 Let me know in the comments if you have any additional time saving tricks that you think I've missed. I'm always interested in improving my personal development process.
 
 [ls]: http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
-[subl]: https://www.sublimetext.com/docs/3/osx_command_line.html
+[subl]: http://stackoverflow.com/questions/16199581/opening-sublime-text-on-command-line-as-subl-on-mac-os#answer-16495202
 [gbps1]: https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 [tab]: http://apple.stackexchange.com/a/55886
