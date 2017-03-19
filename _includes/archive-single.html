@@ -30,12 +30,12 @@
         <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    <p class="page__meta front__page__meta">
+    <p class="page__meta">
     {% if post.date %}
       <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp<time style="margin-left: 2px;" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>&nbsp
-      {{"|"}}&nbsp
     {% endif %}
-    {% if post.read_time %}
+    {% if include.type != "grid" and post.read_time %}
+    {{"|"}}&nbsp
       <i class="fa fa-clock-o" aria-hidden="true"></i>{% include read-time.html %}
     {% endif %}
     </p>
