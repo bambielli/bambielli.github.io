@@ -47,13 +47,13 @@
 }
 
 .hide__on__mobile {
-  @include breakpoint(max-width $small) {
+  @include breakpoint(max-width 600px) {
     display: none;
   }
 }
 
 .show__on__mobile {
-  @include breakpoint(min-width $small) {
+  @include breakpoint(min-width $small + 1) {
     display: none;
   }
 }
