@@ -8,4 +8,9 @@ layout: archive
   {% include archive-single.html %}
 {% endfor %}
 
-{% include paginator.html %}
+<span class="show__on__mobile">
+  {% include mobile_paginator.html %}
+</span>
+<span class="hide__on__mobile">
+  {% include paginator.html %}
+</span>
