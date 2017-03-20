@@ -16,6 +16,12 @@
   }
 }
 
+.center__when__small {
+  @include breakpoint(max-width 418px) {
+    text-align: center;
+  }
+}
+
 #resolution {
   display: inline-block;
   color: black;
