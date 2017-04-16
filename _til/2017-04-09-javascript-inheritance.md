@@ -7,7 +7,7 @@ tags: [javascript, object-oriented]
 
 TIL how to implement an inheritance relationship (from scratch) in javascript using `prototypal inheritance`.
 
-During class this week, we went over constructors and prototypes in the context of javascript. The students were asking great questions about the extensibility of the javascript prototype and how to implement inheritance hierarchies like in other OO languages. I found myself a bit rusty in the subject, so I did some searching after class and stumbled upon [this article from MDN][tldr]{:target="_blank"} which does a good job at explaining the subject.
+During class last week, we covered constructors and prototypes in the context of javascript. The students were asking great questions about the extensibility of the javascript prototype and how to implement inheritance hierarchies like in other OO languages. I found myself a bit rusty in the topic, so I did some searching after class and stumbled upon [this article from MDN][tldr]{:target="_blank"} which does a good job of explaining.
 
 I decided to take my own crack at explaining how to implement an inheritance relationship in javascript! Read on to learn more.
 
@@ -15,7 +15,7 @@ I decided to take my own crack at explaining how to implement an inheritance rel
 
 Javascript has a different system for implementing inheritance hierarchies than those used by traditional Object Oriented languages like C++ and Java: prototypal inheritance!
 
-Unlike C++ and Java, javascript objects do not have inherited functionality *copied over* to the inheriting object from the parent. Instead, functionality is linked to the inheriting object via the `prototype chain`, which, in essence, defines the set of objects from which a particular object inherits. **The linking of functionality via the `prototype chain` is the javascript equivalent to the inheritance systems found in traditional OO class designs.** 
+Unlike C++ and Java, javascript objects do not have inherited functionality *copied over* to the inheriting object from the parent. Instead, functionality is linked to the inheriting object via the `prototype chain`, which, in essence, defines the set of objects from which a particular object inherits. **The linking of functionality via the `prototype chain` is the javascript equivalent to the inheritance systems found in traditional OO class designs.**
 
 It is worth noting that an object can only have one prototype, and an effect of this is that javascript only supports single inheritance (like Java).
 
@@ -24,7 +24,7 @@ It is worth noting that an object can only have one prototype, and an effect of 
 Let's see what prototypal inheritance looks like in code. The following is a constructor for a Pie: Pies have a size and toppings to add to each pie.
 
 {% highlight javascript %}
-  
+
 function Pie (size, toppings) {
   this.size = size
   this.toppings = toppings
@@ -44,7 +44,7 @@ Notice that I put the `getDescription` method on the Pie prototype. Assigning a 
 Now I will create a new object constructor for a Pizza. A Pizza `is-a` Pie, so it should inherit from and subclass pie. In java we would write `public class Pizza extends Pie` to implement this type of relationship, but in javascript we do the following:
 
 {% highlight javascript %}
-  
+
   function Pizza(size, toppings, isDeepDish) {
     Pie.call(this, size, toppings)
     this.isDeepDish = isDeepDish
