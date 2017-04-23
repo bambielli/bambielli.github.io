@@ -5,7 +5,9 @@ category: post
 tags: [code-review, legacy-code]
 ---
 
-Have you ever spent hours looking at legacy code - making notes on paper, adding comments to the codebase, cursing poorly named methods and variables - just to have all of that hard work disappear when you switch contexts or take a break? Last week I went to a workshop at Expedia called ***Read by Refactoring*** where we learned a methodology for reading legacy code and making it better in the process.
+Have you ever spent hours looking at legacy code - making notes on paper, adding comments to the codebase, and cursing poorly named methods and variables - just to have all of that hard work disappear when you switched contexts or took a break? 
+
+Last week I went to a workshop at Expedia called ***Read by Refactoring*** where we learned a methodology for reading legacy code and making it better in the process.
 
 [Click here for Read By Refactoring Part 2.][rbr2]{:target="_blank"}
 
@@ -35,7 +37,7 @@ These above can be mapped to CRUD operations, all operating on **names and ident
 * Update - Rename
 * Delete - Inline
 
-The process of creating names for your code has enough meat for another blog post...
+The process of creating names for your code has enough content for another blog post...
 
 ### Final thoughts
 
