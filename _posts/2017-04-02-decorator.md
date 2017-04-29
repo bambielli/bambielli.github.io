@@ -60,7 +60,10 @@ There are several limitations of the `Decorator` pattern that I'd like to highli
 
 Doing a deep dive in to the Decorator pattern helped me get a better understanding of its pros and cons. The Open/Closed principle (keeping closed parts isolated from new extensions) is great to strive for while developing systems, and `Decorator` gets us closer to this goal.
 
-My next post will be about the Factory pattern, coming soon!
+I also gave a presentation at work that covered the Decorator pattern. [Check out the slides here.][slides]{:target="_blank"}
+
+My next design pattern post will be about the Factory pattern, coming soon!
 
 [observer]: /posts/2016-10-25-observer/
 [test]: https://github.com/bambielli/DecoratorExample
+[slides]: /downloads/Decorator-Presentation-04-03-17.pdf
