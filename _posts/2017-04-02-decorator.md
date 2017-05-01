@@ -7,7 +7,7 @@ tags: [design-patterns, composition]
 
 Next up in my Design Patterns series is the `Decorator` pattern, which allows you to give your objects new responsibilities at runtime without making any code changes to their underlying classes.
 
-[Find my last Design Patterns entry on the Observer pattern here.][observer]{:target="_blank"}
+[Find my last Design Patterns entry on the Observer pattern here.][observer]
 
 ### Favor Composition over Inheritance
 
