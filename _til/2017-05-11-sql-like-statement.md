@@ -7,7 +7,7 @@ tags: [sql, backend]
 
 TIL how to properly write a SQL statement using the `LIKE` operator, including how to use wildcards to match various patterns.
 
-I spent the day working on a Java service to pull data from our Business Intelligence database (MySql). The data in which I was interested involved a string column (name) and an integer column (id). I wanted to write a query that matched **any name AND any id** that started with a prefix that the user input to the service. 
+I spent the day working on a Java service to pull data from our Business Intelligence database (MySql). The data in which I was interested involved a string column (name) and an integer column (id). I wanted to write a query that matched **any name OR any id** that started with a prefix that the user input to the service. 
 
 The [sql `like` operator][like]{:target="_blank"} allows you to write a sql query of the format **"Give me results that contain a particular pattern."** You can customize the pattern to match on either prefixes, postfixes, substrings, or other more complicated patterns. 
 
