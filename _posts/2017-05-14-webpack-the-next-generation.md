@@ -5,7 +5,7 @@ category: post
 tags: [webpack, javascript]
 ---
 
-I've been learning a lot about Webpack recently (check my [TIL section][til] for more detail) and I decided to give a presentation at Expedia's frontEnd engineering community of practice to share my experience. Slides are included in this post!
+[I've been learning a lot about Webpack recently][tags] and I decided to give a presentation at Expedia's frontEnd engineering community of practice to share my experience.
 
 With Webpack 2 coming out of beta last February, I figured the Star Trek reference would be appropriate :)
 
@@ -13,5 +13,5 @@ With Webpack 2 coming out of beta last February, I figured the Star Trek referen
 
 <embed src="/assets/pdf/Webpack_TNG.pdf" />
 
-[til]: /til/
+[tags]: /tags/#webpack
 [sample]: https://github.com/bambielli/webpack-example
