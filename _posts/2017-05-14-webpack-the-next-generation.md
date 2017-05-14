@@ -9,7 +9,7 @@ I've been learning a lot about Webpack recently (check my [TIL section][til] for
 
 With Webpack 2 coming out of beta last February, I figured the Star Trek reference would be appropriate :)
 
-[Find the sample repository here][sample]{:target="_blank"}, which includes a PDF of the slides shown below.
+[Find the sample repository here][sample]{:target="_blank"}, which includes a PDF of the slides.
 
 <embed src="/assets/pdf/Webpack_TNG.pdf" />
 
