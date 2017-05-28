@@ -33,7 +33,7 @@ Pink presents two guiding questions that sellers should ask during every buyer i
 
 If the answer to either of these questions is no, or if you're unsure of the answer, then put on your pinstripes and head back to the used car lot because you're not delivering the customer value that is intended by your role.
 
-### Improving Sales in Modern Times
+### Modern Sales
 
 Here are a few additional ways that sellers and sales organizations can change to better serve customers in a modern sales landscape.
 
