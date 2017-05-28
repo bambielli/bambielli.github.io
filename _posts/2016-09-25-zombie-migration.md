@@ -2,7 +2,7 @@
 title:  "Part 1: Zombie Migration"
 date:   2016-09-25 15:53:00
 category: post
-tags: [beer, nginx, raspberry-pi, django]
+tags: [beer, nginx, raspberry-pi, django, side-project]
 ---
 
 This weekend I decided to dust off the RaspberryPi I've had lying around and get it up and running as a web server again. I'm currently hosting my zombie-dust checking application on heroku: since the app isn't doing anything strenuous, I figured this would be a good candidate to run off of the RBPI web server. Definitely better than this blog, since I want the blog to be as speedy as possible, while the main function of the zombie app is to initiate a cron job every minute to scrape HTML off of the 3Floyds beers to go page... performance doesn't really provide any benefit.

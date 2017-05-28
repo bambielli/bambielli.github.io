@@ -2,7 +2,7 @@
 title:  "First Open Source Contribution: Hacktoberfest"
 date:   2016-11-03 21:36:00
 category: post
-tags: [hacktoberfest, django, python, open-source]
+tags: [hacktoberfest, django, python, open-source, side-project]
 ---
 
 This year I participated in the [Hacktoberfest][hack]{:target="_blank"} challenge presented by Digital Ocean. I had not done much open source contributing before, and Hacktoberfest presented a nice time-boxed opportunity to give it a shot.

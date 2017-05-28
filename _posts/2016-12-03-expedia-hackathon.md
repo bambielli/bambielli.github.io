@@ -2,7 +2,7 @@
 title:  "Hackathon"
 date:   2016-12-03 14:50:00
 category: post
-tags: [hackathon, react, dependencies]
+tags: [hackathon, react, side-project]
 ---
 
 It's been about a month since I last posted, but I've been busy in the meantime! I've switched from the Frontend to the Backend team at work, and participated in the Q4 Expedia internal hackathon where we had 48 hours to come up with an MVP for an idea aligned with the theme "internal tools to make engineers lives easier."

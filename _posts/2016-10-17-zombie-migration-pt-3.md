@@ -2,7 +2,7 @@
 title:  "Part 3: Zombie Migration - It's ALIVEEEE"
 date:   2016-10-17 20:50:00
 category: post
-tags: [beer, nginx, raspberry-pi, django, security]
+tags: [beer, nginx, raspberry-pi, django, security, side-project]
 ---
 
 Wow. There was a lot more work to do than I expected to get [doesfloydshavezombie.com][zombie]{:target="_blank"} back up and running. Here's the final entry in this series!

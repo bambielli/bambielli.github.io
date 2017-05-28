@@ -2,7 +2,7 @@
 title:  "Part 2: Zombie Migration - Facing Daemons"
 date:   2016-10-01 21:31:00
 category: post
-tags: [beer, nginx, raspberry-pi, django]
+tags: [beer, nginx, raspberry-pi, django, side-project]
 ---
 
 I continued to set up my RBIP as a web server this weekend: I've finally got [my application][app]{:target="_blank"} publically facing on a static IP, and the [Zombie Dust][zd]{:target="_blank"} checking script is running every 10 minutes. Here are some thoughts from the experience

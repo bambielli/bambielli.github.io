@@ -71,4 +71,5 @@ Being aware of these 14 principles -- using their lessons to combat bureaucracy 
 I definitely recommend "The Amazon Way" to anyone interested in learning how one of the most significant and disruptive companies of our time operates.
 
 [amzn]: https://www.amazon.com/Amazon-Way-Leadership-Principles-Disruptive/dp/1499296770
+[pt1]: /posts/2017-05-06-the-amazon-way-pt-1/
 

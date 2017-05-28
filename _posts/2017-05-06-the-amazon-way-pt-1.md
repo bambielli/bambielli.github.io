@@ -2,7 +2,7 @@
 title:  "The Amazon Way: Principles 1-7"
 date:   2017-05-06 19:43:00
 category: post
-tags: [leadership, amazon]
+tags: [leadership, amazon, book-review]
 ---
 
 I just finished reading ["The Amazon Way - 14 Leadership Principles Behind the World's Most Disruptive Company"][amzn]{:target="_blank"} by John Rossman. The book was recommended to me by my manager at Expedia (a former Amazon employee himself) as a good case study for how Amazon operates. The principles covered in the book are dogma for Amazon employees: from warehouse worker to vice president, each employee is expected to exemplify the principles in every decision they make. 
