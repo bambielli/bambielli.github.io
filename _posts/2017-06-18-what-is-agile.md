@@ -13,4 +13,4 @@ If you're on mobile, you can download the slides [here.][slides]{:target="_blank
 
 <embed src="/assets/pdf/What_Is_Agile.pdf" />
 
-[slides]: www.bambielli.com/assets/pdf/What_Is_Agile.pdf
+[slides]: /assets/pdf/What_Is_Agile.pdf
