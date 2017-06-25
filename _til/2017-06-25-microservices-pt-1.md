@@ -15,7 +15,7 @@ I'm planning on writing a few posts as I draw insight from the book.
 
 A `microservice` helps us represent the real world in our code.
 
-By breaking down a small piece of our domain (often referred to as a `bounded context`) into a standalone service that is purely focused on operating on that single piece, we strive for `strong cohesion` of code in the service and `loose coupling` between different services.
+By breaking down a small piece of our domain (often referred to as a [`bounded context`][martin]{:target="_blank"}) into a standalone service that is purely focused on operating on that single piece, we strive for `strong cohesion` of code in the service and `loose coupling` between different services.
 
 **How small is too small?** Newman argues that services should be "small enough and no smaller"... a somewhat flippant answer, but he argues that seasoned developers can tell when something feels "too big" and when something feels "small enough". The definition of "too big" tends to change from team to team and domain to domain, so having a consistent answer for every case doesn't seem to be practical.
 
@@ -55,3 +55,4 @@ I will cover some decomposition and modeling techniques in my next post.
 
 [micro]: https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358
 [neo4j]: https://neo4j.com/
+[martin]: https://martinfowler.com/bliki/BoundedContext.html
