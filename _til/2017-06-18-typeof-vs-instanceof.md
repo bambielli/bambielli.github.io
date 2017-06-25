@@ -1,5 +1,5 @@
 ---
-title:  "instanceof vs typeof"
+title:  "instanceof vs. typeof"
 date:   2017-06-18 20:25:00
 category: til
 tags: [javascript]
