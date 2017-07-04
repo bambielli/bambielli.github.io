@@ -30,3 +30,5 @@ Giving simple version numbers this much power feels great, but it's still up to 
 A versioning scheme like semantic versioning can be particularly useful when developing fine grained microservice systems, to ensure changes to services are well communicated, and well thought out, before they are published to the rest of the team to use. The **well thought out** piece is especially relevant: since MAJOR versions are clearly the most disruptive, developers will naturally think twice before making a change that constitutes a MAJOR change.
 
 There's a level of **trust** that goes along with semantic versioning to ensure you don't accidentally break your consumers. Your consumers are your users, and you should treat them right! A team that uses semantic versioning well will definitely have happy consumers.
+
+[semver]: http://semver.org/
