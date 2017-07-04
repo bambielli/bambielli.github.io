@@ -13,7 +13,7 @@ The [fetch API][fetch]{:target="_blank"} provides a simple way to make network r
 
 The gist of `fetch` is that it accepts one mandatory argument, the *path* that it should initiate a request to, but it also accepts a companion object with different configuration options (like `method` and `body`).
 
-A difference to note between fetch and jQuery.ajax(), is that **fetch will not reject the promise if the response from the request results in 404 or 500.** Instead it will resolve, with `response.ok === false`. Be wary before blindly parsing the JSON of all resolved requests, since 404 and 500 will not have any response body to parse **which will result in a runtime error if parsed**.
+A difference to note between fetch and jQuery.ajax(), is that **fetch will not reject the promise if the response from the request results in 404 or 500.** Instead it will resolve, with `response.ok === false`. Be wary before blindly parsing the JSON of all resolved requests: since 404 and 500 will not have any response body to parse, **a runtime error will result if a parse is attempted.**
 
 Here is an example of what initiating a POST request to create a new user might look like using fetch:
 
@@ -69,8 +69,6 @@ fetch('/api/users', {
     console.log('there was an error', err.message)
 });
 {% endhighlight %}
-
-Let me know if you found this helpful! Feel free to drop a comment.
 
 [fetch]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [iso]: https://github.com/matthew-andrews/isomorphic-fetch
