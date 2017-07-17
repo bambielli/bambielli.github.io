@@ -9,7 +9,7 @@ No, this is not the board game we all played as kids...
 
 [Connway's Game of Life][gol]{:target="_blank"} is a simulation often covered in biology and math courses. It was created by mathematician John Conway in 1970 in response to a challenge posed by the great John Von Neuman.
 
-The game is played on a 2d grid of cells (ideally infinite), and begins with the player selecting an initial seed of "living" cells from which all future generations will be calculated. Future generations are calculated by following a simple set of rules (see Rules section below).
+The game is played on a 2d grid of cells (ideally infinite), and begins with the player selecting an initial seed of "living" cells from which all future generations are calculated. A simple set of rules dictate whether a cell lives or dies in the next generation (see Rules section below).
 
 To see a **deployed version** of the client I wrote that plays the game, [click here.][brian]{:target="_blank"}
 
