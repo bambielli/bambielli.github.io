@@ -1,8 +1,8 @@
 ---
-title:  "What is Agile?"
+title:  "Presentation - What is Agile?"
 date:   2017-06-18 19:51:00
 category: post
-tags: [agile, project-management, sdlc]
+tags: [agile, project-management, sdlc, presentation]
 ---
 
 One of the missing components from the curriculum of the bootcamp for which I teach, is a discussion of agile methodologies and how agile is typically implemented on software teams. I decided to remedy this with a short presentation for class. Slides within!

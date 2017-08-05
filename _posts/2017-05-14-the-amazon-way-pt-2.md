@@ -2,14 +2,14 @@
 title:  "The Amazon Way: Principles 8-14"
 date:   2017-05-14 15:58:00
 category: post
-tags: [leadership, amazon]
+tags: [leadership, amazon, book-review]
 ---
 
-This is part 2 of my reflection on ["The Amazon Way"][amzn]{:target="_blank"} by John Rossman. 
+This is part 2 of my reflection on ["The Amazon Way"][amzn]{:target="_blank"} by John Rossman.
 
 Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
 
-### 8. Have a Bias for Action 
+### 8. Have a Bias for Action
   - **Most decisions are reversible**
     - Acting is better than sitting still, especially in the presence uncertainty.
   - Smart decisions are made with data.
@@ -17,10 +17,10 @@ Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
 
 ### 9. Practice Frugality
   - **Resource constrained environments promote resourceful and innovative ideas.**
-  - "The Door Desk" - Desks are often made of old doors or particle board at Amazon. 
-    - Door desks were shipped to Europe for a new office... Jeff blew up. 
+  - "The Door Desk" - Desks are often made of old doors or particle board at Amazon.
+    - Door desks were shipped to Europe for a new office... Jeff blew up.
     - Door desks are not a symbol, they are a practical way to save money.
-  - Compensate with stock instead of salary. 
+  - Compensate with stock instead of salary.
     - This Makes employees more invested in business outcomes.
 
 ### 10. Be Vocally Self-Critical
@@ -53,20 +53,20 @@ Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
   - Mental toughness - Don't feel sorry for yourself, resent others’ successes, or give up after failure.
 
 ### 14. Deliver Results
-  - This is truly the principle which matters most. 
+  - This is truly the principle which matters most.
     - Following the other principles should make this easy to achieve!
 
 ### Conclusion
 
-It has been interesting exploring and reflecting on these principles. Many of the `-isms` contained in this book are referenced by my manager at Expedia, and I didn't realize they originated from his tenure at Amazon! 
+It has been interesting exploring and reflecting on these principles. Many of the `-isms` contained in this book are referenced by my manager at Expedia, and I didn't realize they originated from his tenure at Amazon!
 
-While following these principles will certainly lead to a higher probability of success for your business, full adoption requires a level of employee sacrifice that many organizations aren't willing to impose. 
+While following these principles will certainly lead to a higher probability of success for your business, full adoption requires a level of employee sacrifice that many organizations aren't willing to impose.
 
 During a recent town hall at Expedia, someone raised the question **"Why don't we choose to operate more like Amazon?"** The response from leadership was deliberate: Expedia is inspired by Amazon's level of dedication and focus that they've inspired in their employees, but Expedia aims to achieve success in our space without an Amazonian-level of sacrifice. **Expedia values work-life balance instead of the cutthroat "live to work" culture that has grown at Amazon.**
 
-Hearing that this was a deliberate choice was surprising, and I think the effects are apparent. While there is a ton of schedule flexibility at Expedia (a great benefit for employees) it does often feel that we operate at a slower pace than we otherwise could. Bureaucracy seems to be creeping in, especially as the organization has grown with recent acquisitions. 
+Hearing that this was a deliberate choice was surprising, and I think the effects are apparent. While there is a ton of schedule flexibility at Expedia (a great benefit for employees) it does often feel that we operate at a slower pace than we otherwise could. Bureaucracy seems to be creeping in, especially as the organization has grown with recent acquisitions.
 
-Being aware of these 14 principles -- using their lessons to combat bureaucracy and drive value for the business -- will make me a stronger contributor to my team and a more tactical decision maker in our org. 
+Being aware of these 14 principles -- using their lessons to combat bureaucracy and drive value for the business -- will make me a stronger contributor to my team and a more tactical decision maker in our org.
 
 I definitely recommend "The Amazon Way" to anyone interested in learning how one of the most significant and disruptive companies of our time operates.
 

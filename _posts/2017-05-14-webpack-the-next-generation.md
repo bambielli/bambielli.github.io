@@ -1,8 +1,8 @@
 ---
-title:  "Webpack: The Next Generation"
+title:  "Presentation - Webpack: The Next Generation"
 date:   2017-05-14 12:10:00
 category: post
-tags: [webpack, javascript, book-review]
+tags: [webpack, javascript, presentation]
 ---
 
 [I've been learning a lot about Webpack recently][tags] and I decided to give a presentation at Expedia's frontEnd engineering community of practice to share my experience.
