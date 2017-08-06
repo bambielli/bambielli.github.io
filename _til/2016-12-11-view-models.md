@@ -7,13 +7,13 @@ tags: [view-model, architecture, api, java]
 
 TIL that view models have utility beyond making data easier to digest by consumers.
 
-### Beyond Restructuring
+## Beyond Restructuring
 
 Prior to this revelation, view models to me were just a way to re-format data in an endpoint such that the end structure would be easier to consume. To state differently: **View models are a different representation of your data than how it is persisted to the database** that are constructed for convenience purposes or because consumers require data in a specific format.
 
 This is not the only reason for the creation of view models.
 
-### View Models Help Define Your API Contract
+## View Models Help Define Your API Contract
 
 View models are, in effect, **the contract between you and your consumers for how data shall be structured in a response.** When you define a view model, you are defining how consumers should expect the data they request to be returned.
 
@@ -23,7 +23,7 @@ If your API does not return view models and instead returns database entities di
 
 **View models decouple the data being returned by a view from database entity design.** If your endpoint returns a view model you can make changes to the underlying database schema, create a mapping between database entity and view model, and  guarantee no breaking changes for your consumers.
 
-### Applying this Knowledge
+## Applying this Knowledge
 
 Currently we have an API that defines its view models using the [JsonSchema2Pojo][pojo]{:target="_blank"} generator. JsonSchema2Pojo takes a [json schema][json]{:target="_blank"}, and generates a pojo with builder methods, json serialization, and setters and getters. Using a generator like this for view model classes prevents silly errors that could occur when writing them manually, and also allows you to **share view model json schemas with consumers** so they can easily generate their own copies of the API return types.
 

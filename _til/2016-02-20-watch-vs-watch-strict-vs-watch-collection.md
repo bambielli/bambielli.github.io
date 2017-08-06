@@ -11,7 +11,7 @@ __Angular watchers facilitate the 2 way data binding between views and controlle
 
 There are a few different variations of watchers, each with different performance and purposes:
 
-### [$watch][watch]{:target="_blank"}
+## [$watch][watch]{:target="_blank"}
 
 This is the most basic form of watcher. It accepts an expression as a string (either a `$scope` property or expression that evaluates to a `$scope` property) and a listener function to be called when the expression changes. This type of watcher only detects changes to __shallow__ aspects of the bound `$scope` property (reference equality via `===` comparison). This means if the bound `$scope` property is an object, and a value in that object changes, the listener callback will not be called.
 
@@ -39,7 +39,7 @@ $scope.name = ['Jim', 'John']; // triggers the watcher AGAIN since we created a 
 
 {% endhighlight %}
 
-### [$watchCollection][watch-collection]{:target="_blank"}
+## [$watchCollection][watch-collection]{:target="_blank"}
 
 This registers a watcher for an array or object that is bound to $scope. If any item within the collection changes, including the addition or removal of a new item, the listener is called. Equality is determined using `===` between cycles.
 
@@ -68,11 +68,11 @@ $scope.names = ['Jim', 'John']; // DOES NOT trigger the watcher again, even thou
 
 {% endhighlight %}
 
-### [$watchGroup][watch-group]{:target="_blank"}
+## [$watchGroup][watch-group]{:target="_blank"}
 
 The distinction between this watcher and `$watchCollection`, is that `$watchGroup` takes a **group of expressions** to watch instead of just one collection object. This can be useful if you need to bind a group of `$scope` properties to the same listener callback (instead of needing to write different watchers for them all). For performance reasons, `$watchGroup` delays calling the bound listener until the end of the `$digest()` cycle, to wait and see if multiple items in the group change during `$digest()` so the listener is only called once. `$watchGroup` is only available in angular 1.3 onwards, so we don't use it yet in our application (still on angular 1.2.27).
 
-### $watch (objectEquality)
+## $watch (objectEquality)
 
 `$watch` can take a third boolean argument, which tells the watcher to use `angular.equals` to check for deep objectEquality of the bound item. This causes the watcher to fire even when a sub-key or value of an object inside of the watched `$scope` property changes.
 

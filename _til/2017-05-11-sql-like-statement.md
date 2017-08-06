@@ -23,7 +23,7 @@ The query above will return rows where the name contains the substring 'abc'. I 
 
 NOTE: I also learned that `varchar` and other character string columns will be matched **in a case insensitive manner**, while `varbinary` and other binary columns will match patterns **in a case sensitive manner**. Something to keep in mind when designing your tables!
 
-### Wildcards
+## Wildcards
 
 There are two wildcards that can be used in your patterns
 
@@ -43,7 +43,7 @@ SELECT * FROM Table WHERE name LIKE 'a_%_'; -- matches all names that are at lea
 SELECT * FROM Table WHERE name LIKE '1%3'; -- matches all names that start with 1 and end with 3
 {% endhighlight %}
 
-### Solving my Problem
+## Solving my Problem
 
 I needed to write a query that returned all rows where either the name or id column started with a prefix that the user passed. The statement that got me there was the following:
 

@@ -7,7 +7,7 @@ tags: [hacktoberfest, django, python, open-source, side-project]
 
 This year I participated in the [Hacktoberfest][hack]{:target="_blank"} challenge presented by Digital Ocean. I had not done much open source contributing before, and Hacktoberfest presented a nice time-boxed opportunity to give it a shot.
 
-### Finding a project
+## Finding a project
 
 The Hacktoberfest landing page provided a bunch of resources for how to get started in the open source community, as well as a few example repositories looking for new contributors. I found the best way to find a project was by searching github for issues in public repos tagged with the "Hacktoberfest" tag. These were generally smaller / earlier stage projects that had more reasonable issues to tackle than mature projects. I further limited my search to Javascript and Python repositories.
 
@@ -15,7 +15,7 @@ I eventually came upon the [django-konfera][konfera]{:target="_blank"} app: a te
 
 I wound up fixing an issue to [add validation logic][validation]{:target="_blank"} when saving a ticket with a discount code and adding some updates to their readme to [improve developer setup documentation][setup]{:target="_blank"} based on my experience setting up the app as a new contributor.
 
-### What worked well
+## What worked well
 
 Honestly I thought the Konfera team did a great job setting up contributors for success.
 
@@ -27,7 +27,7 @@ Django-Konfera also had detailed UML diagrams included in their repository, whic
 
 After proposing my changes, I received feedback from one of the other project maintainers, Zoltan. My PR was merged less than 24 hours after I opened it. I think this is another thing the Konfera team did well: having active project maintainers is a great way to reduce code review cycle time and get changes merged!
 
-### What Did I learn
+## What Did I learn
 
 Since I wasn't given write access to the Konfera repository directly, I needed to fork the app and branch from there in order to propose changes. This was a new process for me, as I have usually been given write access to repositories to which I have contributed in the past.
 
@@ -41,7 +41,7 @@ I also learned how to fetch and merge changes from the upstream repository into 
 
 You could also just merge upstream/master's changes in to your fork's master, then rebase on to your master branch instead of upstream.
 
-### Would I do it again?
+## Would I do it again?
 
 Heck yeah! I had a great experience working with the Django-Konfera team. Even with a 9 hour time difference, the feedback came very quickly and my PR was merged within 24 hours of opening. Richard and Zoltan both said they were very appreciative of my contributions.
 

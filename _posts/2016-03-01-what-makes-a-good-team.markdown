@@ -7,7 +7,7 @@ tags: [leadership, teams, teamwork]
 
 An article recently published by the *New York Times Magazine* highlighted research efforts by Google to answer the question __"What Makes the Perfect Team?"__ The article resonated with me quite a bit as it articulated thoughts I have had while working on various teams throughout my career.
 
-### Culture of "Psychological Safety"
+## Culture of "Psychological Safety"
 
 The key finding was that groups should aim to develop a culture of __psychological safety__, wherein group members feel comfortable to take risks and speak up without the concern of being punished or rejected. This group culture puts team members at ease, increases their sense of worth, and promotes both creativity and productivity within the group. Psychologically safe employees are comfortable __being themselves at work,__ and consequently feel more engaged while working.
 
@@ -21,7 +21,7 @@ __Two behaviors that were found to be indicative of a psychologically safe group
 
 Both behaviors demonstrate a culture of respect and understanding for fellow teammates, which leads to a safer and more positive experience for those involved.
 
-### A Make or Break Decision for Employee Engagement
+## A Make or Break Decision for Employee Engagement
 
 I have absolutely experienced the consequences of being on teams with a psychologically *unsafe* culture: you feel drained at the end of the day and work more in isolation since seeking out feedback leads to being rebuked for "incorrect" (read *"different"*) decisions. Feelings of inadequacy and self doubt are common, although illogical.
 
@@ -33,7 +33,7 @@ If an employee doesn't click with the culture of their assigned team, it could b
 
 Managers assign employees to project teams based on factors like *availability*, not based on objective evidence that the selected members will work well together.
 
-### People Analytics
+## People Analytics
 
 A people analytics platform such as [Syndio's][Syndio]{:target="_blank"} can take the guesswork out of forming new teams.
 

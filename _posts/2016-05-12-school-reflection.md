@@ -7,11 +7,11 @@ tags: [teaching]
 
 I've spent the last 10 months volunteering as an AP Computer Science teacher at a Chicagoland high school through the Microsoft sponsored [TEALS][TEALS]{:target="_blank"} program. It was a huge commitment, but the experience wound up being more valuable to me than I had anticipated. Here are some thoughts on the TEALS program and the school year.
 
-### An Opportunity to Give Back
+## An Opportunity to Give Back
 
 I turned 25 last May, and I remember vividly on my birthday as I was out celebrating with some friends, having an unexpected inner existential moment... I'm a quarter of a century old and yet I do not have any consistent outlets for giving back to the community! The TEALS program was the perfect fit for my desire to give back: it provided a regular, long-term volunteer opportunity where I'd be able to leverage my technical skills in a different capacity than at work. It was a constructive distraction from work that kept me busy through the dreary Chicago Winter months.
 
-### Improving my Own Technical Knowledge
+## Improving my Own Technical Knowledge
 
 This school year gave me true experience with the notion that ***"You never really know something until you have to teach it."*** Teaching a topic requires a different level of understanding: it necessitates deeper knowledge so you can present material with confidence and field questions from students on the fly.
 
@@ -19,13 +19,13 @@ The topics covered in the AP CS curriculum are complex, and clear explanations a
 
 I recently interviewed for a new position, and accepted an offer starting June 6th. I attribute part of the success of this interview to my time teaching with TEALS: had I not been "studying" core CS topics throughout the year I would not have performed as well at the interview as I did.
 
-### Chicago Public Schools and Beyond
+## Chicago Public Schools and Beyond
 
 Recently, The Chicago Public School Board[passed a law][CS4ALL]{:target="_blank"} that makes computer science a core graduation requirement for all students in the class of 2020 onward. The Obama administration is also passing a funding request of [four Billion dollars][Obama]{:target="_blank"} for school districts across the country to institute Computer Science courses.
 
 It's great to have governmental support, but who is going to teach these new classes? When a new CS graduate can go out in to the workforce and make a [median salary of 80k][payscale]{:target="_blank"} right off the bat at a hip new startup, choosing the teacher's path becomes difficult. ***Volunteering*** as a teacher on the side (employer permitting), however, is both a great opportunity for members of the tech community to give back and is an excellent way to fill classrooms with passionate teachers for schools with budgetary constraints. I have a feeling that programs like TEALS that facilitate this type of volunteerism will become ever more important in the US, as public schools scramble to find the teaching resources necessary to meet new requirements.
 
-### Business-Driven Motives?
+## Business-Driven Motives?
 
 According to data from [TEALS][about]{:target="_blank"}:
 
@@ -37,7 +37,7 @@ And from [TechCrunch][CS4ALL]{:target="_blank"}:
 
 It makes perfect sense that large tech companies like Microsoft would fund programs such as TEALS across the country: if I worked at Microsoft and saw statistics like the ones above, I would do everything I could to make sure our country's future workforce will be prepared to fill the job openings my company offers. I wouldn't be surprised to see TEALS-like programs being sponsored by other US tech giants who see this gap as an unfulfilled need in our country.
 
-### The End of the School Year
+## The End of the School Year
 
 Regardless of any underlying business motives, I think the TEALS program does excellent work. From Summer training sessions for volunteers, to outlines of lesson plans, as well as providing textbooks and t-shirts for each teacher, the program goes out of its way to set up volunteers for success in the classroom. Even though we were the only TEALS group in Chicago, I felt supported by the program and always knew there was a community of other volunteers across the country who I could reach out to if I ever had questions or wanted feedback.
 

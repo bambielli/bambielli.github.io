@@ -5,13 +5,13 @@ category: post
 tags: [code-review, legacy-code]
 ---
 
-Have you ever spent hours looking at legacy code - making notes on paper, adding comments to the codebase, and cursing poorly named methods and variables - just to have all of that hard work disappear when you switched contexts or took a break? 
+Have you ever spent hours looking at legacy code - making notes on paper, adding comments to the codebase, and cursing poorly named methods and variables - just to have all of that hard work disappear when you switched contexts or took a break?
 
 Last week I went to a workshop at Expedia called ***Read by Refactoring*** where we learned a methodology for reading legacy code and making it better in the process.
 
 [Click here for Read By Refactoring Part 2.][rbr2]{:target="_blank"}
 
-### What is the goal?
+## What is the goal?
 
 The read by refactoring process is designed to capture the work a developer does to comprehend legacy code, by making ***incremental permanent improvements*** to the readability of the code itself. A code reader accomplishes this through liberal use of their IDE's refactor methods, such as rename, extract, and inline, to slowly but surely unravel the core meaning behind a pile of [spaghetti code][spaghetti-code]{:target="_blank"}.
 
@@ -19,7 +19,7 @@ These readability enhancements help you to understand how a chunk of legacy code
 
 Frequent commits are a must while making changes, making it easier to determine root cause of an unintended side effect or bug during a set of refactors. Code should never be in a state that does not compile, and manual changes that do not involve your IDE's refactor tools should be made with caution (and marked as RISKY in commit messages).
 
-### Core 6 Refactorings
+## Core 6 Refactorings
 
 These are the core 6 different changes that will be made while refactoring your legacy code. To emphasize again: these are all to be made using the IDE's refactor tools, and should not be made manually (unless committed separately and marked as RISKY). The refactor tools make changes that are guaranteed to be safe, while if you go rogue and start making manual changes then anything can happen.
 
@@ -39,7 +39,7 @@ These above can be mapped to CRUD operations, all operating on **names and ident
 
 The process of creating names for your code has enough content for another blog post...
 
-### Final thoughts
+## Final thoughts
 
 "But what if I'm not using an IDE?"
 

@@ -7,7 +7,7 @@ tags: [efficiency, osx, shell, sublime]
 
 I bought a new Macbook Pro Retina today for personal use, and spent most of the day re-configuring the terminal and development environment to match my old machine. This post is both a reference for my future self (to save some time with future environment configuration) and a set of recommendations for anyone looking for some time saving tricks.
 
-### [Changing `ls` Colors][ls]{:target="_blank"}
+## [Changing `ls` Colors][ls]{:target="_blank"}
 
 The default colors displayed in the output of the `ls` command in the terminal don't make any differentiation between folders or file types. The guide above highlights a few environment variables to set in your `~/.bash_profile` that allow for customization of the colors of `ls` output. This is exceedingly helpful when trying to navigate foreign folder structures, or trying to find that one executable in a sea of non executables.
 
@@ -21,7 +21,7 @@ The variables are as follows:
 
 {% endhighlight %}
 
-### [Sublime Text Symlink][subl]{:target="_blank"}
+## [Sublime Text Symlink][subl]{:target="_blank"}
 
 My text editor of preference is Sublime, so the article linked above is applicable for creating a symlink for its CLI and adding it to your path. This is convenient since it allows you to open a file (or folder) in your text editor of choice ***from the command line***, instead of having to open files manually from the editor itself. Once you create the symlink, make sure you add the location of the link to your path and put it in your `~/.bash_profile`.
 
@@ -31,7 +31,7 @@ My text editor of preference is Sublime, so the article linked above is applicab
 
 {% endhighlight %}
 
-### Additional Sublime Configuration
+## Additional Sublime Configuration
 
 On the topic of Sublime, I recommend enabling the following options in `Preferences > Settings - User`:
 
@@ -51,11 +51,11 @@ On the topic of Sublime, I recommend enabling the following options in `Preferen
 
 `scroll_past_end` lets the editor scroll further down than the last line of the file. This is useful to bring text at the end of a file higher up in the editor, without needing to add a bunch of unnecessary blank lines.
 
-### [Current Git Branch in Your PS1][gbps1]{:target="_blank"}
+## [Current Git Branch in Your PS1][gbps1]{:target="_blank"}
 
 This one blew my mind when I enabled it, and also taught me how to configure the "Prompt String 1" (PS1) that displays by default in the terminal. Just follow the instructions in the post above, which involves adding a shell function to your `~/.bash_profile` that checks for the presence of a git repository and parses the text of the current branch. If a branch was found, the name of the branch will be added to your `PS1`, right before your cursor! Knowing what branch you're on is critical when working on a complex project with multiple branches, preventing inadvertent work in / commits to the wrong branch.
 
-### [Tab Completion of Git Branches][tab]{:target="_blank"}
+## [Tab Completion of Git Branches][tab]{:target="_blank"}
 
 Another trick that saves me a lot of time is tab completion of git branches. Without this, you are forced to type out the full branch name to which you are switching, which slows you down. See the SO post linked above for details on enabling this. It involves downloading a script that performs the tab completion logic (credit to Shawn O. Pearce <spearce@spearce.org>) and sourcing it in your `~/.bash_profile`. In all honestly I haven't looked through the script in much detail... but works like a charm!
 

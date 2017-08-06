@@ -9,7 +9,7 @@ Next up in my Design Patterns series is the `Decorator` pattern, which allows yo
 
 [Find my last Design Patterns entry on the Observer pattern here.][observer]
 
-### Favor Composition over Inheritance
+## Favor Composition over Inheritance
 
 This is an oft mentioned phrase when learning Object Oriented Programming, and it surfaces again when studying the utility of the decorator pattern.
 
@@ -19,7 +19,7 @@ Dynamically extending an object's behavior through composition can be done at ru
 
 This hits at a core principle of good class design called the "Open/Closed Principle": **classes should be open for extension, but closed for modification.**
 
-### The Decorator Pattern
+## The Decorator Pattern
 
 The Decorator pattern allows us to "decorate" (extend) objects with added functionality at runtime. It gives developers the power to **compose objects that are purpose driven for the current demands of their users**.
 
@@ -39,7 +39,7 @@ Decorators can be thought of as wrappers around the object they are decorating: 
  - Since the concrete `Decorators` themselves share the type `Component`, decorators can be wrapped in other decorators! Each one adds a new layer or "wrapper" to the inner concrete object.
  - `Decorator` is useful for *extending* behaviors exposed as abstract methods by the shared supertype (`Component` above), but cannot be used to add brand new behaviors to objects that do not already exist as abstract methods in the shared supertype. In other words, a decorator cannot add a brand new method to a decorated object, because the contract doesn't exist in the shared abstract supertype.
 
-### Pizza Shop Example
+## Pizza Shop Example
 
 Let's say we have a pizza shop: pizzas can have various pizza toppings like Pepperoni or Cheese, and can be either Thin Crust or Deep Dish (I am from Chicago after all!). [Check out the following repository with some test code that I wrote][test]{:target="_blank"} to get an idea of how the decorator pattern can help design a system that flexibly meets any pizza / topping combination the customer throws at you!
 
@@ -48,7 +48,7 @@ Let's say we have a pizza shop: pizzas can have various pizza toppings like Pepp
   <figcaption>Class Diagram for Pizza Shop</figcaption>
 </figure>
 
-### Downsides of Decorator
+## Downsides of Decorator
 
 There are several limitations of the `Decorator` pattern that I'd like to highlight:
 
@@ -56,7 +56,7 @@ There are several limitations of the `Decorator` pattern that I'd like to highli
 - Decorating your objects manually **is a pain**. Lots of parameters to remember to pass and many constructors if everything is a new object. Combining `Decorator` with the `Factory` or `Builder` patterns alleviates some of this overhead, and makes building purpose driven objects much simpler and less prone to error.
 - As seen from my example repo, using `Decorator` often leads to **numerous small classes** that are each responsible for one behavior modification. This makes the code somewhat more difficult to read and understand.
 
-### Conclusion
+## Conclusion
 
 Doing a deep dive in to the Decorator pattern helped me get a better understanding of its pros and cons. The Open/Closed principle (keeping closed parts isolated from new extensions) is great to strive for while developing systems, and `Decorator` gets us closer to this goal.
 

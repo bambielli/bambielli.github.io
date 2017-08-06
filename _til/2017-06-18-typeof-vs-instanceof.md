@@ -11,7 +11,7 @@ I was solving a puzzle that required that I check the type of the values of the 
 
 The puzzle designer was trying to be tricky, as the input object had *both primitive strings and string Objects* as values. Calling `typeof` on a String object returns `object`. This triggered a research session in to the differences between `typeof` and `instanceof`. Find the discussion below.
 
-### instanceof vs typeof
+## instanceof vs typeof
 
 [Per the MDN docmentation,][typeof]{:target="_blank"} `typeof` is a *unary operator* that returns a string indicating the type of the unevaluated operand.
 
@@ -43,7 +43,7 @@ b instanceof String; --> returns true
 
 {% endhighlight %}
 
-### How to properly test for strings?
+## How to properly test for strings?
 
 In the case of the puzzle I was trying to solve, I had to detect both primitive strings and String objects as values of the object in question's keys.
 

@@ -62,15 +62,15 @@ Any comparisons of the above data objects will return `false`, since `require` i
 
 *Side Note: TIL that the OSX filesystem defaults to resolving files in this case-insensitive manner: `data.json` and `DATA.json` resolve the same file!*
 
-### Examining the `require.cache`
+## Examining the `require.cache`
 
-`require` caches modules that have already been loaded in an object found at `require.cache`. The keys of this object are the **file paths at which previously resolved modules were located**: this is the reason for the case-insensitivity caveat that I highlighted in the last section. 
+`require` caches modules that have already been loaded in an object found at `require.cache`. The keys of this object are the **file paths at which previously resolved modules were located**: this is the reason for the case-insensitivity caveat that I highlighted in the last section.
 
 Before any modules are required, the `require.cache` is just an empty object. Here is a look at the `require.cache` after a single import of `data.json`:
 
 {% highlight javascript %}
 
-{ 
+{
   '/Users/username/data.json': //file-path key
       Module {
           id: '/Users/username/data.json',
@@ -83,46 +83,46 @@ Before any modules are required, the `require.cache` is just an empty object. He
                   filename: null,
                   loaded: false,
                   children: [Object],
-                  paths: [Object] 
+                  paths: [Object]
               },
           filename: '/Users/username/data.json',
           loaded: true,
           children: [],
-          paths: [ 
+          paths: [
               '/Users/username/node_modules',
               '/Users/node_modules',
-              '/node_modules' 
-          ] 
-      } 
+              '/node_modules'
+          ]
+      }
 }
 
 {% endhighlight %}
 
 You can see from the output that the top level key of the require.cache object is the path `/Users/username/data.json`, which is the absolute path in my filesystem of the data.json file. This further illustrates how case-insensitive filenames can look like different modules to require: they will all have different keys in the require.cache object!
 
-You'll also notice that the value of the key is itself a node `Module` object, which contains references to the parent module (in this case, the node REPL), any child modules of the imported module, if the module is 'loaded', and the values that were imported from the file (under `module.exports`). 
+You'll also notice that the value of the key is itself a node `Module` object, which contains references to the parent module (in this case, the node REPL), any child modules of the imported module, if the module is 'loaded', and the values that were imported from the file (under `module.exports`).
 
-### A Real-Life Example
+## A Real-Life Example
 
-I started researching this topic after grading some of my students' homework from the prior week: the homework involved creating an express app with GET and POST routes for a "friends" entity. 
+I started researching this topic after grading some of my students' homework from the prior week: the homework involved creating an express app with GET and POST routes for a "friends" entity.
 
 Students were encouraged to include some seed data for the app in a JSON file. This data would be returned from initial requests to the GET route. The POST route would add new "friend" data to the app: in other words, the POSTed data was expected to "persist" and was expected to be returned from future GET requests.
 
-I assumed students would just `require('./seedData.json')` and push items to the data array once it had been brought in to memory. One of the students implemented what I considered to be 'the long road', and used `fs.readFile` to read the JSON file after each GET request to the server. 
+I assumed students would just `require('./seedData.json')` and push items to the data array once it had been brought in to memory. One of the students implemented what I considered to be 'the long road', and used `fs.readFile` to read the JSON file after each GET request to the server.
 
-Their POST route used `fs.writeFile` to write the JSON data back to the seed data file. I thought we might be able to replace the `readFile` in the get request with a re-require of the module, **but due to the way require caches modules after initial load, any changes written to the module using `fs.writeFile` in the POST route would not be reflected!** 
+Their POST route used `fs.writeFile` to write the JSON data back to the seed data file. I thought we might be able to replace the `readFile` in the get request with a re-require of the module, **but due to the way require caches modules after initial load, any changes written to the module using `fs.writeFile` in the POST route would not be reflected!**
 
 I thought there had to be a better way to read "changing" data from a JSON file without using `fs` APIs.
 
-### Invalidating the cache
+## Invalidating the cache
 
-It is possible to invalidate the `require.cache` for a particular module: just delete the key from the `require.cache`! 
+It is possible to invalidate the `require.cache` for a particular module: just delete the key from the `require.cache`!
 
 {% highlight javascript %}
 
 delete require.cache['/Users/username/data.json']
 
-{% endhighlight %} 
+{% endhighlight %}
 
 If a module isn't in the cache, require will load the module again from disk. In the homework example, this would allow any changes written to the .json file to be reflected in future GET requests: we would just need to invalidate the cache after each write to the file, and require the module in each GET. This would be more performant than reading the file from disk each time, since re-requires of the same module will just resolve the module from the require cache.
 

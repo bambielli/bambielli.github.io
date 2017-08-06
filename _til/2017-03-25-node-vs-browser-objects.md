@@ -7,7 +7,7 @@ tags: [node, javascript]
 
 TIL that node programs have different globally accessible objects than those found in the browser.
 
-### Globals in the browser
+## Globals in the browser
 
 In the browser, we have access to two global objects: `window` and `document`
 
@@ -32,11 +32,11 @@ document; // returns an object that contains all nodes in currently visible DOM
 
 window.document; // returns the same object as the line above!
 
-{%endhighlight%} 
+{%endhighlight%}
 
 Requesting `childNodes`from `document` returns an array of 1 element: the outermost HTML tag of the currently visible DOM.
 
-### Node equivalents
+## Node equivalents
 
 The equivalent objects in a `node` program are named `global` and `process`.
 
@@ -58,7 +58,7 @@ console.log('hi') //also logs 'hi'
 
 Similarly, since code is not executing in the browser, there is no DOM available to a `node` process. There are, however, APIs that `node` exposes to interact with the running node process. `node` exposes these APIs to the user in a second global object called `process`.
 
-The objects and APIs available from `process` give you access to details about the environment in which the node process is running. 
+The objects and APIs available from `process` give you access to details about the environment in which the node process is running.
 
 {%highlight javascript%}
 

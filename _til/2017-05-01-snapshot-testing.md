@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
 {% endhighlight %}
 
 
-### Additional Things to Note
+## Additional Things to Note
 
 **Snapshot tests are not flakey:** Unlike visual regression tests, snapshot tests do not perform pixel comparisons of the rendered output of the view under test. Instead, Facebook suggests using a [test renderer][test]{:="_blank"} to generate the equivalent rendered output for a component or view. Using a test renderer **does not require a browser or browser-like environment.** This keeps tests fast and makes tests more reliable, as the test renderer deterministically renders component output. NOTE: Be sure to use mocks when rendering component output, particularly if your component relies on functions or services that can change over time (i.e. Javascript Date objects). This will ensure deterministic snapshots are rendered.
 
