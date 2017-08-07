@@ -50,7 +50,7 @@ And it's cool to look at, too :)
 
 ## My Implementation
 
-My implementation uses javascript, HTML, and CSS. Its only dependency is a [Coordinate][coord]{:target="_blank"} class that I published to npm, which I extend for my game of life implementation. I used webpack to leverage some ES6 javascript features (like imports) in my code.
+My implementation uses javascript, HTML, and CSS. Its only dependency is a [Coordinate][coord]{:target="_blank"} class that I published to npm, which I extended for my game of life implementation. I used webpack to leverage some ES6 javascript features (like imports) in my code.
 
 The bulk of the algorithm exists in the [Generation class.][generation]{:target="_blank"} `Generation` keeps track of the current state of the game. It accepts an integer in its constructor, and generates a new NxN matrix of dead cells based on that integer. This allows the game to have a flexibly sized window in which to run.
 
