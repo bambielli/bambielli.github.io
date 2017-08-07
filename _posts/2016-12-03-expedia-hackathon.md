@@ -7,7 +7,7 @@ tags: [hackathon, react, side-project]
 
 It's been about a month since I last posted, but I've been busy in the meantime! I've switched from the Frontend to the Backend team at work, and participated in the Q4 Expedia internal hackathon where we had 48 hours to come up with an MVP for an idea aligned with the theme "internal tools to make engineers lives easier."
 
-### Pre-hackathon
+## Pre-hackathon
 
 We picked teams before the hackathon began, and started brainstorming an idea. While we could form teams and brainstorm before the start of the 'thon, we were not able to begin coding until the official kick off.
 
@@ -19,7 +19,7 @@ We thought this functionality would be helpful for engineers looking to find oth
 
   - The tool should be able to search for sets of deps (repositories returned are an AND of the dependencies requested).
 
-### Research and Resources
+## Research and Resources
 
 We thought it made sense to extend the Expedia Engineering Hub with our functionality, since it is already a place where engineers go to for information. This way our tool would be easy to find by others when it went to production. We also knew the developers who maintained the code base that backs the hub, and we knew that the hub was written using React+Redux which the FrontEnd developers on our team were already proficient with. This also meant there were a lot of UI components already built and tested that we could leverage as part of our app.
 
@@ -29,7 +29,7 @@ To source the frontend deps, we could build a scraper that made requests for the
 
 We knew we were going to have to build some sort of API layer to act as intermediary between these different data sources and the front end. We chose Spring Boot since it was quick to configure and deploy to a test environment. During the hackathon, our backend team had mock API endpoints deployed to test within an hour of our team kick-off! Getting these set up ASAP was critical; the frontend could start integrating against mock data while the backend worked on connecting to the actual data sources.
 
-### The 'Thon
+## The 'Thon
 
 Time flies when your hackathon-ing!
 
@@ -41,11 +41,11 @@ There were 250 teams participating in the hackathon across Expedia globally, 50 
 
 Since we wanted to be sure our presentation stood out from the crowd, we decided to start with a skit as an attention grabber: I was a "new engineer" with the company, who was confused on how to find others in the organization who were using the dependencies I was interested in. With the help of the tool we built, I could quickly determine who else in the company had expertise with my dependencies, and see some code examples for inspiration. It was a great way to leverage some of my acting chops from High School / College :)
 
-### The Presentation
+## The Presentation
 
 The skit was a hit! We blazed through the initial round, and easily passed through the semis. We were then tasked with creating a video of our presentation for the finals (2.5 minutes max) which would be shown to the Senior Technology Leadership for their feedback. We used a free program called [snagit][snagit]{:target="_blank"} which allowed us to both screen cap and record live video, then stitched our recorded segments together using iMovie. We had 1 hour to create and submit our video, and we finished with about 5 minutes to spare.
 
-### The Results
+## The Results
 
 While we didn't wind up placing in the finals, our idea garnered a lot of attention internally and we are planning to move it to production within the next month. And in the end, isn't that what matters? Code that is shipped is better than tech demos that will never see the light of day.
 

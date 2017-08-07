@@ -13,7 +13,7 @@ I was recently accepted to the [OMSCS program through Georgia Tech][GT]{:target=
 
 Fortunately, OMSCS offers a [linear algebra refresher course][linear]{:target="_blank"} on Udacity for students in the same boat as myself! The first lesson goes over basic vector algebra and operations on pairs of vectors. Here's what I learned:
 
-### Vectors and Basic Operations
+## Vectors and Basic Operations
 
 A Vector is a geometric construct that has both a **direction** and a **length** (also referred to as a *magnitude*). Basic arithmetic operations like addition, subtraction, and multiplication are possible on vectors. We often think of vectors as lines in 2D or 3D space, but N dimensional vectors are also permitted.
 
@@ -45,7 +45,7 @@ It is also possible to multiply by non integer scalars, and negative scalars.
   <figcaption>Geometric representation of scaling the vector U by -0.5</figcaption>
 </figure>
 
-### Magnitude, Unit Vector, and Normalization
+## Magnitude, Unit Vector, and Normalization
 
 The `magnitude` of the vector is another word for the length of the vector. It represents the distance between the head and tail of a vector. If we think of a vector as the hypotenuse of a triangle, we can use pythagorean's theorem to calculate its length by taking the square root of the sum of squares of its coordinates.
 
@@ -61,7 +61,7 @@ A `unit vector` is a vector in any direction with magnitude of 1. The vector [1,
 Where V is the vector we hope to normalize.
 
 
-### The Dot Product
+## The Dot Product
 
 Another operation that is possible to perform on a pair of vectors is the `dot product`, also known as the `scalar product` or `inner product`. The dot product is a scalar representation of two vectors. It also can be used to describe the angle between two vectors geometrically (the acute angle between the pair, not the obtuse angle). The geometric definition of the dot product is as follows:
 
@@ -79,7 +79,7 @@ Where V and W are vectors and `Vn` and `Wn` are the values at the nth dimension 
 
 Some rules that fall out of this theorem: if `V . W` is 0, and V and W are non-zero, it follows that `cos(theta)` must be 0! **This means that the vectors must be orthogonal to each other.**
 
-### Cross Product
+## Cross Product
 
 The `cross product` of two vectors is a vector that is orthogonal to both given vectors. Unlike the dot product, the cross product is anti-commutative: `V x W` does not yield the same result as `W x V`. Another constraint, is that **the cross product may only be taken on vectors in 3D space.**
 
@@ -95,7 +95,7 @@ If the angle between the vectors is unknown, we can use the algebraic definition
 
 `V x W = [y1\*z1 - y2\*z2, -(x1\*z2 - x2\*z1), x1\*y2 - x2\*y1]`
 
-### When are These Useful?
+## When are These Useful?
 
 I tried poking around the internet to try and find some applications of these vector operations. I know they are used in E&M Physics to calculate magnetic flux (dot product) and the direction and magnitude of an electric field (cross product). I'm sure I'll run in to other uses as I continue the refresher!
 

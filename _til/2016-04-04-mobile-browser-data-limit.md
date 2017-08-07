@@ -7,7 +7,7 @@ tags: [mobile]
 
 TIL that there exists a hard cap on the amount of data a single webpage can ship to a mobile browser, before the browser crashes.
 
-### Imagine an API endpoint...
+## Imagine an API endpoint...
 
 This endpoint ships the names and group affiliations of a particular survey population. It assembles this list of users on the backend, constructs a JSON object with symantically named keys, zips and caches the object in the application cache (to service future requests) and ships the zipped response to the requestor.
 
@@ -21,13 +21,13 @@ A user tries to access the survey on a mobile device. The mobile browser renders
 
 What is going on?
 
-### Hitting the Mobile Hard Cap - 6MB
+## Hitting the Mobile Hard Cap - 6MB
 
 Apparently there is a hard cap on the amount of data a single webpage can ship to a mobile browser before the above error message occurs. ***That hard cap is 6MB.*** The endpoint described above was, at one point, shipping 12MB of data to each user.
 
 I guess it kind of makes sense...webpages designed for mobile should not be shipping MBs of data, since most mobile are on cellular networks and pay for data by the GB.
 
-### Lessons Learned
+## Lessons Learned
 
 Page APIs, and as a wise man once told me *"don't ship the world."* Shipping every user on first hit of the endpoint so filtering can be done on the frontend just doesnt seem sustainable, particularly when all the data is on the order of MBs, 99% of which will never be used by the end user.
 

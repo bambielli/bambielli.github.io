@@ -7,19 +7,19 @@ tags: [beer, nginx, raspberry-pi, django, security, side-project]
 
 Wow. There was a lot more work to do than I expected to get [doesfloydshavezombie.com][zombie]{:target="_blank"} back up and running. Here's the final entry in this series!
 
-### [Setting up SSH][ssh]{:target="_blank"}
+## [Setting up SSH][ssh]{:target="_blank"}
 
 I hadn't set up publicKey authentication on my own before, so it took me a while to figure out where to create the keys and which keys to transfer where...
 
 The learning here was: you want to create your key pair on the client with which you are expecting to access the server, then transfer the generated public key over to the server (using something like ssh-copy-id) under a particular user's ssh key list.
 
-### A Not-So-Static IP
+## A Not-So-Static IP
 
 While attempting to transfer my ssh key over to my RBPI, I realized the IP address of my device had changed... previously I had modified /etc/network/interfaces and changed wlan0 config from dhcp to static, then assigned my IP address there. Apparently this wasn't the best, or easiest solution.
 
 Instead, I modified my server's /etc/dhcpcd.conf file, [specifying a new IP for the wlan0 interface][static]{:target="_blank"}. After a reboot, I was officially locked on a static address.
 
-### A Not-So-Public IP
+## A Not-So-Public IP
 
 I had given my device a static IP address, but the assigned IP was only in relation to my router's internal address space (192.168.1.xxx).
 
@@ -27,7 +27,7 @@ In order to expose my device to the outside world, I first needed to give my rou
 
 My RBPI was already running an nginx webserver that was listening for requests on http port 80. nginx routes requests on port 80 to my django application, which runs in a uwsgi server. To be able to access my application from this static IP, I needed to set up Port Forwarding for requests to port 80 to my RBPI's static IP in the router's address space. I set up Port Forwarding for SSH as well while I was here (port 22) and after re-configuring the firewall I had previously set up on the server, I was able to successfully ssh on to the server and make requests to the application via port 80.
 
-### uwsgi Reconfig
+## uwsgi Reconfig
 
 Previously I was booting up my uwsgi server, explicitly binding it to port 8001 on startup. Apparently there is a better, more direct way of getting nginx and uwsgi to communicate with each other, which is via unix sockets using a `.sock` file.
 
@@ -39,7 +39,7 @@ I also created a `.ini` file for my uwsgi container, that contained all of the c
 
 Finally, I changed my raspi-config to have the RBPI boot to a terminal instead of to the desktop, since I would no longer need to access the desktop to install or test anything further. I could also do some cleanup of some of the bloatware included with the jessie raspbian image (like minecraft PI and Wolfram Alpha) but maybe for another day...
 
-### Last But not Least
+## Last But not Least
 
 Now that the application was running smoothly and server was secured, the only thing left to do was to point the domain name for [doesfloydshavezombie.com][zombie]{:target="_blank"} from the Heroku app to the RBPI instead. I deleted the CNAME records I had created to point at the heroku app, and instead created an A Record to point at my router's static IP. The transfer took about 5 minutes to complete (namecheap is pretty fast).
 
@@ -47,7 +47,7 @@ Another nice part of having a domain name pointing at the static IP for the rout
 
 I lied... one final step: in order to achieve the goal of officially deleting the heroku app instance I had provisioned for the site, I also needed to do a data transfer from my heroku postgres instance to the one on the new server. After installing the heroku CLI + toolbelt on the server, I was able to curl down a dump of the database and pg_restore it to the database on my server. I did a quick user count after I did the upload: **103 users were still signed up to receive notifications** even though the site had been down for the past few months. That feels good :)
 
-### It's Aliiiiivvveeeeeee
+## It's Aliiiiivvveeeeeee
 
 When I started this project a few months ago, I had no idea the amount of configuration that would be required to get everything working. Having used heroku for the majority of my infrastructure needs over the years, a lot has been abstracted away. For small projects and small startup teams, a service like heroku is very valuable so developers can get working on things of value instead of twiddling away with securing and optimizing servers.
 

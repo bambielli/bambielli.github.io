@@ -7,13 +7,13 @@ tags: [react, redux]
 
 TIL that when using Redux, there are examples of state that are best kept local to a component instead of being managed by the Redux store.
 
-### Local State is Ok
+## Local State is Ok
 
 I follow Dan Abramov on twitter, and he published [an article][article]{:target="_blank"} this week titled "You Might not Need Redux." One of the key takeaways I had was that ***local state is perfectly fine.***
 
 When you're a new developer working with Redux, it is tempting to stuff every single bit of state managed by your UI in Redux, eliminating local state from your components entirely. This can often lead to wonky implementations, and weird code smells. We followed our noses today at work and found a few places in particular where we were inappropriately storing state in Redux that was better kept local.
 
-### Creating and Updating objects
+## Creating and Updating objects
 
 We have 2 forms in our application that allow the user to create new "Trips." These trips contain a name, a start date and an end date. Users can create new trips, and then later from a trips detail page, click an edit button to update the start and end dates of a particular trip.
 
@@ -21,7 +21,7 @@ We were originally storing all of this intermediate state in Redux in an object 
 
 Phew... that’s a lot of work for a simple form! We took Dan Abramov's words to heart - "Local state is fine" - and decided to refactor the above flow to store state locally in the form container instead of in Redux.
 
-### The Great Refactor
+## The Great Refactor
 
 We were able to delete about 5 different actions and reducers. Clearing the state no longer involved dispatching an action, but instead can just be cleared out in `comoponentWillUnmount` (or can be ignored entirely, since in the initial `componentWillMount` method we initialize the state of this form to be an empty object!).
 

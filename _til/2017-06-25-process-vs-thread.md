@@ -7,7 +7,7 @@ tags: [systems, operating-systems]
 
 TIL the difference between a process and a thread.
 
-### What is a Process?
+## What is a Process?
 
 A `process` is an executing instance of a program on a computer. It is allocated its own resources on the computer, including its own virtual address space, process id, and unique configuration like environment variables.
 
@@ -15,23 +15,23 @@ A process encompasses both the program that is executing, and the state of all t
 
 Each process starts with a single thread of execution, often referred to as the "main thread".
 
-### A Process as a Restaurant
+## A Process as a Restaurant
 
 Think of it like a dinner service at a restaurant: when employees arrive at the restaurant and the doors open, that is analogous to a program being loaded in to memory and coming to life via its main execution context in a process.
 
 This restaurant's resources are isolated from the resources of all other restaurants in the area: each restaurant has its own food, its own kitchen, and its own dining room. Similarly, a process's resources on a computer are isolated from the resources allocated to other processes.
 
-### Show me a Thread!
+## Show me a Thread!
 
 A `thread` represents a single path of execution within a process. Multiple threads can be created as siblings of the process's main thread (multithreading). Threads exist in the context of a process, and therefore share the same resources allocated to the process. This implies that threads can affect each other via the consumption / modification of these shared resources.
 
 Threads execute independently of one another, in parallel. Each has its own execution context, where data structures necessary for execution of the thread are allocated. The parallelism afforded by independent thread execution can be used to speed up a process, by fully utilizing the resources allocated to the process by the operating system.
 
-### Multithreading Challenges
+## Multithreading Challenges
 
 The parallel execution of a program in a process via multithreading has its own challenges, though. Since threads share the same resource space as the parent process, *if threads cause side effects in this shared resource space* (via writes to memory that other processes can see) this can lead to *race conditions* or *deadlocks* between threads. Also, if one thread unexpectedly exits or throws an exception, this can crash the entire process. A developer needs to take these challenges of thread `synchronization` in to account when considering ways to split a process in to multiple threads.
 
-### A Single vs. Multithreaded Restaurant
+## A Single vs. Multithreaded Restaurant
 
 First, consider a restaurant that is owned and operated by a single employee: this employee acts as the server, the chef, the dishwasher, the cashier... everything necessary to "process" a customer and get them their order!
 

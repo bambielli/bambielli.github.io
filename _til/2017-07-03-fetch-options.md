@@ -7,7 +7,7 @@ tags: [javascript, front-end]
 
 TIL how to pass headers along with requests initiated by the `fetch` API.
 
-### What is Fetch
+## What is Fetch
 
 The [fetch API][fetch]{:target="_blank"} provides a simple way to make network requests from clients. While it exists natively on the window object in all but our most favorite of modern browser (\*cough\* IE \*cough\*) there are polyfills to fill the behavior if it is missing. There is also a library called [isomorphic-fetch][iso]{:target="\_blank"} that allows you to use the same fetch API in your server-side javascript applications.
 
@@ -35,7 +35,7 @@ fetch('/api/users', {
 
 We use the fetch API at work, and find the syntax simple to use and reason about. We've even jumped on the isomorphic-fetch bandwagon, so we're using fetch both client and server side!
 
-### Adding Headers
+## Adding Headers
 
 I needed to pass a few headers along with a request I was making. I thought I could just put my headers at the top level of the fetch companion object like so:
 

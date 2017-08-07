@@ -9,13 +9,13 @@ TIL that the promise implementation shipped with ES6 is not very performant, and
 
 Note that this post will focus on the 3rd party promise library [Bluebird][bluebird]{:target="_blank"}
 
-### Why not Native?
+## Why not Native?
 
 I understood that pre-ES6 when there was no native promise implementation, 3rd party libraries were written to fill that gap. Now that native promises are available for use, why use a library to polyfill the behavior?
 
 It appears that there are a few good reasons.
 
-### More Performant?
+## More Performant?
 
 I stumbled across [this][so]{:target="_blank"} StackExchange post which asks why native ES6 promises appear slower and less memory efficient than Bluebird promises. It points to a perf test that shows **Bluebird promises are around 4x faster and use 4x less memory than native ES6 promises to resolve.**
 
@@ -116,7 +116,7 @@ When compared to ES6, it is still **4.3x faster and 3.8x more memory efficient**
 
 Impressive!
 
-### Killer Feature: Promisify
+## Killer Feature: Promisify
 
 Performance aside, Bluebird offers an awesome feature called [promisification][promisification]{:target="_blank"}, which allows you to wrap another library and have it return promises instead! Examples from the docs:
 
@@ -132,11 +132,11 @@ You can do the same thing with database clients, or other async libraries that a
 
 Also amazing!
 
-### Can I use?
+## Can I use?
 
 According to [can I use][can]{:target="_blank"} native promises are ready for use in most current version browsers today, but not all. If you're looking to support legacy browsers (or IE), using a 3rd party promise library is a nice alternative to relying on an implementation in the browser.
 
-### Conclusion
+## Conclusion
 
 It seems like of your 3rd party async-handling Javascript libraries, bluebird is still the best bet. It offers promisification and is more performant than native ES6 promises. I'll be using it in my next project for sure.
 

@@ -7,11 +7,11 @@ tags: [architecture, versioning]
 
 TIL what semantic versioning is, what each number of the version indicates, and why using a versioning scheme like semantic versioning is important.
 
-### What is Semantic Versioning
+## What is Semantic Versioning
 
 [Semantic Versioning][semver]{:target="_blank"} (also referred to as SemVer) is a set of rules proposed for assigning a version number to your software. Under semantic versioning, each number assigned to a version conveys something meaningful about the changeset that occurred between two versions.
 
-### MAJOR.MINOR.PATCH
+## MAJOR.MINOR.PATCH
 
 There are **3 numbers** assigned to each version of a semantically versioned piece of software. Each number indicates something about the changeset applied at that version. The numbers are generally separated by periods, and are written in the format `MAJOR.MINOR.PATCH`.
 
@@ -21,7 +21,7 @@ There are **3 numbers** assigned to each version of a semantically versioned pie
 
 - **PATCH** - A PATCH version indicates that backwards compatible bug fixes were made to the current version of the software. These are generally the safest upgrades that consumers can make, since there is no new functionality introduced and no new breaking changes. Examples of PATCH type changes include performance enhancements.
 
-### Why Should I Follow SemVer?
+## Why Should I Follow SemVer?
 
 It's in the name! **Semantic** versions convey so much more information to consumers of your software than just any old number could. By following the rules outlined above, **consumers will have confidence when upgrading to newer versions of your software, that the changes made between versions will not break their products.**
 

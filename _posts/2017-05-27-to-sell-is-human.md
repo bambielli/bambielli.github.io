@@ -5,11 +5,11 @@ category: post
 tags: [sales, business, book-review]
 ---
 
-We are in a new age of selling... at least that's what Daniel H. Pink argues in his New York Times best seller [*To Sell is Human*.][sell]{:target="_blank"} 
+We are in a new age of selling... at least that's what Daniel H. Pink argues in his New York Times best seller [*To Sell is Human*.][sell]{:target="_blank"}
 
-After reading, I realized that the stereotype of the "sleazy salesperson" is no longer the norm: the internet has disrupted the information disparity traditionally enjoyed by sellers, resulting in well informed buyers, and sellers that act with buyers' best intentions in mind. 
+After reading, I realized that the stereotype of the "sleazy salesperson" is no longer the norm: the internet has disrupted the information disparity traditionally enjoyed by sellers, resulting in well informed buyers, and sellers that act with buyers' best intentions in mind.
 
-### From Buyer Beware to Seller Beware
+## From Buyer Beware to Seller Beware
 
 With the dawn of the information age, a power shift has occurred from seller to buyer in sales interactions.
 
@@ -19,7 +19,7 @@ With the internet in our pockets, however, the information disparity between buy
 
 The internet, and the informed buyer, has brought us in to a new era of salesmanship: **Seller Beware.**
 
-### The Value of a Salesperson
+## The Value of a Salesperson
 
 Seller Beware has changed the seller from an information keeper and protector, to an information curator. The true value a salesperson brings in this new age is to **help buyers find the right solutions to problems that they encounter**.
 
@@ -29,11 +29,11 @@ Pink presents two guiding questions that sellers should ask during every buyer i
 
 1) If the person you're selling to agrees to buy, will their life improve?
 
-2) When the interaction is over, will the world be a better place? 
+2) When the interaction is over, will the world be a better place?
 
 If the answer to either of these questions is no, or if you're unsure of the answer, then put on your pinstripes and head back to the used car lot because you're not delivering the customer value that is intended by your role.
 
-### Modern Sales
+## Modern Sales
 
 Here are a few additional ways that sellers and sales organizations can change to better serve customers in a modern sales landscape.
 
@@ -43,11 +43,11 @@ Here are a few additional ways that sellers and sales organizations can change t
 
 - **From "Upsell" to "Upserve":** Sales should focus on how to best serve the customer by solving their problem optimally. Pink calls this practice "Upserving" -- going above and beyond to satisfy and delight the customer during every interaction. If the experience is memorable, customers are more likely to repeat purchases and evangelize your brand to their network. Amazon's legendary customer service is a "Prime" (get it?) example of upserving the customer. Even when mishaps occur, Amazon goes out of its way to rectify its mistakes, often at it's own monetary loss. This has resulted in one of the largest and most loyal customer bases of any brand in existence.
 
-- **Something Better than Empathy:** It seems reasonable that the modern salesperson would be expected to develop deep empathy for the customer and their problems, but too much empathy can actually hurt the interests of the seller. Instead of connecting with the customer on an emotional level (empathy how the customer feels), Pink suggests getting in the customer's head by understanding their perspective (how the customer thinks). Pink posits that "perspective taking" by sellers results in higher quality outcomes on both sides of a deal. How to achieve this? Sellers should try to **reduce the amount of power** they have in their interactions with buyers. This results in more confident and comfortable buyers, and forces salespeople to listen more and talk less. 
+- **Something Better than Empathy:** It seems reasonable that the modern salesperson would be expected to develop deep empathy for the customer and their problems, but too much empathy can actually hurt the interests of the seller. Instead of connecting with the customer on an emotional level (empathy how the customer feels), Pink suggests getting in the customer's head by understanding their perspective (how the customer thinks). Pink posits that "perspective taking" by sellers results in higher quality outcomes on both sides of a deal. How to achieve this? Sellers should try to **reduce the amount of power** they have in their interactions with buyers. This results in more confident and comfortable buyers, and forces salespeople to listen more and talk less.
 
-### The New Sales Landscape
+## The New Sales Landscape
 
-In my opinion, the sales landscape in the information age seems more fulfilling than that of the age of Buyer Beware. "Help people find the right solution to their problems" is a more appealing job description than "take the buyer for all they've got". **Let's shed the traditional slimy salesperson stereotype, and focus on attracting customer-centric problem solvers to drive business in our modern sales organizations.** This should lead to a new age of customer focused problem solvers in the field, happier buyers, and better business outcomes for all. 
+In my opinion, the sales landscape in the information age seems more fulfilling than that of the age of Buyer Beware. "Help people find the right solution to their problems" is a more appealing job description than "take the buyer for all they've got". **Let's shed the traditional slimy salesperson stereotype, and focus on attracting customer-centric problem solvers to drive business in our modern sales organizations.** This should lead to a new age of customer focused problem solvers in the field, happier buyers, and better business outcomes for all.
 
 [sell]: https://www.amazon.com/Sell-Human-Surprising-Moving-Others/dp/1594631905/ref=sr_1_1?ie=UTF8&qid=1495919492&sr=8-1&keywords=to+sell+is+human
 [FDSE]: https://www.palantir.com/careers/teams/forward-deployed-software-engineers

@@ -9,7 +9,7 @@ TIL the difference between an `interface` and an `abstract class`.
 
 Well...I guess I didn't really learn this today, but I wrote up some notes for my AP Computer Science class to help clarify differences between the two and when to use each.
 
-### Interface
+## Interface
  - Declares __can-do__ relationships between classes.
  - When classes promise to implement an `interface` we can treat those classes similarly in our code.
    - Declare an object of reference type `<interface_name>`
@@ -30,7 +30,7 @@ __Example: Shapes (triangle, circle, rectangle):__ Common methods `getArea` and 
 
 *Class That Implements:* `public class <class_name> implements <interface_name>`
 
-### Abstract class
+## Abstract class
  - Declares __is-a__ relationships between classes.
  - A __non-instantiatable__ class that serves as a super class for common *data* and *behaviors*.
    - Can declare data fields.
@@ -50,7 +50,7 @@ __Example: Shapes (triangle, circle, rectangle):__ Common methods `getArea` and 
 
 __Note:__ in the class header above, the extending class __must provide implementation detail for all abstract methods__ in the `abstract class`, otherwise it must be declared as abstract itself.
 
-### General Rules
+## General Rules
  - If the base class has the potential to update frequently, `abstract classes` are preferred.
    - If an `abstract class` is updated (implementation detail, method signatures, etc...) then that new functionality will automatically propagate to the rest of the classes that inherit from it.
    - If an `interface` is updated (method signatures update or a new method is added) then __all classes that previously implemented that interface WILL BREAK.__

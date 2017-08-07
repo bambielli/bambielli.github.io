@@ -9,13 +9,13 @@ TIL of a metric that helps measure customer engagement and loyalty: Net Promoter
 
 This morning at Syndio we had our monthly team meeting where we examine how each business function stacked up against its set of KPIs from the previous month. One of the KPIs the implementation function is beginning to measure is Net Promoter Score (NPS).
 
-### What is Net Promoter Score?
+## What is Net Promoter Score?
 
 NPS is a measurement of how loyal your user base is, and how much they are willing to advocate to their friends and family for your product. At Syndio, *Implementation* is in charge of measuring this metric, since they are the first point of contact for maintaining customer relationships: *if a customer reports poor NPS, implementation is the most appropriate business function to respond*.
 
 NPS should be visible to all business functions, though, to ensure all employees understand how the product is currently viewed by the customer.
 
-### How is it measured / calculated?
+## How is it measured / calculated?
 
 NPS is __measured__ by periodically asking customers:
 
@@ -39,7 +39,7 @@ Out of a survey of 100 respondents, 45 responded 9-10 and 40 responded 0-6.
 NPS = 45% - 40% = __5% Promoter__
 
 
-### What can be done with the score?
+## What can be done with the score?
 
 NPS should be one component of a broader customer satisfaction strategy, but it is a quick way to gain insight in to how much brand loyalty your current customers have. Once calculated, it would be interesting to look at users on edges of each spectrum: Those who responded 0 for example would likely have a particularly negative experience to share, and should be reached out to by frontline employees (ideally those already with relationships to the customer).
 

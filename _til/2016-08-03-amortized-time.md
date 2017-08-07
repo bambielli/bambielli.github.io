@@ -7,7 +7,7 @@ tags: [systems]
 
 TIL that the amortized time complexity of adding an item to an ArrayList in Java is O(1), but that the "worst case" for an add operation is O(n). This caused me to look up a few SO posts on what exactly is meant by "amortized time."
 
-### What is it?
+## What is it?
 
 Amortized time is time taken to perform an operation, averaged over a large number of repetitions of that operation.
 

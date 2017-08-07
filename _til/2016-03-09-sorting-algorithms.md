@@ -9,7 +9,7 @@ TIL (more like re-learned) the differences between a few basic sorting algorithm
 
 This week during class I introduced students to 3 sorting algorithms that could potentially appear on the AP exam: `selection sort`, `insertion sort`, and `merge sort`. Students are NOT required to know how to implement these algorithms (in java) on the exam, but should be familiar with how they work and what a collection will look like after 'n' passes of the algorithm.
 
-### Teaching Techniques
+## Teaching Techniques
 
 I started the class by reminding students how much *faster* binary search is than straight sequential search, and that binary search only works on a *sorted collection*. This **motivated** the need for efficient sorting algorithms.
 
@@ -23,7 +23,7 @@ Then, I split the students up in to groups of 3 and gave each group a set of not
 
 Finally, I found some Youtube videos (linked in the headers below) that helped illustrate each algorithm in a more...engaging way :)
 
-### [Selection Sort][Selection]{:target="_blank"}
+## [Selection Sort][Selection]{:target="_blank"}
 
 Possibly one of the worst sorting algorithms out there performance-wise, this was a good place to start our discussion.
 
@@ -54,7 +54,7 @@ __Example:__
 
 **Something incorrect** that students were doing when implementing the algorithm on their own, was to make a swap each time a smaller item was detected during a single pass... **selection sort only makes one swap per pass through the array:** the swap between elements at the starting index, and the index of the smallest item found during the iteration.
 
-### [Insertion Sort][Insertion]{:target="_blank"}
+## [Insertion Sort][Insertion]{:target="_blank"}
 
 `Insertion sort` works by creating a "sorted portion" of the array at the beginning,  adding elements to it (in sorted order) one by one. This sorted portion starts off as one element (which is sorted relative to itself), then grows to 2 sorted elements, then 3, and so on until the entire array is sorted.
 
@@ -80,7 +80,7 @@ __Example:__
   //and so on...
 {% endhighlight %}
 
-### [Merge Sort][Merge]{:target="_blank"}
+## [Merge Sort][Merge]{:target="_blank"}
 
 `Merge sort` works by dividing the starting array in to 2 arrays of (roughly) equal length, then splitting each sub-array recursively until there is one element per sub array. Two adjacent sub-arrays are combined by examining the elements of each sub-array one by one, and placing each item in to the a "merged array" in sorted order.
 

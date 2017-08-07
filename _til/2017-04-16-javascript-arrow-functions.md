@@ -9,9 +9,9 @@ TIL how to leverage ES6 arrow functions to avoid losing "this" when writing func
 
 Arrow functions are more than just a syntactically shorter way of defining a function in javascript.
 
-### Arrow Functions, and `this`
+## Arrow Functions, and `this`
 
-**Arrow functions do not bind a new `this` context like functions defined with the `function` keyword do.** 
+**Arrow functions do not bind a new `this` context like functions defined with the `function` keyword do.**
 
 When defining functions using the `function` keyword, the binding of a new `this` can lead to the loss of the intended `this` when using callbacks or inner functions. For example:
 
@@ -22,7 +22,7 @@ const myObj = {
   salutation: 'Dr.',
   greet: function () {
     //the following logs "Brian", since `this` still refers to the current object
-    console.log('outside of constructGreet: ' + this.name) 
+    console.log('outside of constructGreet: ' + this.name)
     function constructGreeting () {
       // a new `this` is bound here, overwriting the parent object `this`
       //the following logs "hello undefined undefined"
@@ -38,9 +38,9 @@ myObj.greet()
 
 In the `constructGreeting` method above, the `function` keyword binds a new `this` context accessible in its function body that overwrites the enclosing object’s context. This overwrite causes the enclosing object’s scope to be lost inside of the constructGreeting function body. In fact, **the `this` bound by the inner function will actually be the global object!**
 
-### A Workaround to Losing `this`
+## A Workaround to Losing `this`
 
-Before arrow functions, a common workaround for this problem was to assign the outer function's `this` to a variable (often called `that` or `self`). The variable `that` is available for access in the inner function, and allows the inner function to access properties of the outer scope. 
+Before arrow functions, a common workaround for this problem was to assign the outer function's `this` to a variable (often called `that` or `self`). The variable `that` is available for access in the inner function, and allows the inner function to access properties of the outer scope.
 
 {% highlight javascript %}
 
@@ -59,13 +59,13 @@ const myObj = {
 
 myObj.greet()
 
-{% endhighlight %} 
+{% endhighlight %}
 
 The inner function references outer scope properties from the closed over `that` variable.
 
-### A Cleaner Solution with Arrow Functions
+## A Cleaner Solution with Arrow Functions
 
-While the above workaround gets the job done, there is a cleaner solution if we use arrow functions. Since arrow functions **do not bind a new `this` context,** arrow functions can still access any parent object contexts by referencing the `this` keyword in their body. 
+While the above workaround gets the job done, there is a cleaner solution if we use arrow functions. Since arrow functions **do not bind a new `this` context,** arrow functions can still access any parent object contexts by referencing the `this` keyword in their body.
 
 {% highlight javascript %}
 const myObj = {
@@ -80,11 +80,11 @@ const myObj = {
 }
 myObj.greet()
 
-{% endhighlight %} 
+{% endhighlight %}
 
-The above code behaves exactly as you would expect: `this` inside of the `constructGreet` method refers to the containing object instead of a newly bound `this` context. Not only is the above code more consisce, but it is more readable and predictable. 
+The above code behaves exactly as you would expect: `this` inside of the `constructGreet` method refers to the containing object instead of a newly bound `this` context. Not only is the above code more consisce, but it is more readable and predictable.
 
-### Nuances of Arrow Function’s Handling of `this`
+## Nuances of Arrow Function’s Handling of `this`
 
 The fact that arrow functions do not bind their own `this` context has several important implications:
 

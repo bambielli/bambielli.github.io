@@ -9,7 +9,7 @@ TIL that the spread operator does not perform a deep copy of object properties t
 
 This led to a long debugging session at work that had me thinking I was crazy for a while!
 
-### The Spread Operator vs Object.assign()
+## The Spread Operator vs Object.assign()
 
 The [spread operator][spread]{:target="_blank"} (written as `...`) can be used to assign an object's enumerable properties to a new object. It is often used to replace the use of `Object.assign()` since it is more succinct to write, and is suggested for use when writing Redux code by the Redux documentation. See the following example for a comparison of the spread operator and `Object.assign()` when creating a new object:
 
@@ -27,11 +27,11 @@ The [spread operator][spread]{:target="_blank"} (written as `...`) can be used t
   console.log(spreadObj) // this logs {a: 1, b: 2, c: 3}
 
   // both result in the same object
-{% endhighlight %} 
+{% endhighlight %}
 
 Spread, to me, is much more succinct, and since it is suggested for use by the [Redux documentation][redux]{:target="_blank"}, we use the spread operator on objects liberally throughout our project. I'll also acknowledge that since it is still a Javascript stage-3 feature, that it is still somewhat risky to use.
 
-### My Problem
+## My Problem
 
 I was working with an object that contained properties with values that were themselves objects. Something like this: `{a: {b: 1}}`.
 
@@ -45,12 +45,12 @@ const original = {a: {b: 1}};
 
 const falseCopy = {...original};
 
-falseCopy.a.b = 2; 
+falseCopy.a.b = 2;
 
 console.log(falseCopy) // logs {a: {b: 2}}
 console.log(original) // also logs {a: {b: 2}} WTF!
 
-{% endhighlight %} 
+{% endhighlight %}
 
 Under the hood, Babel is transpiling the `...` to `Object.assign` (it contains a fallback if used in a browser where `Object.assign()` is not yet implemented). From the [MDN][mdn]{:target="_blank"} documentation: _The `Object.assign()` method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object._
 

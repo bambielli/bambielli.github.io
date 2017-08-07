@@ -9,13 +9,13 @@ This is part 2 of my reflection on ["The Amazon Way"][amzn]{:target="_blank"} by
 
 Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
 
-### 8. Have a Bias for Action
+## 8. Have a Bias for Action
   - **Most decisions are reversible**
     - Acting is better than sitting still, especially in the presence uncertainty.
   - Smart decisions are made with data.
     - Having the right data at the right time will allow you to act faster than the competition.
 
-### 9. Practice Frugality
+## 9. Practice Frugality
   - **Resource constrained environments promote resourceful and innovative ideas.**
   - "The Door Desk" - Desks are often made of old doors or particle board at Amazon.
     - Door desks were shipped to Europe for a new office... Jeff blew up.
@@ -23,13 +23,13 @@ Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
   - Compensate with stock instead of salary.
     - This Makes employees more invested in business outcomes.
 
-### 10. Be Vocally Self-Critical
+## 10. Be Vocally Self-Critical
   - "Open Kimono" policy
     - Everyone shares their mistakes with the organization so mistakes won't be repeated.
   - The best leaders are those with **"a blend of humility and will"**
     - humble enough to admit they don't know it all, but with the persistence to stay the course in the face of adversity.
 
-### 11. Earn the Trust of Others
+## 11. Earn the Trust of Others
   - The "Two Pizza" team
     - Not as much about size, the spirit of the "Two Pizza" team is that the business should entrust small groups (6-10 people) with the autonomy to explore and innovate on their own.
   - Six keys to earning trust of your team
@@ -40,7 +40,7 @@ Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
     5. **Accept confrontation** - this is a sign that your team isn't afraid to voice their opinions
     6. **Find the value in each person**
 
-### 12. Dive Deep
+## 12. Dive Deep
   - Jeff has banned Powerpoint in favor of the "deep dive" essay summary
     - This technique forces the writer to dive deeper into an idea, instead of skimming the surface with high lever bullet points.
     - **This is the reason why I like blogging:** writing about technical concepts in blog format forces me to dive deeper into a concept than I often would when encountering it at work. It forces a deeper clarity of thinking, which helps with retention of the concept.
@@ -48,15 +48,15 @@ Check out my thoughts on [principles 1-7 here][pt1] if you haven't already.
     - Ask "why" five times when you encounter an issue to reach root cause.
     - This technique is a popular Quality Management System practice during the Corrective Action / Preventative Action process.
 
-### 13. Have a Backbone - Disagree and Commit
+## 13. Have a Backbone - Disagree and Commit
   - **Tenacity and perseverance** are better indicators of someone's likelihood to be successful than talent or skill.
   - Mental toughness - Don't feel sorry for yourself, resent others’ successes, or give up after failure.
 
-### 14. Deliver Results
+## 14. Deliver Results
   - This is truly the principle which matters most.
     - Following the other principles should make this easy to achieve!
 
-### Conclusion
+## Conclusion
 
 It has been interesting exploring and reflecting on these principles. Many of the `-isms` contained in this book are referenced by my manager at Expedia, and I didn't realize they originated from his tenure at Amazon!
 

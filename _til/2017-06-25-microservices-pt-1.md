@@ -11,7 +11,7 @@ I've been reading [Building Microservices][micro]{:target="_blank"} by Sam Newma
 
 I'm planning on writing a few posts as I draw insight from the book.
 
-### What is a Microservice?
+## What is a Microservice?
 
 A `microservice` helps us represent the real world in our code.
 
@@ -23,7 +23,7 @@ Loose coupling between services is critical to a well-functioning microservice s
 
 The key question you should ask when developing your system: **"Can you deploy changes to a service without changing anything else in the system?"** If not, your services have an undesirable amount of coupling, and you should spend time re-thinking your service boundaries and design.
 
-### Benefits of Microservices
+## Benefits of Microservices
 
 There are a few key benefits that microservices offer when compared to their `monolith` counterparts.
 
@@ -39,7 +39,7 @@ There are a few key benefits that microservices offer when compared to their `mo
 
 6. **Composability** - In a world where systems serve many clients, microservices allow us to be flexible in how we reuse functionality to provide the best interfaces for our consumers. We can build different interfaces for mobile, tablet, desktop, wearable... all exposing a different API from our service boundary.
 
-### A Warning on Going 'micro' From the Start
+## A Warning on Going 'micro' From the Start
 
 I've worked on a project that attempted to go micro from the project's inception... unfortunately this wound up being an enormous headache!
 

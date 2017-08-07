@@ -7,7 +7,7 @@ tags: [teaching, web-development]
 
 There were only 3 days school this week (students got Thursday and Friday off for Easter) so instead of forging ahead with new course material before the break, I decided to put together a lesson on Web Development. ***The goal was to have students create an HTML page, with a bit of CSS and JavaScript, in a 50 minute class period, with no assumptions of prior knowledge of any of these web languages.*** Read on to see the lesson plan, and some of the thoughts I had around planning for the day.
 
-### Planning
+## Planning
 
   1. Students can either bring their own laptops in from home for class, or use the school provided Macbook Airs. Some students use PCs, others have Macbooks. To reduce the number of variables during the activity, I decided to have all students grab one of the school provided Macbooks for the class period.
 
@@ -21,7 +21,7 @@ There were only 3 days school this week (students got Thursday and Friday off fo
 
 Find notes / steps for my lesson below.
 
-### The lesson
+## The lesson
 
 #### How Does the Web Work?
 
@@ -168,7 +168,7 @@ For anyone who wants to continue learning about web development languages:
 
 codecademy —> javascript or html/css tracks
 
-### Wrap up
+## Wrap up
 
 We were able to cover all of the material in the 50-minute class period, and every student reached the end goal. Feedback on the lesson was very positive, so I think we will be doing more Web Development type work after the AP exam is over in May.
 

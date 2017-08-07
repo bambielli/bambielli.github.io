@@ -9,7 +9,7 @@ Everyone can see the impact A.I. is having our lives, but an article I read in N
 
 Here are a few of my takeaways from the article.
 
-### A Differnt Way to "Program"
+## A Differnt Way to "Program"
 
 A Neural Network is a series of computational steps that accepts one-to-many factors as inputs, processes these inputs, and produces a single output that may be used in subsequent computations. These systems are modeled after neurons in the human brain (hence "Neural" Networks) and are designed to solve problems that humans excel at but that are difficult to express via traditional programmatic steps. An example of a problem that humans excel at is feature detection or pattern recognition (i.e. does this picture contain a dog).
 
@@ -21,13 +21,13 @@ The "top down" approach would involve programming an exhaustive ruleset for what
 
 Different training methods involve varying levels of tuning of components in the network: supervised learning, for example, permits the network architect to manually weight components in the net to achieve optimal results.
 
-### Exponential Improvements
+## Exponential Improvements
 
 For problems that would benefit from machine learning applications, the improvements can be dramatic. The example discussed in the NYT article was improvements to Google Translate that happened early 2016.
 
 A team from Google Brain proposed that they swap out part of the translate application logic with a neural network trained for translation purposes. The results were remarkable: the improvement to the quality of translations after implementing the neural network was "roughly equivalent to the aggregate gains of the old system over its entire lifetime of development." A decade of development using traditional programming techniques was made obsolete in 9 months of neural network training: an unbelievable achievement. These types of dramatic improvements are not unique, and will lead to revolutions in the types of problems we can efficiently solve.
 
-### Garbage in, Garbage out
+## Garbage in, Garbage out
 
 One concern that the NYT article raised was training a neural network on biased data... the developer’s adage when writing an algorithm is "garbage in, garbage out," meaning if you provide an algorithm with bad data it will surely give you wacky and incorrect results back.
 
@@ -35,7 +35,7 @@ A neural network trained on data this is inherently biased will fall prey to the
 
 I did not realize that the quality of data used for training was so critical to the overall function of the network.
 
-### Summary
+## Summary
 
 This article piqued my interest in machine learning / A.I. applications. I'm currently in the process of applying to the Georgia Tech Online Masters in Computer Science program, and I'm hoping to pursue the Machine Learning specialization. The impact machine learning will have in the future will be extraordinary: I want to make sure I'm equipped as a developer to participate in solving these types of problems!
 

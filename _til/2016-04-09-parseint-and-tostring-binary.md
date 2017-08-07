@@ -9,13 +9,13 @@ TIL how to convert a binary string to a digit of any base, and how to convert a 
 
 This weekend was the annual [Google Code Jam][gcj]{:target="_blank"} qualification round. I don't know if the questions this year were easier, or if I am just a better programmer, but I was able to submit answers for 3 of the 4 qualifying problems and qualify for the next round. Although I could have written my answers in Python, I decided to code in Javascript as I have been practicing with it quite a bit lately.
 
-### JamCoins Problem
+## JamCoins Problem
 
 The third question in the qualification round involved coming up with all possible permutations of a binary string of N bits, the first and last of which were required to be '1'. The success condition involved testing the binary strings constructed above to see if their values converted to base 2 through 10 were NOT prime. I needed a way to iterate through all binary string permutations with the constraints above, and then convert those binary strings to their equivalent values in bases 2-10.
 
 I started by trying to think of an algorithm that, given an array of the inner '0's for the binary string, would return all possible permutations of those bits and then push/shift '1's to the ends, joining it to form the equivalent binary string. This would have involved storing all permutations in memory, which sucks because for the large problem we were working with 32 bits. We also didn't necessarily have to examine ALL permutations of the N bits, because the problem's solution condition could be potentially satisfied with N-J bits.
 
-### The Chosen Implementation
+## The Chosen Implementation
 
 My chosen implementation only required storing the current binary string in memory, testing it against the problem solution condition, and then iterating to the next. I created a for loop that would do this for me. See code below for explanation:
 

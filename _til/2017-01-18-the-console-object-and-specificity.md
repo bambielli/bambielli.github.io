@@ -9,7 +9,7 @@ TIL (more like relearned) CSS specificity rules, and (unrelated) some additional
 
 We had a UI Community of Practice meeting today at Expedia. There were 2 speakers: the first spoke about CSS specificity rules, and the second spoke about the console object and some of the additional methods on it past just `console.log`
 
-### CSS Specificity
+## CSS Specificity
 
 CSS specificity dictates the order of precedence that CSS is applied to elements in the DOM. If two CSS rules apply to the same element, the one with the higher specificity will win out and overwrite the previous rule. Specificity is often the reason that CSS does not work the way a developer/designer is expecting, and can lead to abuse of `!important` throughout the codebase.
 
@@ -26,7 +26,7 @@ A general rule we came up with was, use the least specific selector to apply a r
 
 Another common-sense rule was, do not put classes or elements before the ID in your selector. Since IDs are the most specific selector available, and they are also unique to a document, any classes or elements applied before an ID are wasted work for the browser. When constructing a selector, just jump right to the ID!
 
- ### The Console Object
+ ## The Console Object
 
 The `console` object is so much more than just `console.log`!
 

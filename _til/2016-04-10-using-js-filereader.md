@@ -9,7 +9,7 @@ TIL how to use the javascript FileReader to read data from a text file.
 
 I participated in the qualification round of the [Google Code Jam][gcj]{:target="_blank"} over the weekend. Since I have been working with javaScript a lot lately, I figured I'd write my solutions in JS. One thing I didn't consider, though, was that I had no idea how to read in text from a file using JS...
 
-### Javascript's FileReader
+## Javascript's FileReader
 
 Enter the javaScript [`FileReader`][FileReader]{:target="_blank"}: this object exposes a set of methods that allows the client to read from a file. Reading happens asynchronously, and triggers a FileReader.onload event when it has completed. Any methods you want to interact with the contents of a file that has been read should therefore be included in the `onLoad()` callback.
 

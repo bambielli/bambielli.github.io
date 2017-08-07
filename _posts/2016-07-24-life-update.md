@@ -7,15 +7,15 @@ tags: [general]
 
 It's been a while since I last posted, and a lot has happened over the past few months. Here's a quick recap (with pictures!)
 
-### Switched Companies
+## Switched Companies
 
 I am now working as a Software Engineer at Expedia on their Media Solutions team. The team is small, only around 20 engineers total or so split between Bellevue and Chicago, so it kind of feels like a startup inside of a larger organization. I'm focusing on front end development, but since the team is so small we help each other out as necessary. Over the past 6 weeks since I joined the team I've learned about Backbone + Marionette, React, the SpringMVC framework, Docker + Microservices, Scala, how to conduct a technical interview, AND I have the privilege of working with a ton of really friendly and talented people. Since Expedia HQ is in Bellevue, Washington (close to my hometown of Woodinville) I'm hoping I'll get to travel back home more often (I've already gone out once). A great fit thus far.
 
-### Moved Neighborhoods
+## Moved Neighborhoods
 
 I've swapped the Blue line for the Brown, as I've moved from Logan Square up to Ravenswood. It's a quieter neighborhood with a ton of really great restaurants and food options. Plus, commuting to work on the Metra is unbelievably convenient: the train literally drops me off inside of the building in which I work.
 
-### Bachelor Party on the Pacific Crest Trail
+## Bachelor Party on the Pacific Crest Trail
 
 My good buddy Alex Wilson is getting married in August, and the bachelor party was last weekend. We ditched going to Vegas in favor of a 3 day backpacking trip in the Ansel Adams wilderness out near Mammoth California. It was a challenging weekend: lots of blisters, loud tents, slow water filters and mosquitos. It was really rewarding as well, and I had a blast spending time with good friends from College. Check out the pictures below.
 

@@ -7,13 +7,13 @@ tags: [postgres, databases]
 
 TIL about Postgresql extensions, particularly the CITEXT extension for making a case insensitive column in a table.
 
-### The Use Case
+## The Use Case
 
 I'm building out a user table for an app. I'd like a column of that table to be email (with a uniqueness constraint). I'd also like that data to be stored in a case insensitive manner.
 
 Side note: the word `user` in Postgres is a reserved keyword, so you are unable to create a table named user. You can get around this constraint by wrapping the word user in quotes (i.e. "user") but then all queries to the table would need to reference the table in quotes. This seemed like an easy thing to forget, so I just pluralized my table name (along with the other tables in my database).
 
-### The CITEXT Extension
+## The CITEXT Extension
 
 Postgres has a column extension called CITEXT (stands for case-insensitive extension). This type allows one to query for the column in a case insensitive manner.
 
@@ -33,7 +33,7 @@ In the above scenario, the row that contains the value "brian" would be returned
 
 Data is not stored as lowercase; rows are just returned as if both the query and row value were lower case.
 
-### Postgres Extensions
+## Postgres Extensions
 
 CITEXT is an example of a [postgres extension][pgext]{:target="_blank"}, of which there are many (see link). Extensions are enabled in a database by database manner, and are enabled by executing a CREATE EXTENSION statement in the database.
 
@@ -44,7 +44,7 @@ CREATE EXTENSION IF NOT EXISTS citext;
 
 This will create the CITEXT extension in the database to which you are connected if the extension hasn't already been created for the database. You can view all enabled extensions for a Postgres database with the `\dx` command.
 
-### Is CITEXT Necessary for My Use Case?
+## Is CITEXT Necessary for My Use Case?
 
 Probably not. Querying a CITEXT column is slower than a VARCHAR or TEXT column, because of the underlying conversion of both the query string and the column value for the CITEXT row to LOWER. Per the docs, using CITEXT is slightly more efficient than calling LOWER in your queries explicitly to perform case-insensitive matching **in the database**.
 

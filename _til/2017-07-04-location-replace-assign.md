@@ -11,7 +11,7 @@ TIL how to use `location.replace()` and `location.assign()` to change URLs progr
 
 [location.replace()][replace]{:target="_blank"} behaves almost identically to `location.assign()`, however instead of adding the provided URL to the browser's history, `replace()` **replaces** the current URL in history with the one provided. This effectively erases the current URL from the browser's history: **the user won't be able to click the back button to navigate back to the page they were on before `replace()` was called.**
 
-### A small, but Important, Detail
+## A small, but Important, Detail
 
 The argument to either assign() or replace() can be a **full URL**, or a **relative URI**.
 
@@ -36,7 +36,7 @@ location.assign('2').
 // new URL: http://localhost:3000/users/2
 {% endhighlight %}
 
-### Manipulating History with react-router
+## Manipulating History with react-router
 
 When using react-router's history API, `history.push()` acts like `location.assign()` and `history.replace()` acts like, you guessed it, `location.replace()`.
 

@@ -11,7 +11,7 @@ During class last week, we covered constructors and prototypes in the context of
 
 I decided to take my own crack at explaining how to implement an inheritance relationship in javascript! Read on to learn more.
 
-### What is prototypal inheritance?
+## What is prototypal inheritance?
 
 Javascript has a different system for implementing inheritance hierarchies than those used by traditional Object Oriented languages like C++ and Java: prototypal inheritance!
 
@@ -19,7 +19,7 @@ Unlike C++ and Java, javascript objects do not have inherited functionality *cop
 
 It is worth noting that an object can only have one prototype, and an effect of this is that javascript only supports single inheritance (like Java).
 
-### Prototypal Inheritance in Action: Pie Hierarchy (peirarchy?)
+## Prototypal Inheritance in Action: Pie Hierarchy (peirarchy?)
 
 Let's see what prototypal inheritance looks like in code. The following is a constructor for a Pie: Pies have a size and toppings to add to each pie.
 
@@ -39,7 +39,7 @@ Pie.prototype.getDescription = function () {
 
 Notice that I put the `getDescription` method on the Pie prototype. Assigning a method directly to the prototype **ensures that the method is not re-defined by each instance of Pie**, and will be used by any object that exists on the prototype chain below Pie.
 
-### It's Pizza (subclass) Time!
+## It's Pizza (subclass) Time!
 
 Now I will create a new object constructor for a Pizza. A Pizza `is-a` Pie, so it should inherit from and subclass pie. In java we would write `public class Pizza extends Pie` to implement this type of relationship, but in javascript we do the following:
 
@@ -56,7 +56,7 @@ The constructor looks similar to Pie, adds a new field called `isDeepDish` that 
 
 `call` allows you to pass a different execution context to a function that is defined elsewhere in your program. In the Pizza constructor above, we pass the Pizza constructor's `this` as the execution context to the Pie constructor, plus the relevant arguments necessary for that constructor. **This results in `this.size` and `this.toppings` being defined for new Pizza objects, even though those properties are defined as part of the Pie constructor.**
 
-### Completing the Prototype Link
+## Completing the Prototype Link
 
 In the above example, **the prototype of Pizza is not yet linked to the prototype chain that contains Pie.** In current state the pizza prototype just links to the Pizza constructor itself. This means that since the `getDescription` method is defined on the Pie prototype, the method is not available to Pizza objects and will result in a 'method is not a function' error if it is called on a new Pizza object.
 
@@ -87,7 +87,7 @@ We can confirm the linked-nes of our constructor prototypes by calling `isProtot
   console.log(Pizza.prototype.isPrototypeOf(pie)) // should log false
 {% endhighlight %}
 
-### Overriding Methods on the Chain
+## Overriding Methods on the Chain
 
 Both overriding and partial overriding of methods is possible in javascript as well.
 
@@ -112,7 +112,7 @@ Partial overriding of parent methods is also possible by referencing the method 
 
 The `call(this)` is important, because without it `Pie.prototype.getDescription` will not have the correct execution context. We pass the execution context `this` which in our case will be an instance of a Pizza object.
 
-### Final thoughts
+## Final thoughts
 
 It was a useful exercise to implement a prototypal inheritance relationship from scratch in javascript. In summary, here are the steps necessary to go about creating a subclass that inherits from a parent constructor:
 
