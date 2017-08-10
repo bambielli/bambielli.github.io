@@ -7,6 +7,8 @@ tags: [teaching, presentation, northwestern]
 
 I was recently asked to present as part of the Northwestern Alumni Webinar series. The topic: How Volunteerism Can Impact Your Career.
 
+[Find a youtube link to the presentation recording here.][youtube]{:target="_blank"}
+
 ## Long-Term Volunteer Experiences
 
 Over the past 2 years I've participated in 2 long-term volunteer opportunities. The first was volunteering as an AP Computer Science teacher at a Chicagoland high school [with the Microsoft TEALS program][teals] for the 2015-2016 school year. The second, which just wrapped up a few weeks ago, involved TA'ing a web development bootcamp on Northwestern's Evanston campus.
@@ -32,3 +34,4 @@ Find slides from my presentation below, I'll include a link to the recorded vers
 <embed src="/assets/pdf/Volunteering.pdf" />
 
 [teals]: /posts/2016-05-12-school-reflection/
+[youtube]: https://www.youtube.com/watch?v=5G7QAjFyz0k
