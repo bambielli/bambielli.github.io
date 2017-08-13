@@ -9,7 +9,7 @@ TIL how to leverage ES6 arrow functions to avoid losing "this" when writing func
 
 Arrow functions are more than just a syntactically shorter way of defining a function in javascript.
 
-## Arrow Functions, and `this`
+## What's the Difference?
 
 **Arrow functions do not bind a new `this` context like functions defined with the `function` keyword do.**
 
