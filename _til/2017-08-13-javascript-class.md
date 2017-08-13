@@ -27,6 +27,7 @@ function BaseA(name) {
 BaseA.prototype.greet = function () {
     return `hello ${this.name}!`;
 };
+const baseA = new BaseA(name);
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -39,10 +40,7 @@ class BaseB {
         return `hello ${this.name}`;
     }
 }
-
-const baseA = new BaseA(name);
 const baseB = new BaseB(name);
-
 {% endhighlight %}
 
 Notice that both are still invoked with the `new` keyword to create an instance of the class. The `class` keyword supports the use of an explicit `constructor` function, which should contain code to create and initialize a class instance.
