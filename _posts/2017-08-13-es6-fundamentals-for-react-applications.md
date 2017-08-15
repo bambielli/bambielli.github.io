@@ -2,7 +2,7 @@
 title:  "ES6 Fundamentals for React Applications"
 date:   2017-08-13 21:48:00
 category: post
-tags: [teaching, presentation, react, javascript, es6, spread-operator, destructuring-assignment, let, const, transpile, arrow-functions, template-strings, template-literals, class]
+tags: [teaching, presentation, react, javascript, es6, spread-operator, destructuring-assignment, let, const, transpile, arrow-functions, template-strings, template-literals, class, functional-programming]
 ---
 
 Don't worry about learning all of the new features introduced in the ES6 spec, **just focus on these core ones that are used most frequently in React codebases!**
@@ -18,6 +18,11 @@ The ES6 features any aspiring React dev should learn are:
 - [ES6 classes][classes]{:target="_blank"}
 - [destructuring assignments][dest]{:target="_blank"}
 - [spread operator][spread]{:target="_blank"}
+
+I also snuck in two `Array` methods that are widely used while building React components:
+
+- [Array.map()][map]{:target="_blank"}
+- [Array.filter()][filter]{:target="_blank"}
 
 These features were chosen based on my experience building React applications over the past several years.
 
@@ -40,3 +45,5 @@ And an embedded version below:
 [classes]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 [dest]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 [spread]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator
+[map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+[filter]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
