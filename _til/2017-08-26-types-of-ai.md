@@ -1,5 +1,5 @@
 ---
-title:  "Types of AI"
+title:  "The 6 Branches of AI"
 date:   2017-08-26 8:12:00
 category: til
 tags: [ai, artificial, intelligence, artificial-intelligence, machine-learning, computer-vision, knowledge-representation, robotics, natural-language-processing, automated-reasoning]
