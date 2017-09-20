@@ -9,7 +9,7 @@ TIL that Jest module automocking does not mock the getter / setter properties of
 
 ## Jest genMockFromModule
 
-The Jest testing framework provides many nice utilities out of the box (see my previous TIL on Jest snapshots) one of which is module mocking. This is used to isolate the component under test from its dependencies.
+The Jest testing framework provides many nice utilities out of the box (see my previous TIL on Jest snapshots) one of which is [module mocking][mocking]{:target="_blank"}. This is used to isolate the component under test from its dependencies.
 
 The `genMockFromModule` method makes mocking dependencies a breeze: just create a file of the same name in an `__mocks__` folder, call `genMockFromModule` with the module's path, and export the mocked module from the file. When you call `jest.mock('..path/to/module')` in your test, the mocked version of the module will be fetched from the `__mocks__` folder, and can be further configured on a test case by test case basis.
 
@@ -72,3 +72,5 @@ mockObject.isLoading = true;
 {% endhighlight %}
 
 **This is by far the simpler approach.** Since the object that is using the mock doesn't care whether or not a getter is being executed behind the scenes, just assigning a value to the object property is enough.
+
+[mocking]: https://facebook.github.io/jest/docs/en/manual-mocks.html
