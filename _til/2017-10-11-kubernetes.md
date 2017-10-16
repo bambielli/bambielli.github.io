@@ -21,11 +21,16 @@ Kubernetes is a **container orchestration system**: in other words, it provides 
 
 **You still need to use a system like Docker or rkt to build images of your application, before you can deploy them to a kubernetes cluster**. Kubernetes is only responsible for the orchestration of containers (running images) not the building of those images themselves.
 
-Some of the components that Kubernetes provides in a cluster are:
-  - Pods - A running image / set of images
+<figure>
+	<img src="/assets/images/k8-architecture.jpg">
+	<figcaption>Kubernetes block diagram (provided by Apprenda)</figcaption>
+</figure>
+
+Some of the active components in a kubernetes cluster are:
   - etcd - a distributed key-value store for cluster config
   - Master node - contains common orchestration
-  - Worker node - where your pods are run.
+  - Worker node - where your images are run.
+  - Pods - A running image / set of images
   - API server - processes all REST based requests to the cluster (runs on master node)
   - Scheduler - Spins up new pods on available infrastructure, as requested
   - Controller manager - ensures that the desired number of nodes in your cluster matches the actual active number
