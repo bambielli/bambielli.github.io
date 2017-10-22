@@ -1,5 +1,5 @@
 ---
-title:  "Impossible to Make Class Members Private in Python"
+title:  "No Private Class Members in Python"
 date:   2017-10-22 15:41:00
 category: til
 tags: ["python", "private", "methods", "class", "member"]
