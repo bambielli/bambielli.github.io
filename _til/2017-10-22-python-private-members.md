@@ -64,3 +64,6 @@ tc._TestClass__privatemethod() # prints "is it private?"
 {% endhighlight %}
 
 Therefore, **it is actually impossible to make class members private in python.** The mangling convention makes it more difficult to access members that should be considered private, but they can still be accessed by persistent developers.
+
+[ig]: https://github.com/bambielli/InformationGain/blob/master/InformationGain.py
+[docs]: https://docs.python.org/3/tutorial/classes.html#tut-private
