@@ -107,6 +107,8 @@ Gain('Weather') = 0.5216406363433186
 Gain('Late at Work') = 0.12808527889139454
 ```
 
-The Weather attribute clearly tells us the most about our `Will I Go Running` random variable. If we were to construct a decision tree for classifying new instances of this random variable, **we would want to place the Weather attribute at the top of the tree** since it contains the most information about the inevitable result of the variable.
+The Weather attribute tells us the most about our `Will I Go Running` random variable, since its information gain is the highest of the 3 available attributes.
+
+If we were to construct a decision tree for classifying new instances of this random variable, **we would want to place the Weather attribute at the top of the tree** since it contains the most information about the inevitable result of the variable.
 
 [ig]: https://github.com/bambielli/InformationGain
