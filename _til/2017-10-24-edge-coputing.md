@@ -1,6 +1,6 @@
 ---
 title:  "Edge Computing"
-date:   2017-10-22 15:41:00
+date:   2017-10-24 22:00:00
 category: til
 tags: ["cloud", "edge", "IoT", "distributed", "system", "systems", "data", "optimization"]
 ---
