@@ -35,7 +35,7 @@ To combat this, you adopt a naming convention like [`BEM`][bem]{:target="_blank"
   color: blue;
 }
 
-{% endhighlight }
+{% endhighlight %}
 
 [CSS modules][css]{:target="_blank"} provide a **build-time workaround** for the age old problem of namespace conflicts with css classes. The CSS module system allows you to write short semantic class names by swapping class names with unique identifiers that will not cause conflicts in your app.
 
