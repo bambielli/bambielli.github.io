@@ -1,6 +1,6 @@
 ---
 title:  "RUN vs CMD in Dockerfile"
-date:   2017-11-18 13:35:00
+date:   2017-12-02 13:35:00
 category: til
 tags: ["docker", "container", "image", "run", "cmd", "dockerfile"]
 ---
