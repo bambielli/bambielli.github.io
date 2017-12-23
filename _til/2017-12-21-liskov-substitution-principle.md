@@ -27,6 +27,12 @@ That's because the square isa rectangle relationship as modeled above violates t
 
 If we were creating immutable rectangles instead (no public setWidth / setHeight methods), and clients asked for rectangles through a factory, then the liskov substitution principle would be satisfiable for the Rectangle and Square classes.
 
-The core of the liskov substitution principle is to **prevent the need to change client code when creating new subclasses for objects.** If we can guarantee that our subclasses can be substituted polymorphically in all instances of the parent classes, we can guarantee that we won't need to change the client code in reaction to the addition of new subclasses.
+This was well summarized by user SteveT on Stack Overflow:
 
-**This keeps client code lean** since it doesn't need to change its behavior based on the type it is provided. Simple code is easy to test, and reduces the frequency of bugs.
+> Well, a square clearly IS a type of rectangle in the real world. Whether we can model this in our code depends on the spec. What the LSP indicates is that subtype behavior should match base type behavior as defined in the base type specification. If the rectangle base type spec says that height and width can be set independently, then LSP says that square cannot be a subtype of rectangle. If the rectangle spec says that a rectangle is immutable, then a square can be a subtype of rectangle. It's all about subtypes maintaining the behavior specified for the base type.
+
+An additional benefit of following the liskov substitution principle is **preventing the need to change client code when new subclasses are created.**
+
+If we can guarantee that our subclasses can be substituted polymorphically in all instances of the parent classes, by modeling our subclasses after the base spec, we can guarantee that we won't need to change the client code in reaction to the addition of new subclasses.
+
+**This keeps client code concise and lean** since it doesn't need to change its implementation based on the type it is provided. Simple code is easy to test, and reduces the frequency of bugs.
