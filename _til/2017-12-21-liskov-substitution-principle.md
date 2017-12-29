@@ -13,19 +13,32 @@ It states that **If class S is a subtype of class T, then instances of T may be 
 
 Phew that is rough to parse through... let's go through a classic example.
 
-A relationship that can be modeled to violate the liskov substitution principle is the `Square` is-a `Rectangle` relationship.
+A relationship that is often modeled in a way that violates liskov is the `Square` is-a `Rectangle` relationship.
 
-In this case, a rectangle has `setHeight` and `setWidth` properties that are used to change the width and the height of the rectangle after it is constructed, as well as an `area` method.
+In a violating case, a rectangle has `setHeight` and `setWidth` properties that are used to change the width and the height of the rectangle after it is constructed, as well as an `area` method.
 
 Our Square class extends Rectangle, and overrides the setWidth and setHeight methods to ensure that the inherited width and height properties are kept in sync (since square widths and heights are always the same).
 
 If our client code is receiving rectangles from a factory, it should be acceptable to get a square back from the factory without causing bugs in the client (since a square is-a rectangle).
 
-If our client code calls both `setWidth` and `setHeight` on the rectangle it receives, then calls the `area` method, this could result in some odd results when the rectangle that is being operated on is a square...
+However, if our client code calls both `setWidth` and `setHeight` on the rectangle it receives, then calls the `area` method, this could result in some odd results when the rectangle that is being operated on is a square...
 
-That's because the square isa rectangle relationship as modeled above violates the liskov substitution principle! By exposing setWidth and setHeight as public method for our client to call, **it becomes impossible for a square subclass of rectangle to be substituted in place of a rectangle in all instances.**
+{% highlight java %}
 
-If we were creating immutable rectangles instead (no public setWidth / setHeight methods), and clients asked for rectangles through a factory, then the liskov substitution principle would be satisfiable for the Rectangle and Square classes.
+RectangleFactory rectangleFactory = new RectangleFactory();
+
+Rectangle rectangle = rectangleFactory.getRectangle(); // this can return squares
+rectangle.setWidth(10);
+rectangle.setHeight(5);
+rectangle.getArea();
+
+{% endhighlight %}
+
+In the example above, the client would expect the area to be `10 x 5 = 50`, but if a square is returned from the factory the area will be returned as `25` since a square overrides the width and height methods of the rectangle parent class to keep them in sync.
+
+By exposing setWidth and setHeight as public methods for our client to call, **it becomes impossible for a square subclass of rectangle to be substituted in place of a rectangle in all instances.** Therefore, the Square isa Rectangle relationship as modeled above violates the liskov substitution principle.
+
+If we were creating `immutable rectangles` instead (no public setWidth / setHeight methods), and clients asked for rectangles through a factory, then the liskov substitution principle would be satisfiable for the Rectangle and Square classes.
 
 This was well summarized by user SteveT on Stack Overflow:
 
@@ -33,6 +46,6 @@ This was well summarized by user SteveT on Stack Overflow:
 
 An additional benefit of following the liskov substitution principle is **preventing the need to change client code when new subclasses are created.**
 
-If we can guarantee that our subclasses can be substituted polymorphically in all instances of the parent classes, by modeling our subclasses after the base spec, we can guarantee that we won't need to change the client code in reaction to the addition of new subclasses.
+If we can guarantee that our subclasses can be substituted polymorphically in all instances of the parent classes, we can guarantee that we won't need to change the client code in reaction to the addition of new subclasses.
 
 **This keeps client code concise and lean** since it doesn't need to change its implementation based on the type it is provided. Simple code is easy to test, and reduces the frequency of bugs.
