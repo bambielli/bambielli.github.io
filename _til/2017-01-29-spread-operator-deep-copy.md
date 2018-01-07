@@ -2,7 +2,7 @@
 title:  "Spread Operator Does Not Deep Copy Properties"
 date:   2017-01-29 20:58:00
 category: til
-tags: [javascript]
+tags: [javascript, spread, spread operator, deep, deep copy]
 ---
 
 TIL that the spread operator does not perform a deep copy of object properties to the target object.
