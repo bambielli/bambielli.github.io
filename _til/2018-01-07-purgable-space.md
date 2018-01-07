@@ -7,6 +7,8 @@ tags: [purgeable, space, purgeable space, purgeable-space, disk utility, disk, h
 
 TIL about Purgeable Disk Space in OSX, and after hours of struggling, how to reclaim it.
 
+[Link to step by step instructions at the end of this post for reclaiming purgeable space on your mac.][link]
+
 ## What is Purgeable Space?
 
 Purgeable Disk Space is a "feature" of more recent versions of OSX. It is storage on your hard drive that the operating system sets aside for files that it thinks you might access again in the future.
@@ -42,10 +44,6 @@ This is a good feature in most scenarios, just not in our immediate case where w
 See my step-by-step instructions for creating large files and duplicating them in the next section:
 
 ## Step by Step Instructions:
-
-It looks like there are a lot of steps below to follow, but I was trying to be thorough so anyone could do it.
-
-
 
 1. Open your terminal by searching for `terminal` in spotlight (open spotlight with `cmd+spacebar`)
 
@@ -84,3 +82,4 @@ I hope the above was helpful! Feel free to reach out to me if you're still havin
 
 [cmm]: https://macpaw.com/store/cleanmymac
 [so]: https://apple.stackexchange.com/questions/254676/how-do-i-clear-the-purgeable-area-on-my-disk
+[link]: /til/2018-01-07-purgable-space/#step-by-step-instructions
