@@ -1,5 +1,5 @@
 ---
-title:  "Automocking node_modules with jest"
+title:  "How to Automock node_modules with jest"
 date:   2017-12-14 13:35:00
 category: til
 tags: ["jest", "mocking", "mocks", "automock", "test", "testing", "unit", "facebook", "sentry.io"]
