@@ -75,5 +75,5 @@ This would allow me to catch any changes in my node_module constructor contract,
 
 [previous]: /til/2017-12-14-mocking-node-modules-with-jest
 [obj]: https://www.npmjs.com/package/jest-mock-object
-
+[impl]: https://facebook.github.io/jest/docs/en/mock-functions.html#mock-implementations
 
