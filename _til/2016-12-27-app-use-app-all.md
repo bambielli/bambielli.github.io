@@ -1,8 +1,8 @@
 ---
-title:  "app.use and app.all"
+title:  "The Difference Betwen app.use and app.all in Express"
 date:   2016-12-27 11:13:00
 category: til
-tags: [express, node, javascript]
+tags: [express, node, javascript, app.use, app.all, backend, framework, routing]
 ---
 
 TIL the difference between `app.use` and `app.all` in the context of an express application.
