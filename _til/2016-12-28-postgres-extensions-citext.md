@@ -1,8 +1,8 @@
 ---
-title:  "Postgres Extensions: CITEXT"
+title:  "Postgres Extension - CITEXT for Case Insensitive Columns"
 date:   2016-12-28 09:44:00
 category: til
-tags: [postgres, databases]
+tags: [postgres, databases, backend, CITEXT, case, insensitive, column, extension]
 ---
 
 TIL about Postgresql extensions, particularly the CITEXT extension for making a case insensitive column in a table.
