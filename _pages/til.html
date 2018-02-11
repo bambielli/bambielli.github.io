@@ -5,14 +5,6 @@ permalink: /til/
 ---
 
 {% include base_path %}
-{% assign numTil = site.til | size %}
-{% assign numToGo = 100 | minus:numTil %}
-
-{% if numTil < 100 %}
-  <h3 class="archive__subtitle center__when__small"> Number of TILs remaining to <a href="/posts/2016-12-30-2016-recap#blogging" style="text-decoration: underline;" target="_blank">meet 2017 goal:</a> <span id="resolution">{{numToGo}}</span></h3>
-{% else %}
-  <h3 class="archive__subtitle"> New years resolution of reaching 100 TILs in 2017 <span id="resolution">ACHIEVED!</span></h3>
-{% endif %}
 
 <div class="grid__wrapper">
   {% for post in site.til reversed %}

@@ -22,18 +22,6 @@
   }
 }
 
-#resolution {
-  display: inline-block;
-  color: black;
-  font-size: 1em;
-  -webkit-transition: -webkit-transform .7s ease-in-out;
-          transition:         transform .7s ease-in-out;
-  &:hover {
-    -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  }
-}
-
 .page__hero {
   &--overlay {
     .wrapper {
