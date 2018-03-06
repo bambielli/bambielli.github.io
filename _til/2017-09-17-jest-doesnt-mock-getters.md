@@ -1,5 +1,5 @@
 ---
-title:  "Jest automock doesn't mock getters"
+title:  "Jest Automock Doesn't Mock Getters"
 date:   2017-09-17 18:50:00
 category: til
 tags: [javascript, testing, test, jest, react]
@@ -7,7 +7,20 @@ tags: [javascript, testing, test, jest, react]
 
 TIL that Jest module automocking does not mock the getter / setter properties of the target module.
 
-## Jest genMockFromModule
+**Update March 5, 2018:** with the release of Jest `v22.1.0`, [it is now possible to spy on getters and setters with the `jest.spyOn()` method][jest]{:target="_blank"}.
+
+{% highlight javascript %}
+
+jest.spyOn(module, 'getterName', 'get');
+jest.spyOn(module, 'setterName', 'set');
+
+{% endhighlight %}
+
+From here you can provide mockImplementation to the spy, or overwrite it with a `jest.fn()` if you don't want to call out to the original implementation.
+
+Jest automocking still does not mock getters and setters, so see the rest of the original post below for a workaround.
+
+## jest.genMockFromModule()
 
 The Jest testing framework provides many nice utilities out of the box (see my previous TIL on Jest snapshots) one of which is [module mocking][mocking]{:target="_blank"}. This is used to isolate the component under test from its dependencies.
 
@@ -35,7 +48,7 @@ const featureStore = new FeatureStore('hello', 'world'); // FeatureStore is now 
 
 Any methods on the store above will be automatically mocked by Jest, giving you, the tester, full control over how dependencies respond to your module under test.
 
-## Mocking Modules with Getters
+## Mocking Modules That Contain Getters
 
 Something I discovered during a recent round of testing, was that **object getter properties are not swapped out with mocked versions by genMockFromModule**.
 
@@ -71,6 +84,9 @@ mockObject.isLoading = true;
 
 {% endhighlight %}
 
-**This is by far the simpler approach.** Since the object that is using the mock doesn't care whether or not a getter is being executed behind the scenes, just assigning a value to the object property is enough.
+### The 2nd option is by far the simpler approach.
+
+Since the object that is using the mock doesn't care whether or not a getter is being executed behind the scenes, just assigning a value to the object property should be enough for testing purposes.
 
 [mocking]: https://facebook.github.io/jest/docs/en/manual-mocks.html
+[jest]: https://facebook.github.io/jest/docs/en/jest-object.html#jestspyonobject-methodname-accesstype

@@ -1,5 +1,5 @@
 ---
-title:  "XMLHttpRequest Example"
+title:  "How to initiate a requset using XMLHttpRequest objects"
 date:   2017-07-04 11:34:00
 category: til
 tags: [javascript, browser, ajax]
