@@ -23,13 +23,17 @@ Additionally, both of these experiences allowed me to practice **soft skills** t
 
 ## Make Volunteerism a 2 Way Street
 
-I saught these opportunities out, they did not find me. I was looking for ways to grow outside the workplace, and picked volunteer opportunities that would not only allow me to positively impact those that I worked with, but would also benefit me personally through skill development. **This turned volunteerism in to a two way street, benefiting all involved in different ways.** I found it was more motivating, and easier to make the long term commitment, when I knew I was also getting something substantial out of the experience.
+I saught these opportunities out, they did not find me. I was looking for ways to grow outside the workplace, and picked volunteer opportunities that would not only allow me to positively impact those that I worked with, but would also benefit me personally through skill development.
+
+**This turned volunteerism in to a two way street, benefiting all involved in different ways.** I found it was more motivating, and easier to make the long term commitment, when I knew I was also getting something substantial out of the experience.
 
 If you haven't made the jump in to the world of volunteerism, I'd suggest looking for opportunities similar to mine. Look for ways to donate your technical skills, whether through teaching, consulting with non profits, or giving presentations to interested parties.
 
-**Everyone is in a technical field,** not just those who work in STEM. When my sister talks to me about her Art History thesis for Grad School, it sounds to me like I imagine me talking about the latest Javascript Framework sounds to her. I'm certain there are opportunities to leverage the technical skills you've developed to benefit your community, it just might take a bit of searching to find out how!
+**Everyone is in a technical field,** not just those who work in STEM. When my sister talks to me about her Art History thesis for Grad School, it sounds to me like I imagine me talking about the latest Javascript Framework sounds to her.
 
-Find slides from my presentation below, I'll include a link to the recorded version of the webinar when it is posted.
+I'm certain there are opportunities to leverage the technical skills you've developed to benefit your community, it just might take a bit of searching to find out how!
+
+Find slides from my presentation below.
 
 <embed src="/assets/pdf/Volunteering.pdf" />
 

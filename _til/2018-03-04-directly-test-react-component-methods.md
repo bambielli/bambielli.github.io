@@ -11,7 +11,7 @@ See here for a repo with a working version of the sample code covered in this po
 
 A common pattern when testing React component methods using the AirBnB enzyme library, is to figure out what event triggers the method through normal usage of the component and `simulate` that event to indirectly trigger it.
 
-While this is a valuable test to ensure your component behaves correctly in response to events, it can become tedious and difficult to configure a component in just the right way to fully exercise a complex method in this indirect way.
+While this is a valuable test to ensure your component behaves correctly in response to events, it can become tedious and difficult to configure a component in just the right way to fully exercise a complex method indirectly.
 
 I recently learned about the enzyme `wrapper.instance()` method, which **returns the component instance inside of the wrapper**. Getting access to this instance allows you to directly invoke component methods, instead of resorting to event simulation to indirectly trigger them.
 

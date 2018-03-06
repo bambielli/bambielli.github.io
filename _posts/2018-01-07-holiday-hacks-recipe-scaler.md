@@ -5,7 +5,9 @@ category: post
 tags: [recipe, scaler, recipe-scaler, holiday, hacks, holiday-hacks, halfbakedharvest, chrome, extension, chrome-extension]
 ---
 
-Over the holidays, I created a [chrome extension][git]{:target="_blank"} that allows a user to dynamically adjust the number of servings for a recipe they are preparing. The extension works for recipes on [halfbakedharvest.com][hbh]{:target="_blank"}
+Over the holidays, I created a [chrome extension][git]{:target="_blank"} that allows a user to dynamically adjust the number of servings for a recipe they are preparing.
+
+The extension works for recipes on [halfbakedharvest.com][hbh]{:target="_blank"}
 
 The extension will scale ingredient amounts in the browser, based on the selected number of servings.
 

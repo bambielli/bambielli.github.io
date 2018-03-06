@@ -5,7 +5,7 @@ category: post
 tags: [presentation, testing, react, javascript, frontend, jest, enzyme, snapshot]
 ---
 
-We recently did some thought on what makes a useful test, and shared it with the organization through a tech talk.
+My team at Expedia recently put some thought into "what makes a useful test". Read on to hear our thoughts.
 
 ## The Golden Rule
 
@@ -13,7 +13,9 @@ Our team arrived at a golden rule for testing: **write tests that are useful.**
 
 This seems like a pretty simple realization, but it has profoundly impacted how we write tests.
 
-Previously we strived to meet quantifiable testing metrics like 80% test coverage or 90% branch coverage... we found these metrics did more harm than good. **We realized we were spending more time writing and maintaining our test suite than writing the application code itself.** Something needed to change.
+Previously we strived (strove?) to meet quantifiable testing metrics like 80% test coverage or 90% branch coverage... we found these metrics did more harm than good. **We realized we were spending more time writing and maintaining our test suite than writing the application code itself.**
+
+Something needed to change.
 
 ## What Makes a Useful Test
 

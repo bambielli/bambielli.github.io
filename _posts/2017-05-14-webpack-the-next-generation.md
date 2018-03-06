@@ -5,7 +5,7 @@ category: post
 tags: [webpack, javascript, presentation]
 ---
 
-[I've been learning a lot about Webpack recently][tags] and I decided to give a presentation at Expedia's frontEnd engineering community of practice to share my experience.
+[I've been learning a lot about Webpack recently][tags] and I decided to give a presentation at Expedia's FrontEnd engineering community of practice to share my experience.
 
 With Webpack 2 coming out of beta last February, I figured the Star Trek reference would be appropriate :)
 
