@@ -2,7 +2,7 @@
 title:  "Unwrapping React Components for Testing Purposes"
 date:   2017-10-05 20:37:00
 category: til
-tags: [javascript, testing, test, jest, react, node, mobx, mobx-react, HOC, enzyme, react-i18next]
+tags: [javascript, testing, test, jest, react, node, mobx, mobx-react, HOC, enzyme, react-i18next, wrapped, i18next, higher order component, hoc, wrappedcomponent, wrapped component]
 ---
 
 TIL how to unwrap react components that are decorated by higher order component wrappers like `mobx`, to get at the underlying component implementation during snapshot tests.
