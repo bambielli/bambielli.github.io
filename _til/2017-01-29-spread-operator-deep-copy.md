@@ -2,12 +2,12 @@
 title:  "Spread Operator Does Not Deep Copy Properties"
 date:   2017-01-29 20:58:00
 category: til
-tags: [javascript, spread, spread operator, deep, deep copy]
+tags: [javascript, spread, spread operator, deep, deep copy, redux, Redux, react, es6]
 ---
 
 TIL that the spread operator does not perform a deep copy of object properties to the target object.
 
-This led to a long debugging session at work that had me thinking I was crazy for a while!
+This led to a long debugging session that had me thinking I was crazy for a while!
 
 ## The Spread Operator vs Object.assign()
 
@@ -35,7 +35,7 @@ Spread, to me, is much more succinct, and since it is suggested for use by the [
 
 I was working with an object that contained properties with values that were themselves objects. Something like this: `{a: {b: 1}}`.
 
-When I wanted to make a change to the state of this object, I used the spread operator to create what I considered a "new object" with the properties of my source. Then, I would change the state of a sub key of this copied object (i.e. I would change the value of property `b` above from 1 to 2.
+When I wanted to make a change to the state of this object, I used the spread operator to create what I considered a "new object" with the properties of my source. Then, I could change the state of a sub key of this copied object (i.e. I would change the value of property `b` above from 1 to 2.
 
 Since I thought I was making an isolated "deep" copy of the original object, I thought these mutations would be isolated from the original... but they were not! An example for clarity:
 
@@ -54,7 +54,7 @@ console.log(original) // also logs {a: {b: 2}} WTF!
 
 Under the hood, Babel is transpiling the `...` to `Object.assign` (it contains a fallback if used in a browser where `Object.assign()` is not yet implemented). From the [MDN][mdn]{:target="_blank"} documentation: _The `Object.assign()` method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object._
 
-In retrospect, I should have realized that a "copy" is nothing more than a shallow copy, and in the case of reference types just a copy to the reference. This caused some weird bugs where I was anticipating changes made to the copy to be isolated, but I eventually tracked down the cause (and learned something in the process).
+In retrospect, I should have realized that a "copy" is nothing more than a shallow copy, and in the case of reference types (like objects) just a copy to the reference. This caused some weird bugs where I was anticipating changes made to the copy to be isolated, but I eventually tracked down the cause and learned something in the process.
 
 [spread]: https://github.com/sebmarkbage/ecmascript-rest-spread#spread-properties
 [redux]: http://redux.js.org/docs/recipes/UsingObjectSpreadOperator.html
