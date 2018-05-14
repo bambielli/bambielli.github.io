@@ -1,5 +1,5 @@
 ---
-title:  "Gini Impurity"
+title:  "Gini Impurity (With Examples)"
 date:   2017-10-29 20:44:00
 category: til
 tags: ["machine", "learning", "machine learning", "gini", "information", "gain", "entropy", "impurity"]
