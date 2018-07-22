@@ -21,7 +21,7 @@ We ended up moving to a `webpack chunkhash` + `cache-control: max-age` strategy,
 
 A [chunkhash][chunkhash] acts in a similar way as an etag. It is generated based off of the content of your static file: in other words, **a chunkhash will only change if the content of your file changes**.
 
-Adding a chunkhash to the names of your static assets allows you to cache indefinitely, as the cache will be busted with a new chunkhash the next time the contents change and a bundle with a brand new name is requested. Until that time, it's ok to keep using the cached version.
+Adding a chunkhash to the names of your static assets allows you to cache indefinitely, as the cache will be busted with a new chunkhash the next time the contents change and a bundle with a brand new name is requested. Until the chunkhash changes, it's ok for clients to continue using the cached version.
 
 We wound up saving an average of around **100ms** per page load, and about **2Kb** of data over the the etag strategy. Both strategies were very easy to configure. There really isn't any excuse NOT to be caching static assets!
 

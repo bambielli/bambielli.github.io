@@ -51,6 +51,8 @@ I also think something like [F1 score][f1]{:target="_blank"} would be a better c
 
 If you're interested in **seeing the code**, or have any questions about my experience in the Georgia Tech masters program thus far, feel free to reach out!
 
+<embed src="/assets/pdf/assignment-1-ml.pdf" />
+
 [paper]: /assets/pdf/assignment-1-ml.pdf
 [ml]: https://www.omscs.gatech.edu/cs-7641-machine-learning
 [f1]: https://en.wikipedia.org/wiki/F1_score
