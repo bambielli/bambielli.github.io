@@ -13,6 +13,6 @@ With a formative background in engineering, and expertise in software quality an
 
 [uptake]: https://www.uptake.com/
 [linkedin]: https://www.linkedin.com/in/bambielli
-[resume]: /downloads/Brian-Ambielli-Resume.pdf
+[resume]: /assets/pdf/Brian-Ambielli-Resume.pdf
 [bootcamp]: https://codingbootcamp.northwestern.edu/
 

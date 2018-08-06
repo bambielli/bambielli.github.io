@@ -66,4 +66,4 @@ My next design pattern post will be about the Factory pattern, coming soon!
 
 [observer]: /posts/2016-10-25-observer/
 [test]: https://github.com/bambielli/DecoratorExample
-[slides]: /downloads/Decorator-Presentation-04-03-17.pdf
+[slides]: /assets/pdf/Decorator-Presentation-04-03-17.pdf
