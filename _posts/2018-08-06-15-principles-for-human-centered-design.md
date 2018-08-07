@@ -1,8 +1,8 @@
 ---
-title:  "15 Design Principles for Human Centered Design"
+title:  "15 Principles for Human Centered Design"
 date:   2018-08-06 12:28:00
 category: post
-tags: [human, computer, interaction, hci, ux, ui, experience, user, interface]
+tags: [human, centered, design, hci, ux, ui, experience, user, interface, discoverability, simplicity, affordances, affordance, mapping, perceptibility, consistency, flexibility, equity, ease, comfort, structure, constraints, tolerance, feedback, documentation, principle, don norman, jakob nielsen, larry constantine, lucy lockwood, constantine and lockwood]
 ---
 
 Today marked the last day of the Human Computer Interaction course I took this summer through my GT master’s program. Here’s a look at some user interface design principles that we touched on during lecture.
