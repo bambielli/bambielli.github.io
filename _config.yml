@@ -195,6 +195,7 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+github: [metadata]
 
 # Archives
 #  Type
