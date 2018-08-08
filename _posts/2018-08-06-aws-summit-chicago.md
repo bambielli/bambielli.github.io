@@ -9,15 +9,19 @@ Last Thursday was the AWS Summit Chicago. I attended 3 sessions on AWS Fargate, 
 
 ## Session 1: AWS Fargate
 
-[Fargate][fargate]{:target="_blank"} is a relatively new mode you can choose when you're deploying containers to ECS or EKS. It removes the necessity to specify and configure server specifications, by creating pre-packaged configurations for you that are optimized for most workloads. This allows you to focus purely on your application code instead of on the infrastructure your containers will run on.
+[Fargate][fargate]{:target="_blank"} is a relatively new mode you can choose when you're deploying containers to ECS or EKS. It removes the necessity to configure server specifications (nodes, memory, cpu), by creating pre-packaged configurations for you that are optimized for most workloads. This allows you to focus purely on your application code instead of on the infrastructure your containers will run on.
 
-Contrast this with EC2 mode, which requires that you specify server types, scaling options, and provision these in a way that you are not wasting money. Most applications do not require this level of control, though, and for teams that are just starting out or are validating prototypes with users, Fargate mode seems to be a simple way to get your application running in an efficient pre-configured way.
+Contrast this with `EC2` mode, which requires that you specify server types, scaling options, and provision these in a way that you are not wasting your money. Many applications do not require this level of control.
+
+For teams that are just starting out or are validating prototypes with users, `Fargate` mode seems to be a simple way to get your application deployed quickly in an efficient pre-configured way.
 
 ## Session 2: Canary Deployments with Istio
 
-[Istio][istio]{:target="_blank"} is a service mesh that is complimentary to kubernetes. It provides additional routing control, security standardization, and telemetry than kubernetes provides out of the box.
+[Istio][istio]{:target="_blank"} is a service mesh that is complimentary to `kubernetes`. It provides additional routing control, security standardization, and telemetry than kubernetes provides out of the box.
 
 A `canary deployment` is a way of verifying that a new version of your application will perform well in a production environment, by directing a small amount of production traffic at the new version and collecting metrics on how it is performing compared to the old version. If anything goes wrong, traffic can be directed back to old versions that are still deployed to prod and customers shouldn't experience any outages.
+
+Contrast this to `rolling deployments` where service instances are slowly swapped over to a new service version one by one. This swap will proceed until all old service versions have been replaced. This doesn't give you any opportunity to verify that the new service instances are working as expected under production load; if there winds up being any problems with a new version all customers will be affected since all old instances are spun down.
 
 This session covered how one might perform canary deployments with vanilla kubernetes, and then additionally with istio:
 
