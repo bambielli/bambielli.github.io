@@ -25,7 +25,7 @@ In our case of mocking the Raven library for tests, we created our mock as follo
 
 {% highlight javascript %}
 // /__mocks__/raven-js.js
-const Raven = requre('raven-js');
+const Raven = require('raven-js');
 jest.genMockFromModule('raven-js');
 module.exports = Raven;
 {% endhighlight %}
