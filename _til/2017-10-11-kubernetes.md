@@ -62,6 +62,7 @@ I learned through the session today that **the architecture of ECS is different 
 Overall it was a well spent morning learning about Kubernetes today. The session definitely helped clear up some misconceptions I had about orchestration solutions available. I'm excited to bring this knowledge with me as I begin a new role at Uptake on the 23rd.
 
 [k]: https://kubernetes.io/
+[app]: https://github.com/apprenda/hands-on-with-kubernetes-gke
 [swarm]: https://docs.docker.com/engine/swarm/
 [mesos]: http://mesos.apache.org/
 [ecs]: https://aws.amazon.com/ecs/
