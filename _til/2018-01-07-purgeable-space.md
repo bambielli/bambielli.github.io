@@ -82,4 +82,4 @@ I hope the above was helpful! Feel free to reach out to me if you're still havin
 
 [cmm]: https://macpaw.com/store/cleanmymac
 [so]: https://apple.stackexchange.com/questions/254676/how-do-i-clear-the-purgeable-area-on-my-disk
-[link]: /til/2018-01-07-purgable-space/#step-by-step-instructions
+[link]: /til/2018-01-07-purgeable-space/#step-by-step-instructions
