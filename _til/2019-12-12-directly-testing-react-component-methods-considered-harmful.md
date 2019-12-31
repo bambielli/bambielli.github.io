@@ -125,7 +125,7 @@ In summary, be aware of when you are lifting up the shroud of your component's p
 
 Instead, just focus on testing the public interface of your component by simulating the actual interactions a user might have with it. Then, verify that your component behaves correctly in response to those interactions from the perspective of the end user.
 
-[year]: /2018-03-04-directly-test-react-component-methods.md
+[year]: /til/2018-03-04-directly-test-react-component-methods/
 [white-box]: https://en.wikipedia.org/wiki/White-box_testing
 [black-box]: https://en.wikipedia.org/wiki/Black-box_testing
 [smell]: https://en.wikipedia.org/wiki/Code_smell

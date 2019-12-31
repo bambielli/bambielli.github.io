@@ -7,6 +7,14 @@ tags: [React, component, method, enzyme, airBnB, Facebook, testing, jest, instan
 
 TIL how to directly test a React component method using enzyme `wrapper.instance()`
 
+## STOP! Read This First
+
+After almost 2 years since publishing, I've come to realize that directly testing react component methods is a bit of an antipattern... It is a form of white box testing that can lead to brittle test and components that become difficult to change.
+
+See the [following post][update]{:target="_blank"} for an updated view on the subject, as well as a discussion of the differences between white box and black box testing.
+
+## The Original Post
+
 See here for a repo with a working version of the sample code covered in this post: [https://github.com/bambielli/testing-react-component-methods][github]{:target="_blank"}
 
 A common pattern when testing React component methods using the AirBnB enzyme library, is to figure out what event triggers the method through normal usage of the component and `simulate` that event to indirectly trigger it.
@@ -144,3 +152,4 @@ Learning about `wrapper.instance()` definitely allowed me to get more granular w
 [github]: https://github.com/bambielli/testing-react-component-methods
 [instance]: http://airbnb.io/enzyme/docs/api/ReactWrapper/instance.html
 [spy]: https://facebook.github.io/jest/docs/en/jest-object.html#jestspyonobject-methodname-accesstype
+[update]: /til/2019-12-12-directly-testing-react-component-methods-considered-harmful/
