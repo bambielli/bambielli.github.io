@@ -11,7 +11,7 @@ This post is in response to a post I wrote [about a year ago][year]{:target="_bl
 
 Since that post, I've come to realize that this is a form of [white box testing][white-box]{:target="_blank"}. 
 
-White box testing involves peeking into your component's internals and accessing private implementation details during tests. The name "white box" comes from lifting up the shroud of the public interface that your component presents, making the internals `visible` to the tester.
+White box testing involves peeking into your component's internals and accessing private implementation details during tests. The name "white box" comes from lifting the shroud of the public interface that your component presents, making the internals `visible` to the tester.
 
 Compare this to [black box testing][black-box]{:target="_blank"}: instead of accessing a component's private methods or implementation details, the tester just tests what a component makes publicly available. For most components this just involves testing the expected behavior in response to interactions like clicks or hovers. The name "black box" comes from leaving the shroud of your component's public interface in place, making the internals `invisible` to the tester.
 
@@ -80,7 +80,7 @@ describe('directly invoking the "incrementCounter" method from component instanc
 
 {% endhighlight %}
 
-Notice that not only am I accessing `incrementCounter` directly, but I'm also accessing the component's internal state  to verify that the count updates. **Accessing state directly also constitutes white box testing**. What if I wanted to make a change to an implementation detail of my component, like changing the name of the property in state from `counter` to `count`? The tests above would break in response to this simple name change while the component would still behave as expected... 
+Notice that not only am I accessing `incrementCounter` directly, but I'm also accessing the component's internal state to verify that the count updates. **Accessing state directly also constitutes white box testing**. What if I wanted to make a change to an implementation detail of my component, like changing the name of the property in state from `counter` to `count`? The tests above would break in response to this simple name change while the component would still behave as expected... 
 
 **This is a symptom of the overspecification that white box testing can cause.** It is not a requirement that state has a property named `counter` but by including this in a test I have inadvertently made it a requirement. 
 
@@ -109,9 +109,9 @@ describe('indirectly testing "incrementCounter" through click simulation', () =>
 
 The public interface of this component is a clickable button that updates a count and displays that count. By simulating click events on the button, and verifying the count updates in response, I'm exercising the component in a way that is similar to how it would be used in the real world. The lesson here is to **verify your public interface, and leave all other implementation details alone**.
 
-## For the Astute Reader
+## A Closer Look at the Assertions
 
-An astute reader will notice a an additional difference between the black box and white box test suites above.
+An astute reader will notice an additional difference between the black box and white box test suites above.
 
 Instead of accessing state directly via `wrapper.state` (like in the white box suite), I'm verifying that the count updated in response to a button click by selecting the displayed value (see `wrapper.find('#counter')`).
 
@@ -121,7 +121,7 @@ I think it's actually good practice to ask yourself **would a user care about th
 
 ## Conclusion: White Box Testing Considered Harmful
 
-In summary, be aware of when you are lifting up the shroud of your component's public interface during tests. This leads to white box testing that adds unnecessary specificity to your application, making your code more difficult to change. 
+In summary, be aware of when you are lifting the shroud of your component's public interface during tests. This leads to white box testing that adds unnecessary specificity to your application, making your code more difficult to change. 
 
 Instead, just focus on testing the public interface of your component by simulating the actual interactions a user might have with it. Then, verify that your component behaves correctly in response to those interactions from the perspective of the end user.
 
@@ -130,3 +130,4 @@ Instead, just focus on testing the public interface of your component by simulat
 [black-box]: https://en.wikipedia.org/wiki/Black-box_testing
 [smell]: https://en.wikipedia.org/wiki/Code_smell
 [instance]: http://airbnb.io/enzyme/docs/api/ReactWrapper/instance.html
+
