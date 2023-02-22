@@ -47,7 +47,7 @@ app.all('/api/*', function(req, res, next) {
 
 All in all, `app.all` and `app.use` can be used to achieve similar results: `app.all('*')` and `app.use('/')` achieve the same thing!
 
-The devil is in the details: where `app.use('/api')` will match both the route /app as well as any routes that extend /app, `app.all('/api/*')` will ONLY match routes that extend /api (i.e /api/resource, and NOT /api alone).
+The devil is in the details: where `app.use('/api')` will match both the route /api as well as any routes that extend /api, `app.all('/api/*')` will ONLY match routes that extend /api (i.e /api/resource, and NOT /api alone).
 
 I wound up using `app.use('/api', ...)` to attach my authentication middleware to my app, so in my app.js config file I needed to make sure that it was positioned above the routers to ensure it would be run before any other callbacks associated with my api routes.
 
