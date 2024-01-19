@@ -5,13 +5,12 @@ permalink: /about/
 
 <img class="img-circle brian" src="/assets/images/brian.jpg" />
 
-I'm a Seattle native living in Chicago, currently working at [Flexport][flexport]{:target="_blank"} as an engineering manager on the Trucking team. We manage the [Transmission][trans] web and mobile applications, which help carriers effectively manage their fleets via real time GPS data and delivery statuses.
+The last few years have been full of change: I moved from Chicago back to Seattle, got married, bought a house, and my wife and I just welcomed a daughter to our family.
 
-With a formative background in engineering, and expertise in software quality and agile methodologies, I'm constantly looking for ways to leverage my technical skills to teach others and contribute to meaningful projects.
+Professionally things have also been moving quickly: my team at Flexport grew from 5 to 10 engineers, then from 10 to 40 over a 9 month period of hypergrowth. And more recently, I finally took the leap to join [BusGenius][bg]{:target="_blank"} full time as CTO. Our mission is simple - we fix bus bunching! But beyond that we work closely with our customers to provide unmatched tech-enabled experiences for riders, drivers, and managers of transit systems alike.
 
-[Check out my resume][resume]{:target="_blank"} or feel free to connect with me on [LinkedIn][linkedin]{:target="_blank"}.
+[Check out my resume][resume]{:target="_blank"} or feel free to connect with me on [LinkedIn][linkedin]{:target="_blank"} if you'd like to chat.
 
-[flexport]: https://flexport.com/
+[bg]: https://busgenius.com/
 [linkedin]: https://www.linkedin.com/in/bambielli
 [resume]: /assets/pdf/Brian-Ambielli-Resume.pdf
-[trans]: https://medium.com/gettransmission/launching-transmission-to-power-intermodal-trucking-fleets-2ac605195923
