@@ -3,7 +3,7 @@ title: Thanks for Stopping By!
 permalink: /about/
 ---
 
-<img class="img-circle brian" src="/assets/images/brian.jpg" />
+<img class="img-circle brian" src="/assets/images/brian-updated.jpg" />
 
 The last few years have been full of change: I moved from Chicago back to Seattle, got married, bought a house, and my wife and I just welcomed a daughter to our family.
 
