@@ -8,4 +8,6 @@ tags: [flexport, transmission, performance, scale, chrome profiler, profiling, j
 A few years back I wrote an article about performance improvements I made for one of Flexport's web applications. 
 
 Click on the following link to read more on medium:
-https://flexport.engineering/preparing-transmissions-web-frontend-for-scale-855505b68c78
+[https://flexport.engineering/preparing-transmissions-web-frontend-for-scale-855505b68c78][link]
+
+[link]: https://flexport.engineering/preparing-transmissions-web-frontend-for-scale-855505b68c78
